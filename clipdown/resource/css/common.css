@@ -260,7 +260,7 @@ a.disabled{pointer-events: none;}
 }
 .popup > div {
   max-width: 600px;
-  width: 70%;
+  width: 90%;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -279,10 +279,10 @@ a.disabled{pointer-events: none;}
 .popup-body{padding: 20px 20px; min-height: 200px;}
 .popup-body .poup-content{text-align: left;}
 .popup-body .poup-content p{line-height:1.4;}
-.popup-header .btn-area{position:absolute; top:8px; right:10px;}
-.popup-header .btn-area .btn-close{display: inline-block; vertical-align: top; background:transparent; width: 38px; height: 38px;}
+.popup-header .btn-area{position:absolute; top:0; right:10px; padding:14px 0;}
+.popup-header .btn-area .btn-close{display: inline-block; vertical-align: middle; background:transparent; width: 28px; height: 28px; padding:0;}
 .popup-header .btn-area .btn-close:focus{outline:0;}
-.popup-header .btn-area .btn-close .close{display: inline-block; position: relative; overflow: hidden; width: 38px; height: 38px; opacity: 1;}
+.popup-header .btn-area .btn-close .close{display: inline-block; position: relative; overflow: hidden; width: 28px; height: 28px; opacity: 1;}
 .popup-header .btn-area .btn-close .close:before, .popup-header .btn-area .btn-close .close:after{content: ''; position: absolute; width: 100%; height:2px; top:50%; right:0; background:#fff;}
 .popup-header .btn-area .btn-close .close:before{-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
 .popup-header .btn-area .btn-close .close:after{-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg)}
@@ -296,8 +296,8 @@ a.disabled{pointer-events: none;}
 .navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:hover,.navbar-default .navbar-nav > .active > a:focus{color:#e31d19;background-color:#f5f5f5;}
 .navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .open > a:hover,.navbar-default .navbar-nav > .open > a:focus{color:#e31d19;background-color:#f5f5f5;}
 .navbar-default .navbar-toggle{border-color:#fff;}
-.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#ddd;}
-.navbar-default .navbar-toggle .icon-bar{background-color:#ccc;}
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#fff;}
+.navbar-default .navbar-toggle .icon-bar{background-color:#333;}
 .navbar-default .navbar-brand{padding: 10px 15px;}
 .navbar-default .navbar-brand,.navbar-default .navbar-nav > li > a{font-weight: 500; color:#333;}
 .navbar-default .navbar-nav > li > a{padding: 15px 20px;}
