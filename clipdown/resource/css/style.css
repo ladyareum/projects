@@ -51,6 +51,7 @@
 .services-section .left_img, .services-section .right_img{max-width: 480px; margin-top: 0;}
 .services-section .right_text{margin: 20px 0; padding-left: 40px;}
 .services-section .btn-group a.btn{padding:0;}
+.services-section .btn-group .img-fluid{max-width: 170px;}
 .services-section.services-4k{padding-top: 125px;}
 .services-section.services-4k.inner-bg{background-image: url(../images/img_service_03-02.png); background-repeat: no-repeat; background-position:center center; background-size: cover; width: 100%;}
 .services-section.services-4k .left_img{max-width: 500px;}
@@ -110,13 +111,7 @@
 .footer-section .policy-info{padding-bottom: 8px;}
 .footer-section .copyright{position: relative; padding-top:15px;}
 
-
-
 .slide-indicators{position: relative; left: 0; margin:5px 0;}
-.slick-prev, .slick-next{}
-.slick-prev:before, .slick-next:before{}
-.slick-prev{}
-.slick-next{}
 .slick-dots{bottom:0 !important;}
 .slick-dots li{margin:0 !important;}
 .slick-dots li button:before{color:#333;}
