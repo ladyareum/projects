@@ -708,12 +708,9 @@
 	<script src="./resource/js/slick/slick.js"></script>
 	<script src="./resource/js/jquery.bpopup.min.js"></script>
 	<script>
-        if(document.body.clientWidth < 768){
-            $("html").click(function(event) {
-        $(".m-navbar.collapse").toggle('in');
-    });
-        }
-    
+        $('html').on("click",function(){ 
+           $('.collapse').removeClass('in');
+        });
 	</script>
 	<script>
 	$('.responsive').slick({
