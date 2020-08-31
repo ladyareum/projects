@@ -705,6 +705,11 @@
 	<script src="./resource/js/slick/slick.js"></script>
 	<script src="./resource/js/jquery.bpopup.min.js"></script>
 	<script>
+    $("html").click(function(event) {
+        $(".collapse").toggle('in');
+    });
+	</script>
+	<script>
 	$('.responsive').slick({
 		  dots: false,
 		  arrows:false,
