@@ -39,7 +39,7 @@
 					</div>
 					
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<div class="collapse navbar-collapse navbar-ex1-collapse m-navbar">
 						<ul class="nav navbar-nav navbar-left">
 							<li class="hidden">
 								<a class="page-scroll" href="#page-top"></a>
@@ -708,9 +708,12 @@
 	<script src="./resource/js/slick/slick.js"></script>
 	<script src="./resource/js/jquery.bpopup.min.js"></script>
 	<script>
-    $("html").click(function(event) {
-        $(".collapse").toggle('in');
+        if(document.body.clientWidth < 768){
+            $("html").click(function(event) {
+        $(".m-navbar.collapse").toggle('in');
     });
+        }
+    
 	</script>
 	<script>
 	$('.responsive').slick({
