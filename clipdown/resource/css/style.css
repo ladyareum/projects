@@ -40,11 +40,13 @@
 .content_info{position: relative; text-align:left; margin: 100px 0; z-index: 100;}
 .info-area{position: relative; z-index: 100;}
 .left_img, .right_img{position: relative; overflow: hidden; margin-top: 20px;}
+.m-btn-box{display: none; position: relative; vertical-align: middle;}
 .intro-section .header_title{text-align: left;}
 .intro-section .btn-box{text-align: left; margin: 40px 0; padding-left: 40px;}
 .intro-section .left_text{padding:60px 0;}
 /* .intro-section .bg_01{background-image: url(../images/bg_figure.png); background-repeat: no-repeat; background-position: 650px 10px; background-attachment: fixed;} */
 .intro-section .bg_01{background-image: url(../images/bg_figure.png); background-repeat: no-repeat; position: absolute; top: 0; right: 0; width: 68%; height: 700px;}
+.intro-section .btn-box{display: block;}
 .videolist-section .info-area .info-text{font-size: 16px; font-size: 1.6rem; font-weight:600; margin-bottom:15px;}
 .videolist-section .info-area .info-text-s{font-size: 13px; font-size: 1.3rem;}
 .services-section .bg_02{background-image: url(../images/bg_figure.png); background-repeat: no-repeat; position: absolute; top: 120%; left: -1080px; width: 1373px; height: 1373px;}
@@ -61,7 +63,7 @@
 .services-section.services-mp3 .right_img{max-width: 660px;}
 
 .notice-section .tabs-menu{margin: 60px 0;}
-.notice-section .tabs-menu .nav{width: 100%; margin-bottom: 20px;}
+.notice-section .tabs-menu .nav{width: 100%; margin-bottom: 60px;}
 .notice-section .tabs-menu .nav-item{overflow: hidden; width: 50%; background: #fff; border: 1px solid #ddd; font-size: 15px; font-size: 1.5rem; line-height: 1.6; margin-left: 0 !important; }
 .notice-section .tabs-menu .nav-item a{border-radius: 0; padding: 12px 12px;}
 .notice-section .tabs-menu .nav-item a:hover{background: #fff; color: #e21d19;}
@@ -127,8 +129,11 @@
 	.content-text{padding-bottom: 20px;}
 	.content_info{margin: 50px 0; text-align: center;}
 	.content_info .col-2{width:100%;}
+    .m-btn-box{display: block;}
 	.intro-section, .videolist-section, .services-section, .contact-section, .notice-section{padding-top:75px;}
 	.intro-section .bg_01{width:100%; right: 0;}
+    .intro-section .btn-box{display: none;}
+    .intro-section .m-btn-box{}
 	.services-section .bg_02{top: 109%; left: -1170px;}
 	.services-section .right_text{margin: 20px 0; padding-left: 0;}
 	.services-section .left_text{margin: 20px 0;}
