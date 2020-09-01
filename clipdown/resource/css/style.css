@@ -147,7 +147,7 @@
 	.contact-section{height: 750px;}	
 	.videolist-section{height: 650px;}
 	.tabs_faq .nav-tab{border-bottom:0; padding: 0;}
-	.tabs_faq .nav-tab li{float:left; width:25%; text-align: center;}	
+	.tabs_faq .nav-tab li{float:left; width:25%; text-align: center; margin-top: 0; padding: 10px 10px;}	
     .search-bar .search-form{width: 100%;}
 }
 
