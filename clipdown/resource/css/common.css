@@ -222,7 +222,7 @@ a.disabled{pointer-events: none;}
 .textarea-style{padding: 10px 10px; resize:none;}
 .search-bar{margin-bottom:60px;}
 .search-bar .search-form{position: relative; width: 80%; margin: 0 auto;}
-.search-bar .search-form .form-control{height: 42px; line-height: 4; font-size: 14px; border-radius: 0; border: 0; border-bottom: 1px solid #888; padding: 0px 38px 0px 0; box-shadow: none;}
+.search-bar .search-form .form-control{height: 42px; font-size: 14px; border-radius: 0; border: 0; border-bottom: 1px solid #888; padding: 0px 38px 0px 0; box-shadow: none;}
 .search-bar .search-form .form-control:focus{outline:0; border-bottom: 1px solid #333;}
 .search-btn{position: absolute; top: 0; width: 38px; right: 0; height: 38px; text-align: center; line-height: 38px; cursor: pointer;}
 .search-btn .icon-search{width: 18px; height: 18px; border: 2px solid #888; margin:10px 10px;}
