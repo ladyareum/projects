@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*!
- * 2020-07-28~
+ * 2020-07-28~2020-08-28
  * 클립다운
  * Copyright ⓒ J’SFUTURE corp. All Rights Reserved.
 */
@@ -232,7 +232,6 @@ a.disabled{pointer-events: none;}
 .icon{display: inline-block; position: relative;}
 .icon-search{width: 16px; height: 16px; background: transparent; border: 2px solid #ddd; border-radius: 50%; transition: all .1s ease-in-out; }
 .icon-search:before, .icon-search:after{content: '';position: absolute;top: 8px;right: -3px;width: 2px;height: 8px;background: #ddd;transform: rotate(-45deg);transition: all .2s ease-in-out;}
-
 
 /* layer style */
 .layer_personal-info{display:none; position: absolute; top: 58px; right: 20px; width: 240px; background: #060f19; border: 1px solid #5d6369; z-index: 100;}

@@ -119,11 +119,9 @@
 .slick-dots li button:before{color:#333;}
 .slick-dots li.slick-active button:before{color:#333;}
 
-
-
 /* Media Query */
 
-@media screen and (max-width: 768px){	
+@media screen and (max-width: 767px){	
 	.left_img, .right_img{width:70% !important; margin:0 auto;}
 	.header_title{font-size: 30px; font-size: 3.0rem;}
 	.content-text{padding-bottom: 20px;}
@@ -172,8 +170,6 @@
 	.services-section .btn-group a.btn{display:block; float: none; text-align:center; padding: 10px 0;}
 	.search-bar .search-form .form-control{font-size: 14px; font-size: 1.4rem;}
 	.contact-section .btn{padding: 8px 40px !important;}
-    .popup-header .btn-area{position:absolute; top:0; right:10px; padding:20px 0;}
-	
-	
+    .popup-header .btn-area{position:absolute; top:0; right:10px; padding:20px 0;}		
 }
 
