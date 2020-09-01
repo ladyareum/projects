@@ -131,7 +131,7 @@
 	.content_info .col-2{width:100%;}
     .m-btn-box{display: block; margin-top: 30px;}
 	.intro-section, .videolist-section, .services-section, .contact-section, .notice-section{padding-top:75px;}
-	.intro-section .bg_01{width:100%; right: -140px;}
+	.intro-section .bg_01{width:100%; right: 0;}
     .intro-section .btn-box{display: none;}
     .intro-section .right_img{display:none;}
     .intro-section .m_main_img{display:block; width:55% !important; margin:0 auto;}
