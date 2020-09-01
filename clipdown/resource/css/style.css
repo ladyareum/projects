@@ -145,10 +145,10 @@
 	.services-section.services-4k{padding-top:60px;}
 	.services-section.services-mp3 .left_text{top:0;}
 	.contact-section{height: 750px;}	
-	
 	.videolist-section{height: 650px;}
 	.tabs_faq .nav-tab{border-bottom:0; padding: 0;}
 	.tabs_faq .nav-tab li{float:left; width:25%; text-align: center;}	
+    .search-bar .search-form{width: 100%;}
 }
 
 @media screen and (max-width: 480px){
