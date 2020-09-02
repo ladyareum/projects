@@ -10,7 +10,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="viewport" content=" initial-scale=1.5, user-scalable=no">
 		<title>OnePage</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link rel="stylesheet" href="./css/common-onepage.css">		
 	</head>
 	 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -28,7 +28,7 @@
 				</div>
 				
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<div id="navbar" class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 						<li class="hidden">
@@ -97,15 +97,15 @@
 		</section>	
 	</body>
 	
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
 	<script  src="./js/common.js"></script>
 	<script>
-    $('body,html').on('click', function() {
-        $('.collapse').removeClass('open'); // Hide the nav
-        $(sel).removeClass('in'); // Hide for collapse
-
-    });
+    $('html').on("click",function(e){ 
+		if( $(e.target).attr("id") != "navbar") {
+			$('.collapse').removeClass('in');
+		}
+	}); 
 	</script>
 </html>
