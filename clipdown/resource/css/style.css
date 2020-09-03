@@ -52,6 +52,7 @@
 .services-section .bg_02{background-image: url(../images/bg_figure.png); background-repeat: no-repeat; position: absolute; top: 120%; left: -1080px; width: 1373px; height: 1373px;}
 .services-section .left_img, .services-section .right_img{max-width: 480px; margin-top: 0;}
 .services-section .right_text{margin: 20px 0; padding-left: 40px;}
+.services-section .m-btn-box{display: block;}
 .services-section .btn-group a.btn{padding:0;}
 .services-section .btn-group .img-fluid{max-width: 170px;}
 .services-section.services-4k{padding-top: 125px;}
