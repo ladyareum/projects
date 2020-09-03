@@ -199,7 +199,6 @@ a.disabled{pointer-events: none;}
 .btn-point:before, .btn-danger:before{content: ""; position: absolute; height: 200px; width: 50px; background: #fff; left: -100px; top: -50px; transform: rotate(37deg); transition: all .5s; opacity: 0.4;}
 .btn-point:hover:before, .btn-danger:hover:before{left:105%;}
 
-
 /* img  */
 .img-fluid{max-width: 100%; height: auto;}
 

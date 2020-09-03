@@ -742,10 +742,7 @@
 	<script src="./resource/js/common.js"></script>
 	<script src="./resource/js/slick/slick.js"></script>
 	<script src="./resource/js/jquery.bpopup.min.js"></script>
-	<script>
-        //$('.navbar-collapse .nav li').click(function(){ 
-          //$('.navbar-collapse').removeClass('in'); 
-     // });  
+	<script> 
       $('html').on("click",function(e){ 
 		if( $(e.target).attr("id") != "navbar") {
 			$('.collapse').removeClass('in');
@@ -782,11 +779,4 @@
 		});
 			
 	</script>
-	<script>
-    // Float Banner
-$(window).scroll(function() {
-      $("#floatbox").stop().animate({   "top" : ($(window).scrollTop() + 600) + "px"   }, 500);
-   });
-    </script>
-	
 </html>

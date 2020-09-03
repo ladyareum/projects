@@ -123,12 +123,12 @@
 
 
 /* floatBanne */
-.folat-box{position:absolute; width:120px; height: 140px; top:800px; right:20px; background-color:#d52719; z-index: 100;}
+.folat-box{position:fixed; width:120px; height: 140px; bottom:50px; right:20px; background-color:#d52719; z-index: 100;}
 .float-banner{position: relative; width:120px; height: 140px; text-align: center; cursor: pointer;}
 .float-banner:hover{text-decoration: none;}
 .banner-info{position: relative; padding: 10px 0;}
-.banner-info .img-clipdown{width:110px; margin:0 auto;}
-.banner-info .info-text{font-size: 17px; font-weight: 500; text-align: center; color: #fff; padding:6px 0; text-decoration:none;}
+.banner-info .img-clipdown{width:107px; margin:0 auto;}
+.banner-info .info-text{font-size: 18px; font-weight: 600; text-align: center; color: #fff; padding:6px 0; text-decoration:none;}
 .icon-download{position: relative; overflow: hidden;}
 .icon-download .arrow span{color: #fff; text-decoration: none; padding-top: 10px;}
 .arrow {
