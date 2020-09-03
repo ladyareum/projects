@@ -13,6 +13,7 @@
 		<meta name="format-detection" content="telephone=no" />
 		<title>유튜브 음원추출 - 클립다운(clipdown)</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./resource/css/common.css">
 		<link rel="stylesheet" href="./resource/css/style.css">	
 		<link rel='stylesheet' href='./resource/js/slick/slick.css' type='text/css'>
@@ -24,7 +25,6 @@
 	 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 	 	<div class="wrap">
 		 	<!-- Navigation -->
-		 	
 			<nav class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
 				<div class="container">
 					<div class="navbar-header page-scroll">
@@ -78,7 +78,7 @@
 							<span class="text-block point-text weight-600_bold">초간단 다운로드 클립다운 </span>
 							</h1>
 							<div class="btn-box">				
-								<a class="btn btn-lg btn-point" href="#http://down.clipdown.co.kr/launcher/5/clipdown_setup_5.exe" download="newfilename">다운로드 for Window</a>
+								<a class="btn btn-lg btn-point" href="http://down.clipdown.co.kr/launcher/5/clipdown_setup_5.exe" download="newfilename">다운로드 for Window</a>
 							</div>
 						</div>				
 					</div>
@@ -198,7 +198,7 @@
 										<span class="text-block">다운로드 가능합니다.</span>  
 									</div>
 									<div class="btn-box">				
-										<a class="btn btn-lg btn-point" href="#http://down.clipdown.co.kr/launcher/5/clipdown_setup_5.exe" download="newfilename">다운로드 for Window</a>
+										<a class="btn btn-lg btn-point" href="http://down.clipdown.co.kr/launcher/5/clipdown_setup_5.exe" download="newfilename">다운로드 for Window</a>
 									</div>
 								</div>	
 							</div>
@@ -707,6 +707,33 @@
                 </div>
             </div>
 		</footer>
+		<!--back-to-top -->
+        <div class="back-to-top">
+            <a href="#top" title="Back to top">
+                <span class="arrow-top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+                </span>					
+            </a>
+        </div>
+        <!-- //back-to-top -->
+        <!-- floatBanner-->
+        <div id="floatbox" class="folat-box">
+           <a class="float-banner" href="http://down.clipdown.co.kr/launcher/5/clipdown_setup_5.exe" download="newfilename" title="클립다운 설치하기">
+                <div class="icon-download">
+                    <div class="arrow bounce">
+                        <span class="fa fa-arrow-down fa-2x"></span>
+                    </div> 
+                </div>
+                <div class="banner-info">
+                   <div class="img-clipdown">
+                       <img src="./resource/images/img_clipdown_red.png" class="img-fluid">
+                   </div>
+                   <div class="info-text">다운로드</div>
+                </div>
+            </a>
+        </div> 
+
+        <!-- //floatBanne -->
 	</body>
 	
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
@@ -754,6 +781,12 @@
 		  ]
 		});
 			
-	</script>	
+	</script>
+	<script>
+    // Float Banner
+$(window).scroll(function() {
+      $("#floatbox").stop().animate({   "top" : ($(window).scrollTop() + 600) + "px"   }, 500);
+   });
+    </script>
 	
 </html>
