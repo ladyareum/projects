@@ -63,15 +63,15 @@ $(document).ready(function () {
 
 // Scroll to Top
 jQuery(document).ready(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 220) {
-            $('.back-to-top').fadeIn(500);
-          } else {
-            $('.back-to-top').fadeOut('slow');
-          }
-        });
-        $('#backToTop').click(function (e) {
-          e.preventDefault();
-          $('html, body').animate({scrollTop: 0}, 200);
-        });
-      });
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 220) {
+        $('.back-to-top').fadeIn(500);
+      } else {
+        $('.back-to-top').fadeOut(500);
+      }
+    });
+    $('#backToTop').click(function (e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop: 0}, 220);
+    });
+});

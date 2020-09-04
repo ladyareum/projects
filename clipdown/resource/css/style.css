@@ -123,14 +123,14 @@
 
 
 /* floatBanne */
-.folat-box{position:fixed; width:120px; height: 140px; bottom:50px; right:20px; background-color:#d52719; z-index: 100;}
+.folat-box{position:fixed; width:108px; height: 140px; bottom:50px; right:20px; background-color:#d52719; border-radius: 10px; z-index: 100;}
 .float-banner{position: relative; width:120px; height: 140px; text-align: center; cursor: pointer;}
 .float-banner:hover{text-decoration: none;}
-.banner-info{position: relative; padding: 10px 0;}
-.banner-info .img-clipdown{width:107px; margin:0 auto;}
-.banner-info .info-text{font-size: 18px; font-weight: 600; text-align: center; color: #fff; padding:6px 0; text-decoration:none;}
+.banner-info{position: relative; width:80px; height: 80px; background: #fff; border-radius: 10px; margin: 10px auto; padding: 6px 5px;}
+.banner-info .img-clipdown{width: 60px; margin: 0 auto;}
+.banner-info .info-text{font-size: 14px; font-weight: 500; text-align: center; color: #333; padding:6px 0; text-decoration:none;}
 .icon-download{position: relative; overflow: hidden;}
-.icon-download .arrow span{color: #fff; text-decoration: none; padding-top: 10px;}
+.icon-download .arrow span{color: #fff; text-decoration: none; padding-top: 0;}
 .arrow {
   text-align: center; margin-top: 10px;}
 .bounce {
@@ -184,7 +184,7 @@
 	.tabs_faq .nav-tab li{float:left; width:25%; text-align: center; margin-top: 0; padding: 10px 10px;}	
     .search-bar .search-form{width: 100%;}
     /* Back To Top */
-    .back-to-top {display: none; position: fixed; right: 10px; bottom: 20px; text-decoration: none; padding: 0; z-index: 999;}
+    .back-to-top {display: none; position: fixed; right: 20px; bottom: 30px; text-decoration: none; padding: 0; z-index: 999;}
     .back-to-top a{display: block; width: 40px; height: 40px; background: #e31d19; color: #fff; text-align: center; text-transform: uppercase; text-decoration: none; border-radius: 50%; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
     .back-to-top span{display: block; position: relative; top: 4px;}
     .folat-box{display: none;}
