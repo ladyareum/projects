@@ -64,14 +64,14 @@ $(document).ready(function () {
 // Scroll to Top
 jQuery(document).ready(function () {
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 220) {
+      if ($(this).scrollTop() > 300) {
         $('.back-to-top').fadeIn(500);
       } else {
-        $('.back-to-top').fadeOut(800);
+        $('.back-to-top').fadeOut('slow');
       }
     });
     $('.back-to-top').click(function (e) {
       e.preventDefault();
-      $('html, body').animate({scrollTop: 0}, 220);
+      $('html, body').animate({scrollTop: 0}, 300);
     });
 });
