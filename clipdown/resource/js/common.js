@@ -67,10 +67,10 @@ jQuery(document).ready(function () {
       if ($(this).scrollTop() > 220) {
         $('.back-to-top').fadeIn(500);
       } else {
-        $('.back-to-top').fadeOut(500);
+        $('.back-to-top').fadeOut(800);
       }
     });
-    $('#backToTop').click(function (e) {
+    $('.back-to-top').click(function (e) {
       e.preventDefault();
       $('html, body').animate({scrollTop: 0}, 220);
     });

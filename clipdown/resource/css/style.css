@@ -120,8 +120,8 @@
 .slick-dots li button:before{color:#333;}
 .slick-dots li.slick-active button:before{color:#333;}
 
-
-
+.back-to-top{display: none; }
+.back-to-top a{color:transparent;}
 /* floatBanne */
 .folat-box{position:fixed; width:108px; height: 140px; bottom:50px; right:20px; background-color:#d52719; border-radius: 10px; z-index: 100;}
 .float-banner{position: relative; width:120px; height: 140px; text-align: center; cursor: pointer;}
