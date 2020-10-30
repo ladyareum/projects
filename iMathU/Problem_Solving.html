@@ -100,8 +100,21 @@
 			</div>
 		</div>
 	</body>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="./js/common.js"></script>
+	<script type="text/javascript">
+	$("ol.multiple-choice .checkbox").on("click", function(e){
+	    $("ol.multiple-choice .checkbox").each(function(){
+	        if($(this).children(".answer_num").hasClass("checked")){
+	            $(this).children(".answer_num").removeClass("checked");
+	            $(this).children(".answer_num").children(".mine_choice").remove();
+	        }
+	    });
+	    $(this).children(".answer_num").addClass("checked");
+	    $(this).children(".answer_num").children("span").after("<strong class='mine_choice'>내가 선택한 답</strong>");
+	});
+
+	</script>
 	
 </html>
