@@ -104,6 +104,8 @@ $(document).ready(function(){
 	});
 });
 
+
+
 // a 링크 클릭 방지 (# 대체)
 $('a[href="#"]').click(function(e) {
 	e.preventDefault();
