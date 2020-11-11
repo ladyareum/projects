@@ -75,8 +75,8 @@
 				<div class="nav-bar menu_style01">
 					<div class="container">
 						<ul class="menu-list">
-							<li class="list-item"><a href="#">내 진단테스트</a></li>
-							<li class="list-item active"><a href="#">내 공부방</a></li>
+							<li class="list-item active"><a href="#">내 진단테스트</a></li>
+							<li class="list-item"><a href="#">내 공부방</a></li>
 							<li class="list-item"><a href="#">수강신청</a></li>
 							<li class="list-item"><a href="#">온라인서점</a></li>
 						</ul>
@@ -93,96 +93,123 @@
 				</div>
 			</header>
 			<div class="container">
-				<section class="main_contents">
+				<section class="main_contents my-studyroom">
 					<div class="contents-header">
-						<h2 class="contents_heading">무료 온라인 진단테스트</h2>
-					</div>
+						<h2 class="contents_heading">내 진단테스트</h2>
+					</div>	
 					<article class="content_box">
-						<form role="form" class="form-horizontal form-half">
-							<div class="sub-header">
-								<h2 class="content_heading sub_heading">
-									<span class="sub_title">테스트 정보입력 </span>
-								</h2>
-							</div>
-							<div class="form-contents">
-								<div class="form-group">
-									<div class="row-contents">
-										<label for="name" class="label-control col-4">이름</label>
-										<div class="col-9">
-											<input type="text" id="name" class="form-control input-width-md" required="required" placeholder="이름을 입력해 주세요.">
-											<span class="help-block text-danger"> 이미 사용중이거나 탈퇴한 아이디입니다. </span>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="row-contents">
-										<label for="number" class="label-control col-4">연락처</label>
-										<div class="col-9">
-											<div class="form-input-area">
-											    <label class="form_selectbox">
-   													<select class="form-control select-style input-width-xs font_num">
-														<option value="1" selected>010</option>
-														<option value="2">011</option>
-														<option value="3">016</option>
-														<option value="4">017</option>
-														<option value="5">018</option>
-														<option value="6">019</option>
-													</select>
-												</label>
-											    <span class="pl-5 pr-5">-</span>
-											    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value=""> <span class="pl-5 pr-5">-</span>
-											    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value="">								    
+						<div class="content-list_grid">
+							<div class="row-contents">
+								<div class="col-2">
+									<div class="study-info">
+										<div class="contnet-item">
+											<div class="item-header">
+											    <h3 class="content_heading item-title">
+													<span class="text-orange user_name">홍길동</span><span>님의 공부방</span>
+													<span class="divi-vertical"></span>
+													<span class="sub-title">등록수강 : 1개월 수강권</span>
+												</h3>
+											</div>
+											<div class="next-meeting">
+												<span>다음 미팅 :</span><span class="coaching_date font_num"> 2020년 11월 04일 오후 4시</span> 
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="form-group">
-									<div class="row-contents">
-										<label for="number" class="label-control col-4">학교/학년</label>
-										<div class="col-9">
-											<div class="form-input-area">
-											    <label class="form_selectbox">
-   													<select class="form-control select-style input-width-xs" placeholder="학교">
-														<option value="higth" selected>고등학교</option>
-														<option value="middel">중학교</option>
-														<option value="elementary">초등학교</option>
-													</select>
-												</label>
-											     <label class="form_selectbox">
-   													<select class="form-control select-style input-width-xs" placeholder="학년">
-														<option value="first-grader" selected>1학년</option>
-														<option value="second-grader">2학년</option>
-														<option value="3rdt-grader">3학년</option>
-													</select>
-												</label>
-											    <input type="text" id="number" maxlength="4" class="form-control input-width-sm" placeholder="학교이름">								    
+								
+								<div class="col-2">
+									<div class="study-info">
+										<div class="contnet-item">
+											<div class="item-header">
+											    <h3 class="content_heading item-title">
+													<span class="">담임 코치 선생님</span>
+												</h3>
+											    <div></div>
+											</div>
+											<div class="coach_teacher-info">
+												<div class="teacher_name">이순신</div>
+												<div class="teacher_number font_num">010-0000-0000</div>
+											</div>
+											<div class="btn-area fl-r">
+												<div class="btn-group">
+													<a href="#" class="btn btn-default btn-sm">프로필 보기</a>
+													<a href="#" class="btn btn-orange btn-sm">1:1 학습하기</a>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+							</div>					
+						</div>							
+					</article>
+					
+					
+					<article class="content_box">
+						<div class="content-item">
+							<div class="content-header">
+								<h3 class="content_heading">진단테스트</h3>
+							</div>	
+							<div class="form-group board_list">
+								<form role="form">
+									<table class="table_board-list table-style_test">
+										<caption>무료 온라인 진단테스트</caption>
+										<thead>
+											<tr>
+												<th scope="col" class="subject">과목명</th>
+												<th scope="col" class="diagnostic-test">진단 테스트</th>
+												<th scope="col" class="score">채점/Level</th>
+												<th scope="col" class="date">수행일</th>
+												<th scope="col" class="teacher">작성자</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="">수학 II </td>
+												<td><a href="#" class="btn btn-test btn-solve">진단 테스트 <span class="text-block sub-text">스스로 채점 방식</span></a></td>
+												<td></td>
+												<td></td>
+												<td>이순신 코치선생님</td>
+											</tr>
+											<tr>
+												<td class="">수학 I </td>
+												<td><a href="#" class="btn btn-test btn-solve">진단 테스트 <span class="text-block sub-text">자동 채점 방식</span></a></td>
+												<td></td>
+												<td></td>
+												<td>이순신 코치선생님</td>
+											</tr>
+											<tr>
+												<td class="">수학(하)</td>
+												<td><a href="#" class="btn btn-test btn-complete">채점하기</a></td>
+												<td></td>
+												<td>2020.11.11</td>
+												<td>이순신 코치선생님</td>
+											</tr>
+											<tr>
+												<td class="lecture_title">수학(상)</td>
+												<td><a href="#" class="btn btn-test btn-complete">채점 결과 보기</td>
+												<td>80점 <span class="text-block sub-text">Level2 / 3~4등급</span></td>
+												<td>2020.11.11</td>
+												<td>개념원리 본사</td>
+											</tr>
+										</tbody>
+									</table>
+								</form>
+								<div class="board-pagination">
+									<div class="pagination pagination_style01">
+										<div class="paginate_counter font_num">1/5 of 20</div>
+										<ul class="paginate">
+											<li><a href="#" class="previous"></a></li>
+											<li><a href="#" class="next"></a></li>
+										</ul>
+									</div>
+								</div>
 							</div>
-						</form>
-						<div class="area-block form-half">
-							<div class=" check_usage-greement">
-								<label class="m-checkbox">
-									<input type="checkbox" value=""> 개인정보 수집·이용·제공에 동의(필수)
-									<span></span>
-								</label>
-							</div>
-							<div class="btn-actions">
-								<button type="submit" class="btn btn-primary btn-md b-close">시작하기</button>	
-								<button type="submit" class="btn btn-default btn-md b-close">취소</button>
-							</div>
-						</div>
+						</div>	
 					</article>
 				</section>
-			
 			</div>
 		</div>
 	</body>
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-	<script src="./resource/js/common.js"></script>
 	<footer class="footer">
 		<article class="container">
 			<div class="row footer_contents company_polices">
@@ -211,8 +238,9 @@
 					</a>
 				</div>
 			</div>
-			
 		</article>
-		
 	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="./resource/js/common.js"></script>
 </html>

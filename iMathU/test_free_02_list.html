@@ -98,80 +98,45 @@
 						<h2 class="contents_heading">무료 온라인 진단테스트</h2>
 					</div>
 					<article class="content_box">
-						<form role="form" class="form-horizontal form-half">
-							<div class="sub-header">
-								<h2 class="content_heading sub_heading">
-									<span class="sub_title">테스트 정보입력 </span>
-								</h2>
-							</div>
-							<div class="form-contents">
-								<div class="form-group">
-									<div class="row-contents">
-										<label for="name" class="label-control col-4">이름</label>
-										<div class="col-9">
-											<input type="text" id="name" class="form-control input-width-md" required="required" placeholder="이름을 입력해 주세요.">
-											<span class="help-block text-danger"> 이미 사용중이거나 탈퇴한 아이디입니다. </span>
-										</div>
-									</div>
+						<div class="form-group board_list">
+							<form role="form">
+								<table class="table_board-list table-style_test">
+									<caption>무료 온라인 진단테스트</caption>
+									<thead>
+										<tr>
+											<th scope="col" class="subject">과목명</th>
+											<th scope="col" class="diagnostic-test">진단 테스트</th>
+											<th scope="col" class="teacher">작성자</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="">수학(상)<span class="text-block sub-text">무료</span></td>
+											<td><a href="#" class="btn btn-test btn-solve">무료 진단 테스트 <span class="text-block sub-text">자동 채점 방식</span></a></td>
+											<td>개념원리 본사</td>
+										</tr>
+										<tr>
+											<td class="lecture_title">수학(하)<span class="text-block sub-text">무료</span></td>
+											<td><a href="#" class="btn btn-test btn-solve">무료 진단 테스트 <span class="text-block sub-text">자동 채점 방식</span></a></td>
+											<td>개념원리 본사</td>
+										</tr>
+										<tr>
+											<td class="lecture_title">수학 I<span class="text-block sub-text">무료</span></td>
+											<td><a href="#" class="btn btn-test btn-solve">무료 진단 테스트 <span class="text-block sub-text">자동 채점 방식</span></a></td>
+											<td>개념원리 본사</td>
+										</tr>
+										
+									</tbody>
+								</table>
+							</form>
+							<div class="board-pagination">
+								<div class="pagination pagination_style01">
+									<div class="paginate_counter font_num">1/5 of 20</div>
+									<ul class="paginate">
+										<li><a href="#" class="previous"></a></li>
+										<li><a href="#" class="next"></a></li>
+									</ul>
 								</div>
-								<div class="form-group">
-									<div class="row-contents">
-										<label for="number" class="label-control col-4">연락처</label>
-										<div class="col-9">
-											<div class="form-input-area">
-											    <label class="form_selectbox">
-   													<select class="form-control select-style input-width-xs font_num">
-														<option value="1" selected>010</option>
-														<option value="2">011</option>
-														<option value="3">016</option>
-														<option value="4">017</option>
-														<option value="5">018</option>
-														<option value="6">019</option>
-													</select>
-												</label>
-											    <span class="pl-5 pr-5">-</span>
-											    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value=""> <span class="pl-5 pr-5">-</span>
-											    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value="">								    
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="row-contents">
-										<label for="number" class="label-control col-4">학교/학년</label>
-										<div class="col-9">
-											<div class="form-input-area">
-											    <label class="form_selectbox">
-   													<select class="form-control select-style input-width-xs" placeholder="학교">
-														<option value="higth" selected>고등학교</option>
-														<option value="middel">중학교</option>
-														<option value="elementary">초등학교</option>
-													</select>
-												</label>
-											     <label class="form_selectbox">
-   													<select class="form-control select-style input-width-xs" placeholder="학년">
-														<option value="first-grader" selected>1학년</option>
-														<option value="second-grader">2학년</option>
-														<option value="3rdt-grader">3학년</option>
-													</select>
-												</label>
-											    <input type="text" id="number" maxlength="4" class="form-control input-width-sm" placeholder="학교이름">								    
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</form>
-						<div class="area-block form-half">
-							<div class=" check_usage-greement">
-								<label class="m-checkbox">
-									<input type="checkbox" value=""> 개인정보 수집·이용·제공에 동의(필수)
-									<span></span>
-								</label>
-							</div>
-							<div class="btn-actions">
-								<button type="submit" class="btn btn-primary btn-md b-close">시작하기</button>	
-								<button type="submit" class="btn btn-default btn-md b-close">취소</button>
 							</div>
 						</div>
 					</article>
