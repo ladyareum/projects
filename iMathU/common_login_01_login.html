@@ -30,7 +30,7 @@
 					<div class="container">
 						<div class="top_gnb pull-right">
 							<div class="personal_area">
-								<div class="login hide">
+								<div class="login">
 									<span>
 										<a href="#">로그인</a>
 									</span>
@@ -39,7 +39,7 @@
 										<a href="#">회원가입</a>
 									</span>
 								</div>
-								<div class="logout">
+								<div class="logout hide">
 									<span>
 										<a href="#">
 											<span class="user-name">홍길동님</span>
@@ -93,86 +93,63 @@
 				</div>
 			</header>
 			<div class="container">
-				<section class="main_contents">
+				<section class="main_contents login_style">
 					<div class="contents-header">
-						<h2 class="contents_heading">무료 온라인 진단테스트</h2>
+						<h2 class="contents_heading">로그인</h2>
 					</div>
 					<article class="content_box">
-						<form role="form" class="form-horizontal form-half">
-							<div class="sub-header">
-								<h2 class="content_heading sub_heading">
-									<span class="sub_title">테스트 정보입력 </span>
-								</h2>
-							</div>
-							<div class="form-contents">
-								<div class="form-group">
-									<div class="row-contents">
-										<label for="name" class="label-control col-4">이름</label>
-										<div class="col-9">
-											<input type="text" id="name" class="form-control input-width-md" required="required" placeholder="이름을 입력해 주세요.">
+						<div class="row-contents">
+							<div class="col-2">
+								<form role="form" class="form-horizontal login-form">
+									<div class="form-contents">
+										<div class="form-group">
+											<input type="text" id="name" class="form-control" required="required" placeholder="아이디">
+											<!-- <span class="help-block text-danger"> 이미 사용중이거나 탈퇴한 아이디입니다. </span> -->
 										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="row-contents">
-										<label for="number" class="label-control col-4">연락처</label>
-										<div class="col-9">
-											<div class="form-input-area">
-											    <label class="form_selectbox">
-   													<select class="form-control select-style input-width-xs font_num">
-														<option value="1" selected>010</option>
-														<option value="2">011</option>
-														<option value="3">016</option>
-														<option value="4">017</option>
-														<option value="5">018</option>
-														<option value="6">019</option>
-													</select>
-												</label>
-											    <span class="pl-5 pr-5">-</span>
-											    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value=""> <span class="pl-5 pr-5">-</span>
-											    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value="">								    
+										<div class="form-group">
+											<input type="password" id="pw" class="form-control" required="required" placeholder="비밀번호">
+											<div class="check_in">
+												<div class="check_form-group">
+													<label class="m-checkbox">
+														<input type="checkbox" value="">아이디 저장
+														<span></span>
+													</label>
+													<div class="login_link fl-r">
+														<span>
+															<a href="#" class="text-link">아이디찾기</a>
+														</span>
+														<span class="divi-vertical"></span>
+														<span>
+															<a href="#" class="text-link">비밀번호 찾기</a>
+														</span>
+													</div>
+												</div>
 											</div>
 										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="row-contents">
-										<label for="number" class="label-control col-4">학교/학년</label>
-										<div class="col-9">
-											<div class="form-input-area">
-											    <label class="form_selectbox">
-   													<select class="form-control select-style input-width-xs" placeholder="학교">
-														<option value="higth" selected>고등학교</option>
-														<option value="middel">중학교</option>
-														<option value="elementary">초등학교</option>
-													</select>
-												</label>
-											     <label class="form_selectbox">
-   													<select class="form-control select-style input-width-xs" placeholder="학년">
-														<option value="first-grader" selected>1학년</option>
-														<option value="second-grader">2학년</option>
-														<option value="3rdt-grader">3학년</option>
-													</select>
-												</label>
-											    <input type="text" id="number" maxlength="4" class="form-control input-width-sm" placeholder="학교이름">								    
+										<div class="form-group">
+											<div class="btn-actions">
+												<a href="#" class="btn btn-block btn-lg btn-orange">로그인</a>
 											</div>
+											<div class="join_link">
+												<span class="text">
+													아직 회원이 아니신가요?
+												</span>
+												<span class="btn-box fl-r">
+													<a href="#" class="btn btn-sm btn-primary_outline">회원가입</a>
+												</span>
+											</div>	
+										
 										</div>
 									</div>
+								</form>
+							</div>
+							<div class="col-2">
+								<div class="login_ad-banner">
 								</div>
-							</div>
-						</form>
-						<div class="area-block form-half">
-							<div class=" check_usage-greement">
-								<label class="m-checkbox">
-									<input type="checkbox" value=""> 개인정보 수집·이용·제공에 동의(필수)
-									<span></span>
-								</label>
-							</div>
-							<div class="btn-actions">
-								<button type="submit" class="btn btn-primary btn-md">시작하기</button>	
-								<button type="submit" class="btn btn-default btn-md">취소</button>
 							</div>
 						</div>
+						
+						
 					</article>
 				</section>
 			
