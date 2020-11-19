@@ -53,6 +53,7 @@ button{overflow:visible;}
 button[disabled], button[aria-disabled=true]{background:#efefef; border:1px solid #efefef; color:#626061; cursor:default; transition: none;}
 q, q:before, q:after {quotes: none; content: ''}
 :focus{outline:1px dotted #555; outline-offset:-1px;}
+mark{display: inline-block; background-color:#ffee6f; line-height: 0em; padding-bottom: 0.5em;}
 
 /* Common */
 h1{font-size:24px; font-size:2.4rem; font-weight: 700;}
@@ -375,6 +376,7 @@ table thead .date{width: 120px}
 .content-header .header-option-area .option-input .form-control{height:28px; padding: 14px 10px;}
 .content-header .header-option-area .option-input{display: inline-block; max-width: 250px; min-width: 164px;;}
 .sub-header {padding: 10px 0;}
+.sub_heading{display:inline-block;}
 .sub-header .sub_title{font-size: 16px; font-weight: 500; color: #3b393a;}
 .content-list_grid, .content-list_list{margin-bottom:0;}
 .content-list_grid .grid-item{margin-bottom: 10px;}
@@ -406,13 +408,25 @@ table thead .date{width: 120px}
 .mypage .table-style_payment .method, .mypage .table-style_payment .state{width:10%;}
 .mypage.login_style{width: 100%; margin-top: 30px; padding: 0;}
 .mypage.login_style .content-item{padding: 40px 20px;}
+.mypage .inner-group .file-uplad:before{content: '첨부파일';}
 
 .profile_box{}
-.profile_box .content-item{vertical-align: middle;}
-.profile_box .profile-img{height: 280px; border-right: 1px solid #efefef; text-align: center; padding: 0 20px;}
-
-
-.profile_box .profile-info{background: #fff; padding: 10px 10px;}
+.profile_box .profile-img{vertical-align: middle; margin-bottom: 10px;}
+.profile_box .img_style{min-height: 280px; background: #f7f7f7; border: 1px solid #efefef; text-align: center;}
+.profile_box .img_style img{max-width: none;}
+.profile_box .profile-info .content-item{margin: 10px 0 20px 0;}
+.profile_box .profile-info .sub-header{padding-top:0;} 
+.profile_box .profile-info .sub-header .sub_title{font-size:18px; font-size:1.6rem;}
+.profile_box .info_title{font-size:16px; font-size:1.6rem; font-weight: 500; padding-bottom: 10px;}
+.profile_box p{font-size:14px; font-size:1.4rem; padding-bottom: 3px;}
+.profile_box .coach_info .textarea-style{width:100%; height: 100px; text-indent: 0;}
+.profile_register .profile-img{margin: 55px 0 40px;}
+.profile_register .profile-info{padding-left:40px;}
+.profile_register .img_style{width: 320px; margin: 0 auto;}
+.profile_register .img_style .form_file{position: absolute; top: 50%;  left: 0; margin: -28px 0;}
+.profile_register .img_style .file-uplad{width:40%;}
+.profile_register .img_style .file-uplad:before, .profile_register .img_style .file-uplad:after{display: none;}
+.profile_register .btn-upload{background-color: #337ab7; border-color: #2e6da4; color: #fff;}
 
 
 /* footer */
@@ -456,13 +470,18 @@ table thead .date{width: 120px}
 .form-content{position:relative; overflow:hidden;}
 .form-group{margin-bottom: 20px;}
 .form-group:last-child{margin-bottom: 0;}
+.inner-group{margin-bottom:10px;}
+.inner-group label{padding-bottom:5px;}
+.inner-group .form-group{border-bottom: 0 !important; padding:4px 0 !important;}
+.inner-group .form_selectbox{padding-bottom: 0;}
+.inner-group .label-control{font-size: 14px; font-size: 1.4rem;}
 .form-info-box{border-top: 2px solid #3b393a; border-bottom: 1px solid #efefef;}
 .label-control{font-size: 16px; font-size: 1.6rem; font-weight: 500; line-height: 2;}
 .label-control .required{font-size: 16px; font-size: 1.6rem; color: #e02222; vertical-align: middle; padding-right: 5px;}
 .form-control{display: inline-block; width: 100%; height: 34px;background: #fff; border: 1px solid #ddd; font-size: 1.4rem; font-size: 14px; padding: 5px 10px;}
 .form-input-area{position: relative; width: 100%;}
 .form_selectbox{position: relative;}
-.form_selectbox .select-style{background: #fff; font-size: 14px; font-size: 1.4rem; padding: 0 25px 0 10px; -webkit-appearance: none;}
+.form_selectbox .select-style{background: #fff; font-size: 13px; font-size: 1.3rem; padding: 0 25px 0 10px; -webkit-appearance: none;}
 .form_selectbox:before, .option-select:before, .sorting_select:before, .lang_select:before {content: ''; position: absolute; top: 50%; right: 8px;  width: 0; height: 0; margin-top: -1px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid #333; transition: all ease 0.25s; z-index:10;}
 .form-control-static{position: relative; width: 100%; height: 34px; font-size:14px; font-size:1.4rem; line-height:1.6; padding: 5px 10px;}
 .input-group{margin-bottom: 10px;}
@@ -470,11 +489,11 @@ table thead .date{width: 120px}
 .check_form-group{overflow: hidden;}
 .check_form-group .m-checkbox{color:#626061; line-height: 1.6; margin: 5px 0;}
 .form_file{height: 34px; margin-bottom: 10px;}
-.file-uplad{position: relative; width: 100%;}
+.file-uplad{position: relative; width: 100%; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal;}
 .file-uplad:before{content:'파일찾기'; display:inline-block; position:absolute; top:0; right:0; height:34px; background:#00c18c; color:#fff; font-size:13px; font-size:1.3rem; line-height:2.6; text-transform:uppercase; padding:0 20px; z-index:25; pointer-events:none;}
 .file-uplad:after{content:attr(data-text); position:absolute; top:0; left:0; display:block; width:calc(100% - 60px); height:34px; background:#fff; border: 1px solid #ddd; font-size:12px; font-size:1.2rem; line-height:1.8; color:#9fa0a0; padding:5px 10px; z-index:20; pointer-events:none;}
 .file-field{display:block; position:absolute; top:0; right:0; bottom:0; left:0; width:100%; height:34px; cursor:pointer; margin:0 ; padding:0; opacity:0; z-index:99;}
-.textarea-style{height: 80px; padding: 10px 10px;}
+.textarea-style{height: 80px; overflow: auto; padding: 10px 10px;}
 .sorting_select {position: relative; overflow: hidden; float:right;}
 .check_usage-greement .m-checkbox{line-height:1.6; margin:5px 0; padding-left: 25px;}
 .option-area{position: relative; text-align:right;}
@@ -669,7 +688,6 @@ table thead .date{width: 120px}
 .join_style .heading-summary{padding-left:0;}
 .popup_check .line-sytle{border-bottom: 1px solid #efefef; padding-bottom:20px;}
 .popup_check .identify_box{border-top: 0;}
-.popup_check .identify_box .sub-header{padding:0 0 10px 0}
 .popup_check .content-item{margin: 10px 0; margin-bottom: 20px;}
 .popup_check .label-control{font-size: 1.4rem; font-size: 14px; line-height: 2.4;}
 .popup_check .form-control{width:72% !important; min-width: 200px !important;}
