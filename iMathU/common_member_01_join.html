@@ -30,7 +30,7 @@
 					<div class="container">
 						<div class="top_gnb pull-right">
 							<div class="personal_area">
-								<div class="login hide">
+								<div class="login">
 									<span>
 										<a href="#">로그인</a>
 									</span>
@@ -39,7 +39,7 @@
 										<a href="#">회원가입</a>
 									</span>
 								</div>
-								<div class="logout">
+								<div class="logout hide">
 									<span>
 										<a href="#">
 											<span class="user-name">홍길동님</span>
@@ -75,8 +75,8 @@
 				<div class="nav-bar menu_style01">
 					<div class="container">
 						<ul class="menu-list">
-							<li class="list-item active"><a href="#">내 진단테스트</a></li>
-							<li class="list-item"><a href="#">내 공부방</a></li>
+							<li class="list-item"><a href="#">내 진단테스트</a></li>
+							<li class="list-item active"><a href="#">내 공부방</a></li>
 							<li class="list-item"><a href="#">수강신청</a></li>
 							<li class="list-item"><a href="#">온라인서점</a></li>
 						</ul>
@@ -93,123 +93,55 @@
 				</div>
 			</header>
 			<div class="container">
-				<section class="main_contents my-studyroom">
+				<section class="main_contents join_style">
 					<div class="contents-header">
-						<h2 class="contents_heading">내 진단테스트</h2>
-					</div>	
+						<h2 class="contents_heading">개념원리 회원가입을 환영합니다.</h2>
+					</div>
 					<article class="content_box">
-						<div class="content-list_grid">
-							<div class="row-contents">
-								<div class="col-2">
-									<div class="study-info">
-										<div class="contnet-item">
-											<div class="item-header">
-											    <h3 class="content_heading item-title">
-													<span class="text-orange user_name">홍길동</span><span>님의 공부방</span>
-													<span class="divi-vertical"></span>
-													<span class="sub-title">등록수강 : 1개월 수강권</span>
-												</h3>
-											</div>
-											<div class="next-meeting">
-												<span>다음 미팅 :</span><span class="coaching_date font_num"> 2020년 11월 04일 오후 4시</span> 
-											</div>
+						<div class="row-contents">
+							<div class="col-2">
+								<div class="box_border">
+									<div class="box_img">
+										<img src="./resource/images/img_join_14-under.png">
+									</div>
+									<div class="box_info">
+										<div class="content-header">
+											<h2 class="content_heading font_num">14세 이하 학생회원</h2>
+											<span class="heading-summary">보호자(법적 대리인)의 동의가 필요합니다</span>
 										</div>
 									</div>
-								</div>
-								
-								<div class="col-2">
-									<div class="study-info">
-										<div class="contnet-item">
-											<div class="item-header">
-											    <h3 class="content_heading item-title">
-													<span class="">담임 코치 선생님</span>
-												</h3>
-											    <div></div>
-											</div>
-											<div class="coach_teacher-info">
-												<div class="teacher_name">이순신</div>
-												<div class="teacher_number font_num">010-0000-0000</div>
-											</div>
-											<div class="btn-area fl-r">
-												<div class="btn-group">
-													<a href="#" class="btn btn-default btn-sm">프로필 보기</a>
-													<a href="#" class="btn btn-orange btn-sm">1:1 학습하기</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>					
-						</div>							
-					</article>
-					
-					
-					<article class="content_box">
-						<div class="content-item">
-							<div class="content-header">
-								<h3 class="content_heading">진단테스트</h3>
-							</div>	
-							<div class="form-group board_list">
-								<form role="form">
-									<table class="table_board-list table-style_test">
-										<caption>무료 온라인 진단테스트</caption>
-										<thead>
-											<tr>
-												<th scope="col" class="subject">과목명</th>
-												<th scope="col" class="diagnostic-test">진단 테스트</th>
-												<th scope="col" class="score">채점/Level</th>
-												<th scope="col" class="date">수행일</th>
-												<th scope="col" class="teacher">작성자</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td class="">수학 II </td>
-												<td><a href="#" class="btn btn-test btn-solve">진단 테스트 <span class="text-block sub-text">스스로 채점 방식</span></a></td>
-												<td></td>
-												<td></td>
-												<td>이순신 코치선생님</td>
-											</tr>
-											<tr>
-												<td class="">수학 I </td>
-												<td><a href="#" class="btn btn-test btn-solve">진단 테스트 <span class="text-block sub-text">자동 채점 방식</span></a></td>
-												<td></td>
-												<td></td>
-												<td>이순신 코치선생님</td>
-											</tr>
-											<tr>
-												<td class="">수학(하)</td>
-												<td><a href="#" class="btn btn-test btn-complete">채점하기</a></td>
-												<td></td>
-												<td>2020.11.11</td>
-												<td>이순신 코치선생님</td>
-											</tr>
-											<tr>
-												<td class="lecture_title">수학(상)</td>
-												<td><a href="#" class="btn btn-test btn-complete">채점 결과 보기</a></td>
-												<td>80점 <span class="text-block sub-text">Level2 / 3~4등급</span></td>
-												<td>2020.11.11</td>
-												<td>개념원리 본사</td>
-											</tr>
-										</tbody>
-									</table>
-								</form>
-								<div class="board-pagination">
-									<div class="pagination pagination_style01">
-										<div class="paginate_counter font_num">1/5 of 20</div>
-										<ul class="paginate">
-											<li><a href="#" class="previous"></a></li>
-											<li><a href="#" class="next"></a></li>
-										</ul>
+									<div class="btn-actions">
+										<a href="#" class="btn btn-block btn-lg btn-primary">회원가입하기</a>
 									</div>
 								</div>
 							</div>
-						</div>	
+							
+							<div class="col-2">
+								<div class="box_border">
+									<div class="box_img">
+										<img src="./resource/images/img_join_14.png">
+									</div>
+									<div class="box_info">
+										<div class="content-header">
+											<h2 class="content_heading font_num">14세 이상 학생회원</h2>
+											<span class="heading-summary">교재 구매/강의 수강 사이트 이용이 가능합니다</span>
+										</div>
+										
+									</div>
+									<div class="btn-actions">
+										<a href="#" class="btn btn-block btn-lg btn-orange">회원가입하기</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</article>
 				</section>
 			</div>
 		</div>
 	</body>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="./resource/js/common.js"></script>
 	<footer class="footer">
 		<article class="container">
 			<div class="row footer_contents company_polices">
@@ -238,9 +170,8 @@
 					</a>
 				</div>
 			</div>
+			
 		</article>
+		
 	</footer>
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-	<script src="./resource/js/common.js"></script>
 </html>

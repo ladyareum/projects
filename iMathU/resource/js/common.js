@@ -92,16 +92,19 @@ $(document).ready(function(){
 		if($(this).hasClass('active')){
 		  $(this).removeClass("active");
 		  $(this).siblings('.acc-contents').slideUp(200);
-		  //$(".acc-item > .acc-head i").removeClass("fa-angle-up").addClass("fa-angle-down");
 		}else{
-		  //$(".acc-item > .acc-head i").removeClass("fa-angle-up").addClass("fa-angle-down"); 
-		  //$(this).find("i").removeClass("fa-angle-down").addClass("fa-angle-up");
 		  $(".acc-item > .acc-head").removeClass("active");
 		  $(this).addClass("active");
 		  $('.acc-contents').slideUp(200);
 		  $(this).siblings('.acc-contents').slideDown(200);
 		    }   
 	});
+});
+
+// File Upload Form
+$(".form_file").on("change", ".file-field", function(){ 
+    $(this).parent(".file-uplad").attr("data-text",         
+		$(this).val().replace(/.*(\/|\\)/, '') );
 });
 
 
