@@ -75,13 +75,37 @@ $(function() {
     });
   });
 
+
 //Tabs
-$('.tab-container .tab-content, .curation-container .curation-content').not(':first').hide(); 
-$('.tabs.tabs-nav li, .tabs.curation-nav li').click(function(){
-	$('.tabs.tabs-nav li, .tabs.curation-nav li').removeClass('active'); 
+//Tabs
+$('.tab-container .tab-content').not(':first').hide();
+$('.tab-container .sub-content').each(function(){
+	var idValue = $(this).attr('id');
+	if(idValue.charAt(idValue.length - 1) != 1){
+		$(this).hide();
+	}else{
+		$("li[rel=" + idValue + "]").addClass("active");
+	}
+});
+
+$('.tabs.tabs-nav li').click(function(){
+	$('.tabs.tabs-nav li').removeClass('active'); 
 	$(this).addClass('active');					 
 	var tab_id = $(this).attr('rel');
-	$('.tab-container .tab-content, .curation-container .curation-content').hide(); 
+	$('.tab-container .tab-content').hide();
+	$('#'+tab_id).show();
+
+});
+
+$('.tabs.sub-tabs-nav li').click(function(){
+	$(this).parent().children().removeClass('active'); 
+	$(this).addClass('active');
+	var tab_id = $(this).attr('rel');
+	$('.tab-container .sub-content').each(function(){
+		if($(this).attr('id').substring(0, 6) == tab_id.substring(0, 6)){
+			$(this).hide();
+		}
+	});
 	$('#'+tab_id).show();
 });
 
@@ -106,7 +130,6 @@ $(".form_file").on("change", ".file-field", function(){
     $(this).parent(".file-uplad").attr("data-text",         
 		$(this).val().replace(/.*(\/|\\)/, '') );
 });
-
 
 
 // a 링크 클릭 방지 (# 대체)

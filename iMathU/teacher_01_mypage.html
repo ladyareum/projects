@@ -145,7 +145,7 @@
 																<label for="name" class="label-control col-4"><span class="required">*</span> 이름</label>
 																<div class="col-9">
 																	<div class="input-group">
-																		<input type="text" id="name" class="form-control input-width-sm" required="required" placeholder="이름를 입력해 주세요.">
+																		<p id="static" class="form-control-static">이순신</p>
 																	</div>
 																	
 																</div>
@@ -172,7 +172,7 @@
 																<div class="col-9">
 																	<div class="form-input-area form_birth">
 																	    <label class="form_selectbox">
-						   													<select name="birth_year" class="form-control select-style input-width-xs">
+						   													<select name="birth_year" class="form-control select-style input-width-xs font_num">
 																				<option value="2010">2010</option>
 																				<option value="2009">2009</option>
 																				<option value="2008">2008</option>
@@ -238,7 +238,7 @@
 																			년
 																		</label>
 																	    <label class="form_selectbox">
-						   													<select name="birth_month" class="form-control select-style input-width-xs" placeholder="">
+						   													<select name="birth_month" class="form-control select-style input-width-xs font_num" placeholder="">
 																				<option value="01">01</option>
 																				<option value="02">02</option>
 																				<option value="03">03</option>
@@ -255,7 +255,7 @@
 																			월
 																		</label>
 																	    <label class="form_selectbox">
-						   													<select name="birth_day" class="form-control select-style input-width-xs" placeholder="">
+						   													<select name="birth_day" class="form-control select-style input-width-xs font_num" placeholder="">
 																				<option value="01">01</option>
 																				<option value="02">02</option>
 																				<option value="03">03</option>
@@ -329,8 +329,8 @@
 																			</select>
 																		</label>
 																	    <span class="pl-5 pr-5">-</span>
-																	    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value=""> <span class="pl-5 pr-5">-</span>
-																	    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value="">								    
+																	    <input type="text" id="number" maxlength="4" class="form-control input-width-xs font_num" value=""> <span class="pl-5 pr-5">-</span>
+																	    <input type="text" id="number" maxlength="4" class="form-control input-width-xs font_num" value="">								    
 																	</div>
 																	<div class=" check_usage-greement">
 																		<label class="m-checkbox">
@@ -431,7 +431,7 @@
 												<div class="profile-img">
 													<div class="img_style">
 														<div class="form-input-area form_file">
-															<div class="file-uplad btn btn-md btn-upload">
+															<div class="btn file-uplad btn-upload">
 														      <input name="file-field" type="file" class="form-control file-field" value="">사진등록하기
 														    </div>
 														</div>
@@ -480,7 +480,7 @@
 												<div class="profile-img">
 													<div class="img_style">
 														<div class="form-input-area form_file">
-															<div class="file-uplad btn btn-md btn-upload">
+															<div class="btn file-uplad btn-upload">
 														      <input name="file-field" type="file" class="form-control file-field" value="">사진등록하기
 														    </div>
 														</div>
@@ -596,7 +596,7 @@
 														</div>
 														<div class="form-group">
 															<div class="row-contents">
-																<label for="name" class="label-control col-4"><span class="required">*</span> 통장정보</label>
+																<label for="name" class="label-control col-4"> 통장정보</label>
 																<div class="col-9">
 																	<div class="inner-group">
 																		<div class="form-group">

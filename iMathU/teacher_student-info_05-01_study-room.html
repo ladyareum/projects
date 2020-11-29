@@ -17,7 +17,7 @@
 	</head>
 	
 	<body>
-		<div class="wrapper">
+		<div class="wrapper wrap_teacher">
 			<div class="top_banner">
 				<div class="inner">
 					<a href="#" target="_blank">
@@ -30,7 +30,7 @@
 					<div class="container">
 						<div class="top_gnb pull-right">
 							<div class="personal_area">
-								<div class="login">
+								<div class="login hide">
 									<span>
 										<a href="#">로그인</a>
 									</span>
@@ -39,10 +39,10 @@
 										<a href="#">회원가입</a>
 									</span>
 								</div>
-								<div class="logout hide">
+								<div class="logout">
 									<span>
 										<a href="#">
-											<span class="user-name">홍길동님</span>
+											<span class="user-name">이순신님</span>
 											<span>환영합니다.</span>
 										</a>
 									</span>
@@ -75,16 +75,11 @@
 				<div class="nav-bar menu_style01">
 					<div class="container">
 						<ul class="menu-list">
-							<li class="list-item"><a href="#">내 진단테스트</a></li>
-							<li class="list-item active"><a href="#">내 공부방</a></li>
-							<li class="list-item"><a href="#">수강신청</a></li>
-							<li class="list-item"><a href="#">온라인서점</a></li>
+							<li class="list-item active"><a href="#">내 학생정보</a></li>
+							<li class="list-item"><a href="#">학습관리</a></li>
+							<li class="list-item"><a href="#">내 수익</a></li>
 						</ul>
 						<div class="support_area pull-right">
-							<span>
-								<a href="#">학습지원센터</a>
-							</span>
-							<span class="divi-vertical"></span>
 							<span>
 								<a href="#">코치지원센터</a>
 							</span>
@@ -95,7 +90,7 @@
 			<div class="container">
 				<section class="main_contents my-studyroom">
 					<div class="contents-header">
-						<h2 class="contents_heading">내 공부방</h2>
+						<h2 class="contents_heading">학생 공부방</h2>
 					</div>	
 					<article class="content_box">					
 						<div class="content-list_grid">
@@ -210,12 +205,17 @@
 								<div class="tab-content active" id="tab_01_1">
 									<div class="content-item">
 										<div class="content-header line-sytle">
-											<h3 class="content_heading">주간 학습전달 사항</h3>
+											<h3 class="content_heading">주간 학습 전달사항</h3>
 											<div class="option-area fl-r">
 												<a href="#" class="link-text">+ 더보기</a>
 											</div>
 										</div>
 										<div id="accordion" class="accordion-list-box">
+											<div class="content-header">
+												<div class="option-area fl-r">
+													<a href="#" class="btn btn-primary btn-sm" onclick="go_popup_question()">주간학습 전달사항 작성하기</a>												
+												</div>
+											</div>
 											<!-- section 1 -->
 											<div class="acc-item">
 												<div class="acc-head">
@@ -243,6 +243,11 @@
 											</div>
 										</div>
 										<!-- 해당 영역만 가져다 쓰시면 됩니다. -->
+										<div class="content-header">
+											<div class="option-area fl-r">
+												<a href="#" class="btn btn-primary btn-sm" onclick="go_popup_question()">주간학습 전달사항 작성하기</a>												
+											</div>
+										</div>
 										<div class="list-empty">
 										    <span>아직 등록된 학습전달사항이 없습니다.</span>
 										</div>
@@ -253,13 +258,14 @@
 									<div class="content-item">
 										<div class="content-header">
 											<h3 class="content_heading">수강중인 강의</h3>
-											<div class="option-area fl-r hide">
-												<div class="sorting">
+											<div class="option-area fl-r">
+												<div class="sorting hide">
 													<input type="radio" id="radio1" name="radios" value="all" checked>
 				   									<label for="radio1">수강중인 강의</label>
 				   									<input type="radio" id="radio2" name="radios"value="" >
 				   									<label for="radio2">즐겨찾기 강의</label>
 												</div>
+												<a href="#" class="btn btn-primary btn-sm" onclick="go_popup_question()">강의 출제하기</a>		
 											</div>
 										</div>
 										<div class="form-group board_list">
@@ -438,13 +444,14 @@
 						<div class="content-item">
 							<div class="content-header">
 								<h3 class="content_heading">수강중인 강의</h3>
-								<div class="option-area fl-r hide">
-									<div class="sorting">
+								<div class="option-area fl-r">
+									<div class="sorting hide">
 										<input type="radio" id="radio1" name="radios" value="all" checked>
 	   									<label for="radio1">수강중인 강의</label>
 	   									<input type="radio" id="radio2" name="radios"value="" >
 	   									<label for="radio2">즐겨찾기 강의</label>
 									</div>
+									<a href="#" class="btn btn-primary btn-sm" onclick="go_popup_question()">강의 출제하기</a>	
 								</div>
 							</div>
 							<div class="form-group board_list">
