@@ -608,7 +608,8 @@ table thead .date{width: 120px}
 .layer-popup-style01 .layer-popup-content .popup-content .title{font-size:14px; font-size:1.4rem; line-height: 2.4; margin-bottom: 10px;}
 .layer-popup-style01 .layer-popup-content .popup-content .message-item{line-height: 1.2; padding:20px 0px;}
 .layer-popup-style01 .layer-popup-content .popup-content .message-item p, .layer-popup-style01 .layer-popup-content .popup-content .message-item span{line-height: 1.2; margin-bottom:10px;}
-.layer-popup-style01 .layer-popup-content .popup-content .form-area{maring:10px 10px;}
+.layer-popup-style01 .layer-popup-content .popup-content .form-area{margin:10px 10px;}
+.layer-popup-style01 .layer-popup-content .popup-content .option-area{text-align: left;}
 .popup-header-area .btn-area{position:absolute; top:0; right:0; padding:11px 20px;}
 .popup-header-area .btn-area .btn-close{display: inline-block; vertical-align: middle; background:transparent; width: 20px; height: 20px; padding:0; opacity:.85;}
 .popup-header-area .btn-area .btn-close:hover{opacity:1;}

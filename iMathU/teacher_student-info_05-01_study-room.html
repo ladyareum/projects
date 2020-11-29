@@ -12,7 +12,8 @@
 		<meta name="format-detection" content="telephone=no"/> 
 		<title>개념원리</title>
 		<link rel="stylesheet" type="text/css" href="./resource/font/NotoSans/notosans.css">
-		<link rel="stylesheet" type="text/css" href="./resource/css/common.css">	
+		<link rel="stylesheet" type="text/css" href="./resource/css/common.css">
+		<link rel="stylesheet" type="text/css" href="./resource/css/lightpick.css">	
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	
@@ -127,7 +128,7 @@
 											</div>
 											<div class="btn-area fl-r">
 												<div class="btn-group">
-													<a href="#" class="btn btn-default btn-sm" onclick="go_popup_Profile()">프로필 보기</a>
+													<a href="#" class="btn btn-default btn-sm">프로필 보기</a>
 													<a href="#" class="btn btn-orange btn-sm">1:1 학습하기</a>
 												</div>
 											</div>
@@ -137,63 +138,6 @@
 							</div>					
 						</div>					
 					</article>
-					<!-- 팝업 시작 -->
-					<div id="popup_profileView" class="layer-popup-style01">	
-						<div class="layer-popup-content popup-width-sm" style="height: auto; width: auto;">
-							<div class="popup-header-area">
-						  	    <h3 class="popup-header">프로필 보기</h3>
-						  	    <div class="btn-area">
-								 	<button type="button" class="btn-close b-close" name="close">
-								 		<span class="close icon-close"></span>
-								 	</button>
-							 	</div>
-							</div>
-							<div class="popup-content">
-								<div class="content-area">
-									<div class="profile_box">
-										<div class="content-list_grid">
-											<div class="row-contents">
-												<div class="col-2">
-												<div class="profile-img">
-													<div class="img_style">
-														<img src="https://www.imath.tv/data/banner/cjym123/thumb-7LWc7KO87Jew7I2c3_320x280_320x280.png" class="">
-													</div>	
-												</div>
-													
-												</div>
-												<div class="col-2">
-													<div class="profile-info">
-														<div class="sub-header">
-															<h2 class="content_heading sub_heading">
-																<span class="sub_title"><span class="text-primary weight-700_bold">이순신</span>  코치선생님 </span>
-															</h2>
-														</div>
-														<div class="content-item">
-															<div class="info_title"><mark>코칭 방식</mark></div>
-															<p>열린질문, 경청하는 자세, 칭찬 가득!</p>
-															<p>철저한 내신분석! 풍부한 내신자료!</p>
-															<p>1:1 밀착코칭으로 학생의 성적을 올립니다.</p>
-														</div>
-														<div class="content-item">
-															<div class="info_title"><mark>학력과 경력</mark></div>
-															<p>현) 개념원리 인터넷 강의 강사</p>
-															<p>현) EBS 중학 프리미엄 수학 강사</p>
-															<p>현) 올림피아드교육 수학 강사</p>
-															<p>현) 대교 공부와락 수학 대표강사</p>
-															<p>현) 세븐에듀윌 수학 강사</p>
-															<p>전) 시공미디어 수학 강사</p>
-															<p>전) 중앙 유웨이 친절한쌤 수학 강사</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> <!-- //팝업 끝 -->
-					
 					<!-- tab -->
 					<article class="content_box">
 						<div class="tabs-area">
@@ -213,7 +157,7 @@
 										<div id="accordion" class="accordion-list-box">
 											<div class="content-header">
 												<div class="option-area fl-r">
-													<a href="#" class="btn btn-primary btn-sm" onclick="go_popup_question()">주간학습 전달사항 작성하기</a>												
+													<a href="#" class="btn btn-primary btn-sm" onclick="go_popup_create()">주간학습 전달사항 작성하기</a>
 												</div>
 											</div>
 											<!-- section 1 -->
@@ -245,7 +189,7 @@
 										<!-- 해당 영역만 가져다 쓰시면 됩니다. -->
 										<div class="content-header">
 											<div class="option-area fl-r">
-												<a href="#" class="btn btn-primary btn-sm" onclick="go_popup_question()">주간학습 전달사항 작성하기</a>												
+												<a href="#" class="btn btn-primary btn-sm" onclick="go_popup_create()">주간학습 전달사항 작성하기</a>
 											</div>
 										</div>
 										<div class="list-empty">
@@ -491,6 +435,39 @@
 						</div>	
 					</article>
 				</section>
+				<!-- 팝업 시작 -->
+                <div id="popup_create" class="layer-popup-style01">	
+                    <div class="layer-popup-content popup-width-sm" style="height: auto; width: auto;">
+                        <div class="popup-header-area">
+                            <h3 class="popup-header">한주간 학습전달사항</h3>
+                            <div class="btn-area">
+                                <button type="button" class="btn-close b-close" name="close">
+                                    <span class="close icon-close"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popup-content">
+                            <div class="content-area">
+                                <div class="form-area option-area">
+                                   <div class="option-input">
+                                        <input type="text" id="datepicker_first" class="form-control input-width-sm font_num" placeholder="학습날짜"/>
+                                        <span class="pl-5 pr-5">-</span>
+                                        <input type="text" id="datepicker_last" class="form-control input-width-sm font_num" placeholder="학습날짜"/>
+                                    </div>
+                                </div>
+                                <div class="form-area">
+                                    <form role="form" class="">
+                                        <textarea class="form-control textarea-style" name="text" placeholder=""></textarea>
+                                    </form>
+                                    <div class="btn-actions">
+                                        <button type="submit" class="btn btn-primary btn-sm b-close">확인</button>	
+                                        <button type="submit" class="btn btn-default btn-sm b-close">취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- //팝업 끝 -->
 			</div>
 		</div>
 	</body>
@@ -528,10 +505,12 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 	<script src="./resource/js/common.js"></script>
 	<script src="./resource/js/jquery.bpopup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+	<script src="./resource/js/lightpick.js"></script> 
 	<script>
 	    //Layer Popup
-		function go_popup_Profile() {	   
-		  $('#popup_profileView').bPopup({
+		function go_popup_create() {	   
+		  $('#popup_create').bPopup({
 			  modalClose: false,
 			  easing: 'easeOutBack', //uses jQuery easing plugin
 		      speed: 450,
@@ -539,4 +518,18 @@
 		  });	   
 		};
 	</script>
+	<script>
+    var picker = new Lightpick({
+        field: document.getElementById('datepicker_first'),
+        secondField: document.getElementById('datepicker_last'),
+        singleDate: false,
+        format: 'YYYY-MM-DD',
+        onSelect: function(start, end){
+            var str = '';
+            str += start ? start.format('Do YYYY MMMM') + ' to ' : '';
+            str += end ? end.format('Do YYYY MMMM') : '...';
+            document.getElementById('result-3').innerHTML = str;
+        }
+    });
+    </script>
 </html>
