@@ -975,6 +975,20 @@ body.problem_solving{height:100%; overflow: auto;}
 /* consult-record */
 .consult-record .study-info{background: #efefef; margin-bottom: 20px; padding: 10px;}
 .consult-record .study-info .contnet-item{background: #fff; border: 1px solid #c9caca;}
+.consult-record .accordion-list-box .acc-item .acc-head .heade-title:after{margin-top: 3px;}
+.consult-record .accordion-list-box .acc-item .acc-head.active .heade-title:after{margin-top: 8px;}
+.consult-record .acc-head .heade-title{display: inline-block; width:80px; padding-right: 10px;}
+.consult-record .acc-head .date_consult{font-size: 13px; font-size: 1.3rem; font-weight: 400;}
+.consult-record .acc-contents .writer-info{position: relative; text-align: right; padding: 5px 0;}
+.consult-record .writer-info .sub-text{font-size: 13px; font-size: 1.3rem; font-weight: 400; padding: 0 5px;}
+.consult-record .writer-info .btn-delete{min-width: 48px !important;}
+.consult-record .consult-detail .filter-area{padding: 10px 0;}
+/* style
+.consult-record .accordion-list-box .acc-item .acc-head:hover{background: #fff;}
+.consult-record .accordion-list-box .acc-item .acc-head.active{background: #fff; border: 1px solid #ff6d37; border-bottom: transparent;} 
+.consult-record .accordion-list-box .acc-item .acc-contents{background: #fff;}
+*/
+/* datetimepicker */
 
 @media screen and (max-width: 1260px){	
 	.math-problem_contents table thead .solve{width:164px;}
