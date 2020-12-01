@@ -913,13 +913,25 @@ body.problem_solving{height:100%; overflow: auto;}
 .support-center .cs_inquiry .cs_img{position:relative; height: 120px; float: left; padding-right: 40px; }
 .support-center .cs_inquiry .cs_info{position: relative; width:100%;}
 .support-center .cs_inquiry .cs_info .item-header{display: inline-block; font-size: 20px; font-size: 2rem; font-weight: 700; padding-bottom: 10px;}
-.support-center .cs_inquiry .cs_info .item-sub, .support-center .cs_inquiry .cs_info .btn-area{padding:10px 0;}
+.support-center .cs_inquiry .cs_info .item-sub, .support-center .cs_inquiry .cs_info .btn-area{padding:5px 0;}
 .support_notice .content-header{background:#fff; border-bottom: 1px dotted #9c9c9c; text-align: left; margin: 0; margin-bottom: 10px; padding: 5px 0 5px;}
 .support_notice .content-header .content_heading{display: inline-block; font-size: 16px; font-size: 1.6rem; font-weight: 500; line-height: 1.8;}
 .support_notice .notice_list li{position:relative; overflow:hidden; width: 100%; margin-bottom: 5px;}
 .support_notice .notice_list li a{position:relative;}
 .support_notice .notice_list li .list{width: 75%; float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: top; padding: 0 8px;}
 .support_notice .notice_list li .date{float: right; text-align: right; padding: 0 8px;}
+.support-center .search-area{position: relative; max-width: 920px; margin: 40px auto;}
+.support-center .search-area .search-title-area{display:inline-block; margin-right: 20px;vertical-align: middle;} 
+.support-center .search-area .search-title-area .search-title{font-size:25px;font-size: 2.5rem; font-weight:700;line-height: 50px;}
+.support-center .form-control{height:50px;border-color:#3b393a;}
+.support-center .link-list>dt{display:block;font-size:1.6rem;padding:8px 0px;font-weight:600; color: #ff6d37; border-bottom: 1px solid #c9caca}
+.support-center .link-list>dd>a{display:block;font-size:1.4rem;line-height: 1.6;margin:8px 0px;}
+.support-center .link-list>dd>a:before{content:'';display: inline-block;vertical-align: middle;margin-right:4px;width:3px; height:3px; background:#6b6b6b;}
+.support-center .search-form{display: inline-block; width: calc(100% - 224px);}
+.support-center .search-control-area{display: inline-block;width:calc(100% - 68px);float: left;}
+.support-center .search-btn-area{display: inline-block;}
+.support-center .search-btn-area .btn-search{height: 50px;padding: 0px 20px; color: #fff; background-color:#3b393a;font-size:14px;font-size: 1.4rem;}
+.support-center .content-list_grid{margin-bottom: 40px;}
 
 /* LayerPopup Test Question */
 .popup-test-question{width:1300px !important;}   
@@ -988,7 +1000,25 @@ body.problem_solving{height:100%; overflow: auto;}
 .consult-record .accordion-list-box .acc-item .acc-head.active{background: #fff; border: 1px solid #ff6d37; border-bottom: transparent;} 
 .consult-record .accordion-list-box .acc-item .acc-contents{background: #fff;}
 */
+
 /* datetimepicker */
+.recruit_teacher{border: 1px dotted #efefef; margin:60px 0;}    
+.recruit_teacher .contents-header{background:#00c18c; text-align: center; margin: 0; padding:50px 20px;}
+.recruit_teacher .contents-header .contents_heading{font-size: 32px; font-size: 3.2rem; color: #fff;}
+.recruit_teacher .contnet-item{position: relative; overflow: hidden; max-width: 920px; margin: 0 auto;}
+.recruit_teacher .contnet-item dl{display: block; position: relative; margin: 60px 0; padding-left: 300px;}
+.recruit_teacher .contnet-item dl dt{position: absolute; top:0; left:20px; font-size: 20px; font-size: 2.0rem; font-weight: 700; letter-spacing: -1px;}
+.recruit_teacher .contnet-item dl dt:after{content: ''; position: absolute; width:32px; height: 32px; top:-12px; left:-18px; background: #ffee6f; border-radius: 100px 100px 0px; z-index: -1;}
+.recruit_teacher .contnet-item dl dd{font-size: 16px; font-size:1.6rem; font-weight: 500;}
+.recruit_teacher .contnet-item dl dd ul li{font-size: 18px; font-size: 1.8rem; line-height: 1.8;}
+.recruit_teacher .contnet-item .style_round{display: inline-block; width:100px; height: 100px; background: #00c18c; text-align: center; vertical-align: middle; border-radius: 50%; margin-right: 60px;}
+.recruit_teacher .contnet-item .style_text{position: absolute; top:50%; width:100px; margin: -15px -50px; color:#fff; line-height: 1.2; font-weight: 700; letter-spacing: -1px;}
+.recruit_teacher .contnet-item .style_round:after{content: " "; position: absolute; top:50%; width: 16px; height: 16px; border-right: 3px solid #c9caca; border-bottom: 3px solid #c9caca; margin: -8px 70px; transform: rotate(-45deg);}
+.recruit_teacher .contnet-item .style_round:last-child:after{display: none;}
+.recruit_teacher .btn-actions{margin-bottom:40px;}
+.recruit_teacher .btn-actions .btn-recruit{min-width: 250px;font-size: 22px; font-size: 2.4rem; font-weight: 500; padding: 10px 60px; }
+
+
 
 @media screen and (max-width: 1260px){	
 	.math-problem_contents table thead .solve{width:164px;}
