@@ -818,7 +818,7 @@ body.problem_solving{height:100%; overflow: auto;}
 .table-style_management .btn-table{min-width:101px; min-height: 24px; font-size: 13px; font-size: 1.3rem; margin-bottom: 5px;}
 
 /* Video Player List */
-.video-player-list{position: relative; overflow:hidden; width:100%; background: #000; color: #999; padding-right:250px;}
+.video-player-list{position: relative; overflow:hidden; width:100%; background: #000; color: #999; padding-right:280px;}
 .video-player-list .video-player{position: relative; float:left; width:100%}
 .video-player-list .playlist{position: absolute; top:0; right:0; bottom:0; width: 280px; background: #3b393a;}
 .video-player-list .playlist .list-header{position: relative; width: 100%; height: 48px; padding: 10px 10px; background: #252525; font-weight: 500; z-index: 2;}
@@ -1016,7 +1016,25 @@ body.problem_solving{height:100%; overflow: auto;}
 .recruit_teacher .contnet-item .style_round:after{content: " "; position: absolute; top:50%; width: 16px; height: 16px; border-right: 3px solid #c9caca; border-bottom: 3px solid #c9caca; margin: -8px 70px; transform: rotate(-45deg);}
 .recruit_teacher .contnet-item .style_round:last-child:after{display: none;}
 .recruit_teacher .btn-actions{margin-bottom:40px;}
-.recruit_teacher .btn-actions .btn-recruit{min-width: 250px;font-size: 22px; font-size: 2.4rem; font-weight: 500; padding: 10px 60px; }
+.recruit_teacher .btn-actions .btn-recruit{min-width: 250px; font-size: 24px; font-size: 2.4rem; font-weight: 500; padding: 10px 60px; }
+
+/* notify page */
+.notify-contents {position: relative; width: 800px; margin: 0 auto; padding: 80px 0;}
+.notify-contents .content_box{border: 3px solid #ea6b39;}
+.notify-contents .contents-header{text-align: center; margin: 0; padding: 50px 60px 10px;}
+.notify-contents .contents-header .contents_heading{font-size: 32px; font-size: 3.2rem; font-weight: 700; color: #ea6b39; border-bottom: 1px solid #efefef; padding-bottom: 20px;}
+.notify-contents .message-item{padding: 56px 60px;}
+.notify-contents .notify_text{font-size: 18px; font-size: 1.8rem; color: #3b393a;}
+.notify-contents .notify_text a{position: relative; vertical-align:top; color: #ea6b39; font-weight: 500;}
+.notify-contents .guide-box{min-width: 480px; margin-top: 40px;}
+.notify-contents .guide-box dl{position: relative; font-size: 16px; font-size: 1.6rem; font-weight: 500; line-height: 1.8; text-align: left; padding-left: 100px;}
+.notify-contents .guide-box dl dt{position: absolute; top:0; left:20px;}
+.notify-contents .error_404.content_box{border: 0;}
+.notify-contents .error_404 .contents-header .contents_heading{font-size: 42px; font-size: 4.2rem; font-weight: 700;}
+.notify-contents .error_404 .notify_text strong{font-weight: 700; line-height: 2;}
+
+
+
 
 
 
