@@ -1034,6 +1034,13 @@ body.problem_solving{height:100%; overflow: auto;}
 .notify-contents .error_404 .notify_text strong{font-weight: 700; line-height: 2;}
 
 
+/* multi step */
+.steps{text-align: center;} 
+.steps li{display: inline-block; color: #ccc; margin: 10px 20px; padding-bottom: 5px;}
+.steps li.active{color: #3498db; border-bottom: 1px solid #3498db;}
+.multistep-form .section{opacity: 0;}
+.multistep-form .section.active{opacity: 1;}
+
 
 
 
@@ -1059,3 +1066,6 @@ body.problem_solving{height:100%; overflow: auto;}
 	
 
 	}
+
+
+
