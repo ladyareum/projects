@@ -1038,8 +1038,12 @@ body.problem_solving{height:100%; overflow: auto;}
 .steps{text-align: center;} 
 .steps li{display: inline-block; color: #ccc; margin: 10px 20px; padding-bottom: 5px;}
 .steps li.active{color: #3498db; border-bottom: 1px solid #3498db;}
-.multistep-form .section{opacity: 0;}
-.multistep-form .section.active{opacity: 1;}
+.multistep-form .section{display: none;}
+.multistep-form .section.active{display: block;}
+/*
+.multistep-form .section{display: none;}
+.multistep-form .section.active{display: block;}
+*/
 
 
 

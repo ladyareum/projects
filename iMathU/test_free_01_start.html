@@ -107,7 +107,7 @@
                             <li class="">진단 결과 보기</li>
                             <li class="">무료 코칭 신청하기</li>
                         </ul>
-                        <form class="multistep-form form-half">
+                        <form class="multistep-form">
                             <fieldset class="section active">
                                  <div class="content-item">
                                      <div class="content-header">
@@ -152,7 +152,7 @@
                                     </div>
                                  </div> 
                             </fieldset>
-                            <fieldset class="section">
+                            <fieldset class="section form-half">
                                  <div class="content-item">
                                      <div class="content-header">
                                          <h3 class="content_heading">회원가입</h3>
@@ -222,17 +222,71 @@
                             </fieldset>
                             <fieldset class="section">
                                  <div class="content-item">
-                                 무료진단 테스트
+                                    <div class="content-header">
+                                        <h3 class="content_heading">무료진단 테스트</h3>
+                                    </div>
+                                     <table class="table_board-list table-style_test">
+                                        <caption>무료 온라인 진단테스트</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="subject">과목명</th>
+                                                <th scope="col" class="diagnostic-test">진단 테스트</th>
+                                                <th scope="col" class="teacher">작성자</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="">수학(상)<span class="text-block sub-text">무료</span></td>
+                                                <td><a href="#" class="btn btn-test btn-solve">무료 진단 테스트 <span class="text-block sub-text">자동 채점 방식</span></a></td>
+                                                <td>개념원리 본사</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="lecture_title">수학(하)<span class="text-block sub-text">무료</span></td>
+                                                <td><a href="#" class="btn btn-test btn-solve">무료 진단 테스트 <span class="text-block sub-text">자동 채점 방식</span></a></td>
+                                                <td>개념원리 본사</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="lecture_title">수학 I<span class="text-block sub-text">무료</span></td>
+                                                <td><a href="#" class="btn btn-test btn-solve">무료 진단 테스트 <span class="text-block sub-text">자동 채점 방식</span></a></td>
+                                                <td>개념원리 본사</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="btn-actions">
+                                    <button type="submit" class="btn btn-primary btn-md btn-next">회원가입</button>
+                                </div>
+                            </fieldset>
+                            <fieldset class="section result_section">
+                                <div class="title">
+                                    <h2>수학(상) 진단테스트 (무료)</h2>
+                                </div>
+                                <div class="content-item">
+                                     <div class="content-header">
+                                         <h3 class="content_heading">총점 및 레벨</h3>
+                                     </div>
+                                     <div>
+                                         
+                                     </div>
+                                     
+                                </div>
+                                <div class="content-item">
+                                     <div class="content-header">
+                                         <h3 class="content_heading">레벨별 학습 전략</h3>
+                                     </div>
+                                </div>
+                                <div class="btn-actions">
+                                    <button type="submit" class="btn btn-primary btn-md btn-next">무료코칭 신청하기</button>
                                 </div>
                             </fieldset>
                             <fieldset class="section">
                                  <div class="content-item">
-                                 진단 결과보기
+                                     <div class="content-header">
+                                         <h3 class="content_heading">무료코칭 신청하기</h3>
+                                     </div>
                                 </div>
-                            </fieldset>
-                            <fieldset class="section">
-                                 <div class="content-item">
-                                 무료코칭 신청하기
+                                <div class="btn-actions">
+                                    <button type="submit" class="btn btn-primary btn-md btn-next">신청 완료</button>
                                 </div>
                             </fieldset>
                         </form>
@@ -249,25 +303,26 @@
 	<script src="./resource/js/common.js"></script>
 	<script src="./resource/js/jquery.steps.css"></script>
 	<script>
-    jQuery(document).ready(function(){
-  jQuery(".multistep-fom .button").click(function(){
-    var button = jQuery(this);
-    var currentSection = button.parents(".multistep");
-    var currentSectionIndex = currentSection.index();
-    var headerSection = jQuery('.steps li').eq(currentSectionIndex);
-    currentSection.removeClass("is-active").next().addClass("is-active");
-    headerSection.removeClass("is-active").next().addClass("is-active");
+    $(document).ready(function(){
+        $(".multistep-form button").click(function(){
+        var button = $(this);
+        var currentSection = button.parents(".section");
+        var currentSectionIndex = currentSection.index();
+        var headerSection = $('.steps li').eq(currentSectionIndex);
+        currentSection.removeClass("active").next().addClass("active");
+        //currentSection.css("display", "none");
+        //currentSection.next().css("display", "block");
+        headerSection.removeClass("active").next().addClass("active");
 
-    jQuery(".multistep-fom").submit(function(e) {
-      e.preventDefault();
+        $(".multistep-form").submit(function(e) {
+            e.preventDefault();
+        });
+        if(currentSectionIndex === 3){
+            $(document).find(".multistep-form .section").first().addClass("active");
+            $(document).find(".steps li").first().addClass("active");
+        }
+        });
     });
-
-    if(currentSectionIndex === 3){
-      jQuery(document).find(".multistep-fom .multistep").first().addClass("is-active");
-      jQuery(document).find(".steps li").first().addClass("is-active");
-    }
-  });
-});
     </script>
 	<footer class="footer">
 		<article class="container">
