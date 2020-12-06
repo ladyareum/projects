@@ -347,7 +347,7 @@ table thead .date{width: 120px}
 .support_area{position: absolute; height: 60px; top:0; right:0; padding:0 20px;}
 .support_area a{font-size:16px; font-size:1.6rem; line-height:4;}
 .support_area a:hover{color: #ff6d37; text-decoration: none;}
-.section h3{font-weight: 600; text-align: left; padding:10px 0;}
+/*.section h3{font-weight: 600; text-align: left; padding:10px 0;}*/
 .confirm-message{font-size:14px; font-size:1.4rem; margin-bottom:20px;}
 .fixed{position: fixed; top: 0; left: 0; width: 100%;}
 
@@ -373,7 +373,8 @@ table thead .date{width: 120px}
 .content-header .header-option-area .option-input{display: inline-block; max-width: 250px; min-width: 164px;;}
 .sub-header {padding: 10px 0;}
 .sub_heading{display:inline-block;}
-.sub-header .sub_title{font-size: 16px; font-weight: 500; color: #3b393a;}
+.sub-header .sub_title{font-size: 16px; font-size: 1.6rem; font-weight: 500; color: #3b393a;}
+.sub-header .test_timer{color: #eb6d38; font-size: 16px; font-size: 1.6rem; line-height: 2.2;}
 .content-list_grid, .content-list_list{margin-bottom:0;}
 .content-list_grid .grid-item{margin-bottom: 10px;}
 .content-item{margin: 20px 0; margin-bottom:50px;}
@@ -466,7 +467,7 @@ table thead .date{width: 120px}
 .form-group:last-child{margin-bottom: 0;}
 .inner-group{margin-bottom:10px;}
 .inner-group label{padding-bottom:5px;}
-.inner-group .form-group{border-bottom: 0 !important; padding:4px 0 !important;}
+.inner-group .form-group{border-bottom: 0 !important; margin-bottom: 0; padding:4px 0 !important;}
 .inner-group .form_selectbox{padding-bottom: 0;}
 .inner-group .label-control{font-size: 14px; font-size: 1.4rem;}
 .form-info-box{border-top: 2px solid #3b393a; border-bottom: 1px solid #efefef;}
@@ -490,7 +491,7 @@ table thead .date{width: 120px}
 .textarea-style{height: 80px; overflow: auto; padding: 10px 10px;}
 .sorting_select {position: relative; overflow: hidden; float:right;}
 .check_usage-greement .m-checkbox{line-height:1.6; margin:5px 0; padding-left: 25px;}
-.option-area{position: relative; text-align:right;}
+.option-area{position: relative; vertical-align: middle; text-align:right;}
 .option-area .sorting_select{overflow: inherit; float:none; margin: 0 5px;}
 .option-area .form-input-area .form-control{height: 30px; font-size:13px; font-size:1.3rem;}
 .option-area .form-input-area .search-form{padding:5px 32px 5px 10px;}
@@ -749,7 +750,7 @@ body.problem_solving{height:100%; overflow: auto;}
 .toggle_favorite input + label.icon_star.all{color:#ffd24a;}
 
 .question_item{position: relative; padding-left: 45px; margin-bottom: 30px;}
-.question_item .question_num{position: absolute; top:0; left:0; width:30px; height:35px; margin-top:-2px; text-align:center; font-family: 'Rubik', sans-serif; font-size: 20px; font-weight:500;}
+.question_item .question_num{position: absolute; top:0; left:0; width:30px; height:35px; margin-top:-2px; text-align:center; font-family: 'Rubik', sans-serif; font-size: 240px; font-size: 2.4rem; font-weight:500;}
 .question_item .question_area{padding-bottom: 10px;}
 .question_item .question_area .question_text{font-size: 16px;}
 .question_item .objective_item{clear: both;}
@@ -805,7 +806,7 @@ body.problem_solving{height:100%; overflow: auto;}
 .table-style_test .date{width: 12%;}
 .table-style_test .score{width: 18%;}
 .table-style_test .teacher{width: 15%;}
-.table-style_test .btn-test{min-width: 253px; min-height:42px; font-size: 14px; font-size: 1.4rem; font-weight: 500; padding: 5px 80px;}
+.table-style_test .btn-test{max-width: 250px;width: 80%; min-height:42px; font-size: 14px; font-size: 1.4rem; font-weight: 500; padding: 5px 20px;}
 .table-style_test .btn-test.btn-complete{line-height:2;}
 .table-style_test .sub-text{font-size: 13px; font-size: 1.3rem; font-weight: 400;}
 
@@ -833,7 +834,7 @@ body.problem_solving{height:100%; overflow: auto;}
 .video-player-list .playlist .video_title.active{color: #fff;}
 
 .video-player-list .playlist .totla_time{position: absolute; width: 100%; bottom: 0; background: #252525; padding: 10px 10px; z-index: 999;}
-.video-player-list .playlist .totla_time span{color: #fff;g}
+.video-player-list .playlist .totla_time span{color: #fff;}
 .video-player-list .playlist .checkbox_repeat{cursor: pointer;}
 .video-player-list .playlist .checkbox_repeat input[type=checkbox]{display: none;}
 .video-player-list .playlist .checkbox_repeat .icon-repeat{display: inline-block; width: 24px; height: 24px; background: url(../images/icon_repeat_off.png) left center no-repeat; vertical-align: middle; cursor: pointer;}
@@ -1035,15 +1036,23 @@ body.problem_solving{height:100%; overflow: auto;}
 
 
 /* multi step */
-.steps{text-align: center;} 
-.steps li{display: inline-block; color: #ccc; margin: 10px 20px; padding-bottom: 5px;}
-.steps li.active{color: #3498db; border-bottom: 1px solid #3498db;}
-.multistep-form .section{display: none;}
+.steps{position: relative; width: 100%; min-width: 965px; text-align: center;} 
+.steps li{display: inline-block; position: relative; width:128px; color: #3b393a; border: 1px solid #efefef; margin-right: 30px; padding: 5px 7px;}
+.steps li.active{color: #fff; background: #ff6d37; border: 1px solid #ff6d37;}
+.steps li span{display: block; text-align: left; font-weight: 700;}
+.steps li:after{content: " "; position: absolute; top:50%; width: 16px; height: 16px; border-right: 3px solid #efefef; border-bottom: 3px solid #efefef; margin: -8px 68px; transform: rotate(-45deg);}
+.steps li.active:after{border-right: 3px solid #ff6d37; border-bottom: 3px solid #ff6d37;}
+.steps li:last-child{margin-right:0;}
+.steps li:last-child:after{display: none;}
+.multistep-form{width: 80%; min-width: 800px; margin: 0 auto;}
+.multistep-form .section{display: none; padding: 40px 0; }
 .multistep-form .section.active{display: block;}
-/*
-.multistep-form .section{display: none;}
-.multistep-form .section.active{display: block;}
-*/
+.multistep-form .section .form-contents{margin-bottom: 20px;}
+.checkbox_time input[type="checkbox"]{display: none;}
+.checkbox_time label{font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
+.checkbox_time input[type="checkbox"] + label{display: inline-block; height: 28px; color: #9fa0a0; font-size: 12px; font-size: 1.2rem; font-weight: 500; line-height: 1.6; border: 1px dotted #ddd; margin-bottom: 5px; padding:5px 10px; cursor: pointer;}
+.checkbox_time input[type="checkbox"] + label:hover{color: #3b393a; border: 1px solid #ea6b39;}
+.checkbox_time input[type="checkbox"]:checked + label{color: #3b393a; border: 1px solid #ea6b39;}
 
 
 

@@ -136,5 +136,3 @@ $(".form_file").on("change", ".file-field", function(){
 $('a[href="#"]').click(function(e) {
 	e.preventDefault();
 });
-
-
