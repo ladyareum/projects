@@ -806,7 +806,7 @@ body.problem_solving{height:100%; overflow: auto;}
 .table-style_test .date{width: 12%;}
 .table-style_test .score{width: 18%;}
 .table-style_test .teacher{width: 15%;}
-.table-style_test .btn-test{max-width: 250px;width: 80%; min-height:42px; font-size: 14px; font-size: 1.4rem; font-weight: 500; padding: 5px 20px;}
+.table-style_test .btn-test{max-width: 250px;width: 80%; min-height:42px; font-size: 14px; font-size: 1.4rem; font-weight: 500; line-height: 2; padding: 5px 20px;}
 .table-style_test .btn-test.btn-complete{line-height:2;}
 .table-style_test .sub-text{font-size: 13px; font-size: 1.3rem; font-weight: 400;}
 
