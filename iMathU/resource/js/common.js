@@ -1,32 +1,6 @@
 // mobile check
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
-// Login Layer
-$(document).on('click', '.personal-info', function(){
-	$('.personal-info').toggleClass('state-login');
-	$('.layer_personal-info').toggleClass('on');
-});
-
-//jQuery to Leave menu bar fixed on top when scrolled
-//var num = 50; //number of pixels before modifying styles
-//$(window).bind('scroll', function () {
- //   if ($(window).scrollTop() > num) {
- //       $('.sub-menu').addClass('fixed');
-  //  } else {
- //       $('.sub-menu').removeClass('fixed');
- //   }
-//});
-
-//Nav SearchBar
-$('.search-btn').click(function(){
-	$('.search-bar_area').addClass('search-display');
-});
-
-$('.close-btn').click(function(){
-	$('.search-bar_area').removeClass('search-display');
-});
-
-
 //Slider
 var slideIndex = 1;
 var slideTimer = null;
@@ -68,15 +42,7 @@ function showSlides(n) {
   }, slideInterval); // Change image every 2
 };
 
-// Like Button
-$(function() {
-    $( ".btn-like" ).click(function() {
-      $( ".btn-like" ).toggleClass( "on",1000);
-    });
-  });
 
-
-//Tabs
 //Tabs
 $('.tab-container .tab-content').not(':first').hide();
 $('.tab-container .sub-content').each(function(){
