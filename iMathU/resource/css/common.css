@@ -330,6 +330,7 @@ table thead .date{width: 120px}
 .header{position:relative; width:100%; height: 100%; background-color: #fff; clear: both; z-index:999;}
 .header .top_gnb{text-align: right; padding: 12px 0 8px;}
 .top_gnb .personal_area, .top_gnb .support_area{display: inline-block; margin-left:20px;}
+.top_gnb .personal_area .login, .top_gnb .personal_area .logout{float: left;}
 .top_gnb .personal_area a{color:#58647a;}
 .top_gnb .support_area{font-weight:500;}
 .gnb{position: relative; overflow: hidden; width: 100%; height: 88px; vertical-align: middle;}
@@ -703,9 +704,8 @@ table thead .date{width: 120px}
 .form_info-input .form-info-box .form-group{border-bottom: 1px solid #efefef; margin-bottom: 0; padding: 20px 0 10px 0;}
 .form_info-input .form-info-box{border-bottom: 0;}
 .form_info-input .form_birth, .form_info-input .form_school{margin-bottom: 10px;}
-.form_info-input .form_birth .form_selectbox:before{right: 25px;}
-.form_info-input .form_birth label{margin-right:10px;}
-
+.form_info-input .form_birth .form_selectbox:before, .form_birth .form_selectbox:before{right: 25px;}
+.form_info-input .form_birth label, .form_birth label{margin-right:10px;}
 
 /* confirm page */
 .confirm-page{position: relative; width: 800px; margin: 0 auto; padding: 80px 0;}
@@ -724,20 +724,20 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .test_result .header_bar{position: relative; background: #ff6e37; border-bottom:0; padding: 15px 10px;}
 .test_result .result_contents .contents-header{text-align: center; margin-top: 40px;}
 .result_contents .contents-header .contents_heading{font-size:24px; font-size:2.4rem;}
-.result_contents .content_box, .result_contents .row-contents{overflow: inherit;}
-.result_contents .content-item{margin:60px 0;}
-.result_contents .content-item .content-header{overflow: inherit; text-align: left; border-bottom:0; padding-bottom: 0;}
-.result_contents .result_total{text-align: center;}
-.result_contents .result_total .total_score, .result_contents .result_total .total_level{}
-.result_contents .result_total .result-title{color:#fff; font-size:16px; font-size:1.6rem; font-weight:500; padding:10px 10px;}
-.result_contents .result_total .result-content{font-size:26px; font-size:2.6rem; font-weight:700; padding:30px 10px;}
-.result_contents .result_total .total_score .result-title{background: #ff6e37;}
-.result_contents .result_total .total_score .result-content{background: #fff5f1;}
-.result_contents .result_total .total_level .result-title{background: #00c18c;}
-.result_contents .result_total .total_level .result-content{background: #ebfaf6;}
-.result_contents .result_content{background:#fff; border-top:2px solid #3b393a; border-bottom:1px solid #efefef; padding:30px 20px;;}
-.result_contents .result_content p{font-size:14px; font-size:1.4rem; margin-bottom:10px;}
-.result_contents .tooltip{border-bottom:0; cursor:default;} 
+.result_contents .content_box, .result_contents .row-contents, .result_section .content_box, .result_section .row-contents{overflow: inherit;}
+.result_contents .contents-header .contents_heading{text-align: center;}
+.result_contents .content-item, .result_section .content-item{margin:60px 0;}
+.result_contents .content-item .content-header, .result_section .content-item .content-header{overflow: inherit; text-align: left; border-bottom:0; padding-bottom: 0;}
+.result_contents .result_total, .result_section .result_total{text-align: center;}
+.result_contents .result_total .result-title, .result_section .result_total .result-title{color:#fff; font-size:16px; font-size:1.6rem; font-weight:500; padding:10px 10px;}
+.result_contents .result_total .result-content, .result_section .result_total .result-content{font-size:26px; font-size:2.6rem; font-weight:700; padding:30px 10px;}
+.result_contents .result_total .total_score .result-title, .result_section .result_total .total_score .result-title{background: #ff6e37;}
+.result_contents .result_total .total_score .result-content, .result_section .result_total .total_score .result-content{background: #fff5f1;}
+.result_contents .result_total .total_level .result-title, .result_section .result_total .total_level .result-title{background: #00c18c;}
+.result_contents .result_total .total_level .result-content, .result_section .result_total .total_level .result-content{background: #ebfaf6;}
+.result_contents .result_content, .result_section .result_content{background:#fff; border-top:2px solid #3b393a; border-bottom:1px solid #efefef; padding:30px 20px;;}
+.result_contents .result_content p, .result_section .result_content p{font-size:14px; font-size:1.4rem; margin-bottom:10px;}
+.result_contents .tooltip, .result_section .tooltip{border-bottom:0; cursor:default;} 
 
 /* math-problem_contents */
 .problem_solving .header_bar{position: relative; background: #ff6e37; border-bottom:0; padding: 15px 10px;}
@@ -1084,10 +1084,26 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .checkbox_time input[type="checkbox"] + label{display: inline-block; height: 28px; color: #9fa0a0; font-size: 12px; font-size: 1.2rem; font-weight: 500; line-height: 1.6; border: 1px dotted #ddd; margin-bottom: 5px; padding:5px 10px; cursor: pointer;}
 .checkbox_time input[type="checkbox"] + label:hover{color: #3b393a; border: 1px solid #ea6b39;}
 .checkbox_time input[type="checkbox"]:checked + label{color: #3b393a; border: 1px solid #ea6b39;}
-
-
-
-
+.result_section .contents-header .contents_heading{text-align: center;}
+.result_section .result_total{margin-bottom: 20px;}
+.evaluation-item{background: #f7f7f7; border:1px solid #efefef; margin-top: 50px; padding: 20px 20px;}
+.evaluation-item .form-group .evaluation-text{position: relative; vertical-align: middle;}
+.evaluation-item .label-control{font-size: 13px; font-size: 1.3rem; font-weight: 400; line-height: 2.2;}
+.evaluation-item .form-input-area{display: inline;}
+.evaluation-item .form-input-area .form_selectbox:before{right: 12px;}
+.evaluation-item .form-input-area .select-style{height: 28px; padding: 0 25px 0 10px;}
+.evaluation-item .form-input-area .input_survey{height: 28px; }
+.multi-item .form-group{margin-bottom: 10px;}
+.sumo_form{display: inline-block; top: 5px;}
+.SumoSelect .form-control{font-size: 13px; font-size: 1.3rem; font-weight: 400; line-height: 2.2;}
+.SumoSelect > .CaptionCont{min-height: 28px !important; border: 1px solid #ddd !important; border-radius: 0 !important;}
+.SumoSelect > .optWrapper{border: 1px solid #efefef; border-radius: 0; box-shadow: 0;}
+.SelectBox{padding: 0 25px 0 10px;}
+.SumoSelect > .CaptionCont > span{color: #3b393a; font-size: 12px !important; font-size: 1.2rem !important; padding-right: 25px !important;}
+.SumoSelect > .CaptionCont > span.placeholder{font-style: normal !important;}
+.SumoSelect > .CaptionCont > label > i{top: 5px !important; background-image:none !important; width: 8px !important; height: 8px !important; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid #333; transition: all ease 0.25s; z-index: 10;}
+.SumoSelect > .optWrapper.multiple > .options li.opt span i, .SumoSelect .select-all > span i{box-shadow: none !important; border: 1px solid #ddd !important; border-radius: 0 !important;}    
+.SumoSelect > .optWrapper.multiple > .options li.opt.selected span i, .SumoSelect .select-all.selected > span i, .SumoSelect .select-all.partial > span i{background-color: #ff6d37 !important; border: 1px solid #ff6d37 !important;}
 
 @media screen and (max-width: 1260px){	
 	.math-problem_contents table thead .solve{width:164px;}
