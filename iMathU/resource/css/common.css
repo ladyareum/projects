@@ -1138,7 +1138,36 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .top_contents .content_description p{font-size:22px; font-size:2.2rem; font-weight: 400;}
 
 .middle_visual .content_box{margin:20px 0;}
-.middle_visual .content_coach {background:#f7f7f7;}
+.middle_visual .single-services{}
+.middle_visual .serviece-left{text-align: right;}
+.middle_visual .serviece-right{text-align: left;}
+.middle_visual .row-contents.middle-row{margin-top: 15px; margin-bottom: 15px;}
+.middle_visual .single-services .service-icon{background: #ff033d; text-align: center; color: #fff; padding:20px;}
+.middle_visual .single-services .service-icon span{font-size: 45px; font-size: 4.5rem; padding: 35px 9px;}
+.middle_visual .single-services h2{font-weight: 500;  margin-bottom: 15px;}
+.middle_visual .single-services:hover .service-icon{background: deepskyblue; color:#fff; transition: all 0.4s ease;}
+
+.services-item{position: relative; margin: 40px 0;}
+.services-item ul{position: relative;}
+.services-item ul li{position: relative; width: 100%; margin-bottom: 40px;}
+.services-item ul li .service-icon{display: inline-block; position: relative; float:left; top:10px;  width: 130px; height: 130px; background: #3b393a; color: #fff;  border-radius: 50%;}
+.services-item ul li .service-icon span{width:100%; font-size:58px; font-size: 5.8rem; text-align: center; padding:15px 0 0;}
+.services-item ul li .service-icon h2{font-size: 22px; font-size: 2.2rem; font-weight: 700; text-align: center; padding: 0;}
+.services-item ul li .service-text{position: relative; min-height: 160px; background: #3b393a; color:#fff; border: 5px solid #3b393a; margin-left: 200px; padding:30px 30px;}
+.services-item ul li .service-text:after{content: ""; position: absolute; width: 0; height: 0; top:60px; left: -25px; border: 10px solid transparent; border-right-color: #3b393a; pointer-events: none;}
+.services-item ul li .service-text .headline{font-weight: 500; border-bottom:1px solid #9fa0a0; margin-bottom: 10px; padding-bottom: 10px;}
+.services-item ul li .service-text p{font-size:18px; font-size:1.8rem;}
+.services-item ul li:hover .service-icon{background: #ff6d37;}
+.services-item ul li:hover .service-text{background: #fff; color:#3b393a; border: 5px solid #ff6d37;}
+.services-item ul li:hover .service-text:after{border-right-color: #ff6d37;}
+.services-item ul li:hover .service-text .headline{border-bottom:1px solid #ddd;}
+
+
+
+
+
+.middle_visual .content_coach {background:#f7f7f7}
+.middle_visual .content_coach .content-item{margin-top: 40px;}
 .middle_visual .content_coach .coach_box{position: relative; background:#fff;}
 .middle_visual .content_coach .coach_box a{display:block; position: relative; overflow: hidden; width: 100%; padding: 20px 20px; border:5px solid #00c18c;}
 .middle_visual .content_coach .coach_box a:after{content: ''; position: absolute; width: 150px; height: 550px; top: -90px; left: -165px; background: #fff; -webkit-transform: rotate(35deg); transform: rotate(35deg); -webkit-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1); transition: all 2s cubic-bezier(0.19, 1, 0.22, 1); opacity:0;}
