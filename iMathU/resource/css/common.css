@@ -1034,7 +1034,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .checkbox_time input[type="checkbox"] + label{display: inline-block; height: 28px; color: #9fa0a0; font-size: 12px; font-size: 1.2rem; font-weight: 500; line-height: 1.6; border: 1px dotted #ddd; margin-bottom: 5px; padding:5px 10px; cursor: pointer;}
 .checkbox_time input[type="checkbox"] + label:hover{color: #3b393a; border: 1px solid #ea6b39;}
 .checkbox_time input[type="checkbox"]:checked + label{color: #3b393a; border: 1px solid #ea6b39;}
-.result_section .contents-header{margin: 60px0; }
+.result_section .contents-header{margin: 60px 0; }
 .result_section .contents-header .contents_heading{text-align: center;}
 .result_section .result_total{margin-bottom: 20px;}
 .evaluation-item{background: #f7f7f7; border:1px solid #efefef; margin-top: 50px; padding: 20px 20px;}
@@ -1060,7 +1060,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 /* Test Start*/
 .test_start .test_box{max-width: 1080px; margin: 0 auto;}
 .test_start .test_box .content-item{margin: 50px 0; margin-bottom: 100px;}
-.test_header{background: #fff; border: 8px solid #ff6d37;}
+.test_header{background: #fff;}
 .test_header .contents-header{font-size: 36px; font-size: 3.6rem; margin:50px 0 !important;}
 .test_start .contents-header{text-align: center; margin-top: 100px; margin-bottom: 80px;}
 .test_start .summary{display: inline-block; background: #efefef; border-radius: 50px; margin-bottom: 15px; padding: 5px 15px;}
@@ -1129,21 +1129,23 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .middle_visual .horizontal_accordion ul:hover li:hover { width: 42%; }
 
 /* MainPage */
-.main_visual{position:relative; overflow: hidden; width:100%; height:530px; background:#f7f7f7;}
+.main_visual{position:relative; overflow: hidden; width:100%; height:460px; background:#f7f7f7;}
 .middle_visual{position:relative; overflow: hidden; width:100%; background:#fff;}
-.top_contents .content_left{position:relative; height:530px; padding:80px 20px;}
+.top_contents .content_left{position:relative; padding:60px 20px;}
 .top_contents .content_title{margin-bottom:20px;}
-.top_contents .content_title h2{font-size:52px; font-size:5.2rem; font-weight: 500; line-height: 1.3;}
+.top_contents .content_title h2{font-size:48px; font-size:4.8rem; font-weight: 500; line-height: 1.3;}
 .top_contents .content_description{margin-top: 40px; margin-bottom:40px; }
 .top_contents .content_description p{font-size:22px; font-size:2.2rem; font-weight: 400;}
 
 .middle_visual .content_box{margin:20px 0;}
+/* 추후 삭제 */
 .middle_visual .single-services{}
 .middle_visual .serviece-left{text-align: right;}
 .middle_visual .serviece-right{text-align: left;}
-.middle_visual .row-contents.middle-row{margin-top: 15px; margin-bottom: 15px;}
-.middle_visual .single-services .service-icon{background: #ff033d; text-align: center; color: #fff; padding:20px;}
-.middle_visual .single-services .service-icon span{font-size: 45px; font-size: 4.5rem; padding: 35px 9px;}
+.middle_visual .row-contents.middle-row{margin-top: 20px; margin-bottom: 20px;}
+.middle_visual .single-services .service-icon{background: #ff033d; width: 85px; height: 85px; text-align: center; color: #fff; padding:10px;}
+.middle_visual .single-services .service-icon span{font-size: 48px; font-size: 4.8rem; padding:0;}
+.middle_visual .single-services .service-icon h4{font-size: 18px; font-weight: 500; }
 .middle_visual .single-services h2{font-weight: 500;  margin-bottom: 15px;}
 .middle_visual .single-services:hover .service-icon{background: deepskyblue; color:#fff; transition: all 0.4s ease;}
 
@@ -1162,10 +1164,6 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .services-item ul li:hover .service-text:after{border-right-color: #ff6d37;}
 .services-item ul li:hover .service-text .headline{border-bottom:1px solid #ddd;}
 
-
-
-
-
 .middle_visual .content_coach {background:#f7f7f7}
 .middle_visual .content_coach .content-item{margin-top: 40px;}
 .middle_visual .content_coach .coach_box{position: relative; background:#fff;}
@@ -1179,10 +1177,10 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .middle_visual .content_coach .coach_box .coach-info .info{display: block; font-size:18px; font-size:1.8rem; font-weight: 500; letter-spacing: -1px; margin: 20px 0;}
 .middle_visual .content_coach .coach_box .coach-info .name{display:block; font-size:28px; font-size:2.8rem; font-weight: 700; padding: 5px 0; border-top:1px solid #3b393a;}
 .review_box{position: relative; overflow:hidden; }
-.review_box .review-list{position: relative; overflow:hidden; border: 5px solid #ff6d37; padding:20px 20px;}
-.review_box .review-list .reviewer-img{position: relative; overflow: hidden; width:120px; height:120px; float: left; background: #efefef; border-radius:50%; text-align: center; margin-right: 10px; padding: 4px; clear: both;}
+.review_box .review-list{position: relative; overflow:hidden; background: #f7f7f7; padding:40px 20px;}
+.review_box .review-list .reviewer-img{position: relative; overflow: hidden; width:100px; height:100px; float: left; background: #fff; border-radius:50%; text-align: center; margin-right: 10px; padding: 4px; clear: both;}
 .review_box .review-list .reviewer-img img{position: relative; top: 12px;}
-.review_box .review-list .reviw-info{position: relative; padding-left: 150px;}
+.review_box .review-list .reviw-info{position: relative; margin-left: 150px;}
 .review_box .review-list .reviw-info .text-tit{color:#ff6d37; font-size: 18px; font-size: 1.8rem; font-weight: 500; line-height: 1.4;}
 .review_box .review-list .reviw-info .text-history{padding:10px 0 5px;}
 .review_box .review-list .reviw-info .name{}
@@ -1190,7 +1188,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .slide-list{display:block; position:relative; height: 530px; max-width: 1280px; background:#f7f7f7; margin: 0 auto;}
 .slide-item{display: none;}
 .slide-item a{display:inline-block; position: relative; overflow: hidden; width:100%; height:100%; text-align: center;}
-.slide-item .slide-img{height: 530px;}
+.slide-item .slide-img{width: 90%; height: 460px;}
 .slide-item .slide-img img{position: absolute; top: 50%; left: 50%; width: 100%; vertical-align: middle; transform: translate(-50%, -50%);}
 .slick-prev, .slick-next{z-index: 10;}
 .slick-prev{left:20px !important;}
