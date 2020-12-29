@@ -26,7 +26,8 @@ table caption, legend{position: absolute; top: -9999px; text-indent: -9999px; fo
 fieldset, img, iframe, button{border:0;}
 input, button, textarea, select, img, a {vertical-align: middle;}
 a{background-color: transparent; color:#3b393a; text-decoration:none; -webkit-text-decoration-skip:object;}
-a:hover, a:active, a:focus{text-decoration:underline; outline:0;}
+a:hover, a:active, a:focus{outline:0;}
+a:hover{text-decoration:underline;}
 img{max-width: 100%; height: auto; -ms-interpolation-mode:bicubic;}
 label{display:inline-block; *display:inline; *zoom:1;}
 select{padding:0 0 0 5px; height:28px; border:1px solid #efefef;}
@@ -328,20 +329,20 @@ table thead .date{width: 120px}
 .top_banner{position:relative; text-align: center; background:#3b393a;}
 .top_banner a{position:relative; width: 100%; height:100px;}
 .header{position:relative; width:100%; height: 100%; background-color: #fff; clear: both; z-index:999;}
-.header .top_gnb{text-align: right; padding: 12px 0 8px;}
+.header .top_gnb{position: relative; width: 100%; background: #f7f7f7; text-align: right; padding: 10px 0;}
 .top_gnb .personal_area, .top_gnb .support_area{display: inline-block; margin-left:20px;}
 .top_gnb .personal_area .login, .top_gnb .personal_area .logout{float: left;}
-.top_gnb .personal_area a{color:#58647a;}
+.top_gnb .personal_area a{color:#9fa0a0;}
+.top_gnb .personal_area a:hover{color:#3b393a; text-decoration:none;}
 .top_gnb .support_area{font-weight:500;}
 .gnb{position: relative; overflow: hidden; width: 100%; height: 88px; vertical-align: middle;}
 .gnb .banner_area{width: 200px; height: 64px; background: #ddd; margin: 12px 0px;}
 .gnb .banner_left{}
-.gnb .brand_center{display:block;  width: 100%; height: 64px; text-align: center; vertical-align: middle; margin: 12px 0px; padding: 0 200px;}
-.gnb .brand_center .gnb-logo{position: relative; height: 64px; line-height: 4.8;}
-.gnb .brand_center .gnb-logo img{width: 160px;}
+.gnb .brand_center{display:block; width: 100%; height: 64px; text-align: center; vertical-align: middle; margin: 12px 0px; padding: 0 200px;}
+.gnb .brand_center .gnb-logo{position: relative; overflow: hidden; width: 100%; height: 52px; line-height: 4;}
 .gnb .banner_event{position: absolute; top:0; right: 0;}
-.nav-bar{display:block; height:60px; background-color: #fff; border-bottom: 3px solid #ff6d37;}
-.nav-bar .menu-list{position: relative; overflow: hidden; text-align: left;}
+.nav-bar{display:block; background-color: #fff; border-top:3px solid #ff6d37; border-bottom: 1px solid #f7f7f7;}
+.nav-bar .menu-list{position: relative; overflow: hidden; text-align: center;}
 .nav-bar .menu-list .list-item{display: inline-block; height: 60px; margin: 0 20px; padding: 0;}
 .nav-bar .menu-list .list-item a{font-size: 18px; font-size: 1.8rem; line-height: 3.5; font-weight:500; transition: all .2s ease-in-out;}
 .nav-bar .menu-list .list-item a:hover{color: #ff6d37; text-decoration: none;}
@@ -1033,6 +1034,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .checkbox_time input[type="checkbox"] + label{display: inline-block; height: 28px; color: #9fa0a0; font-size: 12px; font-size: 1.2rem; font-weight: 500; line-height: 1.6; border: 1px dotted #ddd; margin-bottom: 5px; padding:5px 10px; cursor: pointer;}
 .checkbox_time input[type="checkbox"] + label:hover{color: #3b393a; border: 1px solid #ea6b39;}
 .checkbox_time input[type="checkbox"]:checked + label{color: #3b393a; border: 1px solid #ea6b39;}
+.result_section .contents-header{margin: 60px0; }
 .result_section .contents-header .contents_heading{text-align: center;}
 .result_section .result_total{margin-bottom: 20px;}
 .evaluation-item{background: #f7f7f7; border:1px solid #efefef; margin-top: 50px; padding: 20px 20px;}
@@ -1127,21 +1129,19 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .middle_visual .horizontal_accordion ul:hover li:hover { width: 42%; }
 
 /* MainPage */
-.main_visual{position:relative; overflow: hidden; width:100%; height:400px; background:#333;}
+.main_visual{position:relative; overflow: hidden; width:100%; height:530px; background:#f7f7f7;}
 .middle_visual{position:relative; overflow: hidden; width:100%; background:#fff;}
-.top_contents .content_left{position:relative; height:400px; padding:60px 20px;}
-.top_contents .content_title{margin-bottom:20px; color:#fff;}
-.top_contents .content_title h2{font-size:36px; font-size:3.6rem; font-weight: 700; line-height: 1.3;}
-.top_contents .content_description{margin-top: 40px; margin-bottom:40px; color:#fff;}
-.top_contents .content_description p{font-size:18px; font-size:1.8rem; font-weight: 400;}
+.top_contents .content_left{position:relative; height:530px; padding:80px 20px;}
+.top_contents .content_title{margin-bottom:20px;}
+.top_contents .content_title h2{font-size:52px; font-size:5.2rem; font-weight: 500; line-height: 1.3;}
+.top_contents .content_description{margin-top: 40px; margin-bottom:40px; }
+.top_contents .content_description p{font-size:22px; font-size:2.2rem; font-weight: 400;}
 
-.middle_visual .content_box{margin:60px 0;}
-.middle_visual .contents-header .contents_heading{font-size: 28px; font-size: 2.8rem; font-weight: 700;}
+.middle_visual .content_box{margin:20px 0;}
 .middle_visual .content_coach {background:#f7f7f7;}
-.middle_visual .content_coach .content-item{margin:80px 0;}
 .middle_visual .content_coach .coach_box{position: relative; background:#fff;}
-.middle_visual .content_coach .coach_box a{display:block; position: relative; overflow: hidden; width: 100%; padding: 20px 20px; border:10px solid #00c18c;}
-.middle_visual .content_coach .coach_box a:after{content: ''; position: absolute; width: 150px; height: 550px; top: -90px; left: -165px; background: #fff; -webkit-transform: rotate(35deg); transform: rotate(35deg); -webkit-transition: all 1a cubic-bezier(0.19, 1, 0.22, 1); transition: all 1a cubic-bezier(0.19, 1, 0.22, 1); opacity:0;}
+.middle_visual .content_coach .coach_box a{display:block; position: relative; overflow: hidden; width: 100%; padding: 20px 20px; border:5px solid #00c18c;}
+.middle_visual .content_coach .coach_box a:after{content: ''; position: absolute; width: 150px; height: 550px; top: -90px; left: -165px; background: #fff; -webkit-transform: rotate(35deg); transform: rotate(35deg); -webkit-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1); transition: all 2s cubic-bezier(0.19, 1, 0.22, 1); opacity:0;}
 
 .middle_visual .content_coach .coach_box a:hover:after{left: 120%; -webkit-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1); opacity: 0.5;}
 .middle_visual .content_coach .coach_box .profile-img{width: 40%; float: left;}
@@ -1156,19 +1156,19 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .review_box .review-list .reviw-info{position: relative; padding-left: 150px;}
 .review_box .review-list .reviw-info .text-tit{color:#ff6d37; font-size: 18px; font-size: 1.8rem; font-weight: 500; line-height: 1.4;}
 .review_box .review-list .reviw-info .text-history{padding:10px 0 5px;}
-.review_box .review-list .reviw-info .name{text}
+.review_box .review-list .reviw-info .name{}
 
-.slide-list{display:block; position:relative; height: 400px; max-width: 1280px; background:#000; margin: 0 auto;}
+.slide-list{display:block; position:relative; height: 530px; max-width: 1280px; background:#f7f7f7; margin: 0 auto;}
 .slide-item{display: none;}
 .slide-item a{display:inline-block; position: relative; overflow: hidden; width:100%; height:100%; text-align: center;}
-.slide-item .slide-img{height: 400px;}
+.slide-item .slide-img{height: 530px;}
 .slide-item .slide-img img{position: absolute; top: 50%; left: 50%; width: 100%; vertical-align: middle; transform: translate(-50%, -50%);}
 .slick-prev, .slick-next{z-index: 10;}
 .slick-prev{left:20px !important;}
 .slick-next {right: 20px !important;}
 .slick-dots{bottom: 10px !important;}
 .slick-dots li{width: 10px !important; height:10px !important;}
-.slick-dots li button::before{color: #fff !important;}
+.slick-dots li button::before{color: #ff6d37 !important;}
 .slick-dots li.slick-active button:before{opacity: 1 !important;}
 
 

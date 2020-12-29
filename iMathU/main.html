@@ -26,64 +26,60 @@
                 </a>
 			</div>
 			<header class="header">
-				<div class="">
-					<div class="container">
-						<div class="top_gnb pull-right">
-							<div class="personal_area">
-								<div class="login">
-									<span>
-										<a href="#">로그인</a>
-									</span>
-									<span class="divi-vertical"></span>
-									<span>
-										<a href="#">회원가입</a>
-									</span>
-								</div>
-								<div class="logout hide">
-									<span>
-										<a href="#">
-											<span class="user-name">홍길동님</span>
-											<span>환영합니다.</span>
-										</a>
-									</span>
-									<span class="divi-vertical"></span>
-									<span>
-										<a href="#">마이페이지</a>
-									</span>
-								</div>
-								<span class="divi-vertical"></span>
+			    <div class="top_gnb pull-right">
+                    <div class="inner">
+                        <div class="personal_area">
+                            <div class="login">
                                 <span>
-                                    <a href="#">온라인서점</a>
+                                    <a href="#">로그인</a>
                                 </span>
                                 <span class="divi-vertical"></span>
                                 <span>
-                                    <a href="#">고객센터</a>
+                                    <a href="#">회원가입</a>
                                 </span>
-								
-								
-							</div>
-						</div>
-						<div class="gnb">
-							<div class="banner_area banner_left pull-left">
-								<a href="#" class="">
-									<img src="">
-								</a>
-							</div>
-							<div class="brand_center">
-								<a href="#" class="gnb-logo">
-									<img src="./resource/images/header-logo.png" width="200" height="64" alt="개념원리">
-								</a>
-							</div>
-							<div class="banner_area banner_event pull-right">
-								<a href="#" class="">
-									<img src="">
-								</a>
-							</div>
-						</div>										
-					</div>
-				</div>
+                            </div>
+                            <div class="logout hide">
+                                <span>
+                                    <a href="#">
+                                        <span class="user-name">홍길동님</span>
+                                        <span>환영합니다.</span>
+                                    </a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">마이페이지</a>
+                                </span>
+                            </div>
+                            <span class="divi-vertical"></span>
+                            <span>
+                                <a href="#">온라인서점</a>
+                            </span>
+                            <span class="divi-vertical"></span>
+                            <span>
+                                <a href="#">고객센터</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb">
+                    <div class="banner_area banner_left pull-left hide">
+                        <a href="#" class="">
+                            <img src="#">
+                        </a>
+                    </div>
+                    <div class="brand_center">
+                        <a href="#" class="gnb-logo">
+                            <img src="./resource/images/header-logo.png" width="152" height="52" alt="개념원리">
+                        </a>
+                    </div>
+                    <div class="banner_area banner_event pull-right hide">
+                        <a href="#" class="">
+                            <img src="#">
+                        </a>
+                    </div>
+                </div>
 				<div class="nav-bar menu_style01">
-					<div class="container">
+					<div class="inner">
 						<ul class="menu-list">
 							<li class="list-item"><a href="#">내 진단테스트</a></li>
 							<li class="list-item active"><a href="#">내 공부방</a></li>
@@ -101,7 +97,13 @@
 									<div class="content_left">
 										<div class="content_title">
 					                        <h2 class="">
-					                        	<span class="text-block">지금</span>
+					                        	<span class="text-block weight-300_light">지금,</span>
+					                        	<span><span class="point-color">풀자</span>를 시작할때 </span>
+					                        </h2>
+					                    </div>
+					                    <div class="content_title login_title hide">
+					                        <h2 class="">
+					                        	<span class="text-block weight-400_regular">홍길동님이,</span>
 					                        	<span><span class="point-color">풀자</span>를 시작할때 </span>
 					                        </h2>
 					                    </div>
@@ -111,7 +113,6 @@
 					                    <div class="btn-box">
 											<a href="#" class="btn-block btn btn-apply btn-lg" target="_blank">수학 고민 풀자!</a>
 										</div>
-								
 									</div>
 								</div>
 								<div class="col-8">
@@ -120,17 +121,7 @@
 											<ul class="slider slide-list">
 												<li class="slide-item">
 													<a href="#" class="slide-img">
-														<img src="https://www.imath.tv/uploads/book/image/1607322015_a33acc0f63a6a7c1fa06.png" class="slide-img" alt="First slide">
-													</a>
-												</li>
-												<li class="slide-item">
-													<a href="#" class="slide-img">
-														<img src="https://www.imath.tv/uploads/book/image/1607319874_57045bf2e8bd72d1f57e.png" class="" alt="Seond slide">
-													</a>
-												</li>
-												<li class="slide-item">
-													<a href="#" class="slide-img">
-														<img src="https://www.imath.tv/uploads/book/image/1607320254_d3b04ebf5a0582533079.png" class="" alt="Third slide">
+														<img src="./resource/images/img_main_slider-img-01.png" class="" alt="First slide">
 													</a>
 												</li>
 											</ul>
@@ -297,17 +288,15 @@
 	<script>
 	$('.slider').slick({
 		dots: true,
-		infinite: true,
-		autoplay: true,
+		infinite: false,
+		autoplay: false,
 		autoplaySpeed: 1800,
 		speed: 300,
         arrows: false,		        
         draggable: true,
-        infinite: true,
-        speed: 300,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        adaptiveHeight: true
+        slidesToScroll: 1
+        //adaptiveHeight: true
     });
 	</script>
 	<footer class="footer">
