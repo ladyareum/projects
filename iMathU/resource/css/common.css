@@ -341,9 +341,9 @@ table thead .date{width: 120px}
 .gnb .brand_center{display:block; width: 100%; height: 64px; text-align: center; vertical-align: middle; margin: 12px 0px; padding: 0 200px;}
 .gnb .brand_center .gnb-logo{position: relative; overflow: hidden; width: 100%; height: 52px; line-height: 4;}
 .gnb .banner_event{position: absolute; top:0; right: 0;}
-.nav-bar{display:block; background-color: #fff; border-top:3px solid #ff6d37; border-bottom: 1px solid #f7f7f7;}
+.nav-bar{display:block; background-color: #fff; border-top:3px solid #ff6d37; border-bottom: 1px solid #efefef;}
 .nav-bar .menu-list{position: relative; overflow: hidden; text-align: center;}
-.nav-bar .menu-list .list-item{display: inline-block; height: 60px; margin: 0 20px; padding: 0;}
+.nav-bar .menu-list .list-item{display: inline-block; width: 120; height: 60px; margin: 0 20px; padding: 0;}
 .nav-bar .menu-list .list-item a{font-size: 18px; font-size: 1.8rem; line-height: 3.5; font-weight:500; transition: all .2s ease-in-out;}
 .nav-bar .menu-list .list-item a:hover{color: #ff6d37; text-decoration: none;}
 .nav-bar .menu-list .list-item.active a{color: #ff6d37;}
@@ -982,11 +982,11 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 */
 
 /* datetimepicker */
-.recruit_teacher{border: 1px dotted #efefef; margin:60px 0;}    
+.recruit_teacher{border: 1px dotted #efefef; margin:30px 0;}    
 .recruit_teacher .contents-header{background:#00c18c; text-align: center; margin: 0; padding:50px 20px;}
 .recruit_teacher .contents-header .contents_heading{font-size: 32px; font-size: 3.2rem; color: #fff;}
 .recruit_teacher .contnet-item{position: relative; overflow: hidden; max-width: 920px; margin: 0 auto;}
-.recruit_teacher .contnet-item dl{display: block; position: relative; margin: 60px 0; padding-left: 300px;}
+.recruit_teacher .contnet-item dl{display: block; position: relative; margin: 40px 0; padding-left: 300px;}
 .recruit_teacher .contnet-item dl dt{position: absolute; top:0; left:20px; font-size: 20px; font-size: 2.0rem; font-weight: 700; letter-spacing: -1px;}
 .recruit_teacher .contnet-item dl dt:after{content: ''; position: absolute; width:32px; height: 32px; top:-12px; left:-18px; background: #ffee6f; border-radius: 100px 100px 0px; z-index: -1;}
 .recruit_teacher .contnet-item dl dd{font-size: 16px; font-size:1.6rem; font-weight: 500;}
@@ -1060,12 +1060,14 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 /* Test Start*/
 .test_header{background: #fff;}
 .test_header .contents-header{font-size: 36px; font-size: 3.6rem; margin:50px 0 !important;}
-.test_start .contents-header{text-align: center; margin-top: 60px; margin-bottom: 80px;}
+.test_start .contents-header{text-align: center; margin-top: 60px; margin-bottom: 40px;}
 .test_start .summary{display: inline-block; background: #efefef; border-radius: 50px; margin-bottom: 15px; padding: 5px 15px;}
 .test_start .summary h4{color: #3b393a; font-size: 18px; font-size: 1.8rem; font-weight: 500;}
 .test_start .contents_heading{font-size: 34px; font-size: 3.4rem;}
 .test_start .content-item .content-header {margin: 40px 0;}
 .test_start .content-item .content-header .content_heading{font-size: 24px; font-size: 2.4rem; font-weight: 700;}
+.test_start .bg_graph{background: #f7f7f7;}
+.test_start .bg_graph .content-item{background: #fff; margin-top: 40px;}
 .test_start .img_graph{text-align: center;}
 .fixed_btn{ width: 100%; left:0; background: #3b393a; text-align: center; margin-bottom:-40px; z-index: 10;}
 .fixed_btn a{display:block; position: relative; width:100%; color:#fff; font-size: 24px; font-size: 2.4rem; font-weight: 700; padding: 20px 20px;}
@@ -1082,12 +1084,12 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 		background-position: 0% 50%;
 	}
 }
-.test_start .bg_list{background: #f7f7f7;}
-.test_start .test_list-sytle .content-header{margin: 0; padding: 10px 40px;}
+.test_start .bg_list{background: #fff7f4;}
+.test_start .test_list-sytle .content-header{margin: 0; padding: 10px 0;}
 .test_start .test_list-sytle .content-header .content_heading {font-size: 20px; font-size: 2.0em; vertical-align: top; font-weight: 700;}
 .test_start .test_list-sytle .content-header .icon_heading{position: relative; top:4px; font-size: 48px; padding-right: 10px;}
 .test_start .test_list-sytle .content-header .content_heading mark{color: #3b393a; }
-.test_start .test_list-sytle .content_point{padding: 20px 40px;}
+.test_start .test_list-sytle .content_point{padding: 20px 0;}
 .test_start .test_list-sytle .list-item {margin: 10px 0 40px 0;}
 .test_start .test_list-sytle .list-item:last-child{margin-bottom: 20px;}
 .test_start .test_list-sytle .list-item .item-title{font-family: 'Rubik', 'Noto Sans KR',sans-serif; display: inline-block; background: #ff6d37; color: #fff; font-size: 20px; font-size: 2.0rem; font-weight: 500; border-radius: 50px; margin-bottom: 15px;  padding: 5px 20px; }
@@ -1151,16 +1153,16 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 
 .services_area .services-item{}
 .services_area .services-item {border: 3px solid #efefef; background: #fff;}
-.services_area .services-item .service-header{position: relative; overflow: hidden; background: #efefef; text-align: center; padding: 10px 80px;}
-.services_area .services-item .service-header .service-icon{width: 48px; height: 48px; float: left; overflow: hidden; background: #fff; border-radius: 50%; }
-.services_area .services-item .service-header .service-icon span{width: 48px; font-size: 48px;}
-.services_area .services-item .service-header h2{font-size: 22px; font-size: 2.2rem; font-weight: 700; color: #fff; margin-left: 48px; padding: 8px 0;}
+.services_area .services-item .service-header{position: relative; overflow: hidden; background: #efefef; text-align: center; padding: 10px 20px;}
+.services_area .services-item .service-header .service-icon{display: inline-block; width: 48px; height: 48px; background: #fff; border-radius: 50%; }
+.services_area .services-item .service-header .service-icon span{position: relative; top:5px; width: 36px; font-size: 36px;}
+.services_area .services-item .service-header h2{display: inline-block; position: relative; top:-4px; font-size: 22px; font-size: 2.2rem; font-weight: 700; color: #fff; margin-left: 10px;}
 .services_area .services-item .service-text {height: 280px; padding: 20px;}
 .services_area .services-item .service-text .headline{font-size: 18px; font-weight: 500; margin-bottom: 20px;}
 .services_area .services-item .service-text p{font-size: 16px; font-size: 1.6rem;  padding-bottom: 10px;}
-.services_area .services-item.border_point{border: 3px solid #ff6d37;}
+.services_area .services-item.border_point{border: 1px solid #ff6d37;}
 .services_area .services-item .service-header.bg_point{background: #ff6d37;}
-.services_area .services-item.border_primary{border: 3px solid #00c18c;}
+.services_area .services-item.border_primary{border: 1px solid #00c18c;}
 .services_area .services-item .service-header.bg_primary{background: #00c18c;}
 
 
@@ -1245,6 +1247,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 	.steps{text-align: left;}
 	.steps li:after{width: 12px; height: 12px; margin: -8px 123px;}
 	.recruit_teacher .contnet-item dl{padding-left: 230px;}
+    .middle_visual .content-item .services_area .col-4{width: 50%;}
     
 
 /* top_banner */
