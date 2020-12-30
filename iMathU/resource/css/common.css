@@ -341,7 +341,7 @@ table thead .date{width: 120px}
 .gnb .brand_center{display:block; width: 100%; height: 64px; text-align: center; vertical-align: middle; margin: 12px 0px; padding: 0 200px;}
 .gnb .brand_center .gnb-logo{position: relative; overflow: hidden; width: 100%; height: 52px; line-height: 4;}
 .gnb .banner_event{position: absolute; top:0; right: 0;}
-.nav-bar{display:block; background-color: #fff; border-top:3px solid #ff6d37; border-bottom: 1px solid #efefef;}
+.nav-bar{display:block; background-color: #fff; border-top:3px solid #ff6d37; border-bottom: 1px solid #ddd;}
 .nav-bar .menu-list{position: relative; overflow: hidden; text-align: center;}
 .nav-bar .menu-list .list-item{display: inline-block; width: 120; height: 60px; margin: 0 20px; padding: 0;}
 .nav-bar .menu-list .list-item a{font-size: 18px; font-size: 1.8rem; line-height: 3.5; font-weight:500; transition: all .2s ease-in-out;}
@@ -855,7 +855,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .chat_message-box .bnt_send{float: right; min-width: 80px; min-height: 34px; background: #ff6d37; padding: 8px 10px; border-radius: 30px; font-family: 'Noto Sans KR', Helvetica, sans-serif; font-weight: 500; color: #fff; text-align: center; vertical-align: middle; touch-action: manipulation; -webkit-tap-highlight-color: transparent; padding: 4px; cursor: pointer;}
 .chat_message-box .message_style{width: calc(100% - 135px); border: 1px solid #fff;}
 .chat_message-box.message_style:focus{outline:0;}
-.chat_learn .btn-input{font-size: 14px; font-size: 1.4rem; padding: 6px 20px !important;}
+.chat_learn .btn-input{font-size: 14px; font-size: 1.4rem;}
 
 /* SupportCenter*/
 .support_wrap{}
@@ -1158,7 +1158,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .services_area .services-item .service-header h2{display: inline-block; position: relative; top:-4px; font-size: 22px; font-size: 2.2rem; font-weight: 700; color: #fff; margin-left: 10px;}
 .services_area .services-item .service-text {height: 280px; padding: 20px;}
 .services_area .services-item .service-text .headline{font-size: 18px; font-weight: 500; margin-bottom: 20px;}
-.services_area .services-item .service-text p{font-size: 16px; font-size: 1.6rem;  padding-bottom: 10px;}
+.services_area .services-item .service-text p{font-size: 16px; font-size: 1.6rem; letter-spacing: -1px; padding-bottom: 10px;}
 .services_area .services-item.border_point{border: 1px solid #ff6d37;}
 .services_area .services-item .service-header.bg_point{background: #ff6d37;}
 .services_area .services-item.border_primary{border: 1px solid #00c18c;}
@@ -1207,7 +1207,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .slide-list{display:block; position:relative; height: 530px; max-width: 1280px; background:#f7f7f7; margin: 0 auto;}
 .slide-item{display: none;}
 .slide-item a{display:inline-block; position: relative; overflow: hidden; width:100%; height:100%; text-align: center;}
-.slide-item .slide-img{width: 90%; height: 460px;}
+.slide-item .slide-img{width: 100%; height: 460px;}
 .slide-item .slide-img img{position: absolute; top: 50%; left: 50%; width: 100%; vertical-align: middle; transform: translate(-50%, -50%);}
 .slick-prev, .slick-next{z-index: 10;}
 .slick-prev{left:20px !important;}
