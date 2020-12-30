@@ -565,6 +565,12 @@
         //adaptiveHeight: true
     });
 	</script>
+<!-- accordion 열림고정	-->
+    <script>
+        $('.horizontal_accordion ul li').on('click', function() {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+    </script>
 	<footer class="footer">
 		<article class="container">
 			<div class="row footer_contents company_polices">
