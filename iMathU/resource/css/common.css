@@ -1254,7 +1254,10 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 	.math-problem_contents table thead .solve{width:164px;}
 }
 
-@media screen and (max-width:980px){
+@media screen and (max-width: 1024px){	
+	.top_contents .content_left{padding: 60px 0;}
+	.top_contents .content_title h2{font-size: 42px; font-size: 4.2rem;}
+	.top_contents .content_description p{font-size: 20px; font-size: 2.0rem;}
 	.question_item .objective_item .multiple-choice li .answer_text{width: 85%;}
 	.math-problem_contents table thead .answer{width:80px;}
 	.math-problem_contents table thead .solve{width:80px;}
@@ -1268,8 +1271,8 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 	.recruit_teacher .contnet-item dl{padding-left: 290px;}
 	.services_area .col-4{width:50%;}
 	.test_start .test_list-sytle .list-item ul li{font-size: 16px; font-size: 1.6rem;}
-	
 }
+
 @media screen and (max-width:768px){
 	.study-info .contnet-item .btn-group .btn-sm{padding: 3px 10px !important; font-size: 13px !important; font-size:1.3rem !important;}
 	.table-style_lecture thead .solve{width: 24%;}
