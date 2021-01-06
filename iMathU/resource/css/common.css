@@ -1256,8 +1256,8 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 
 @media screen and (max-width: 1024px){	
 	.top_contents .content_left{padding: 60px 0;}
-	.top_contents .content_title h2{font-size: 42px; font-size: 4.2rem;}
-	.top_contents .content_description p{font-size: 20px; font-size: 2.0rem;}
+	.top_contents .content_title h2{font-size: 40px; font-size: 4.0rem;}
+	.top_contents .content_description p{font-size: 1.8px; font-size: 1.8rem;}
 	.question_item .objective_item .multiple-choice li .answer_text{width: 85%;}
 	.math-problem_contents table thead .answer{width:80px;}
 	.math-problem_contents table thead .solve{width:80px;}
