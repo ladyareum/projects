@@ -341,7 +341,7 @@ table thead .date{width: 120px}
 .gnb{position: relative; overflow: hidden; width: 100%; height: 88px; border-bottom:3px solid #ff6d37; vertical-align: middle;}
 .gnb .banner_area{width: 200px; height: 64px; background: #ddd; margin: 12px 0px;}
 .gnb .banner_left{}
-.gnb .brand_center{display:block; width: 100%; height: 64px; text-align: center; vertical-align: middle; margin: 12px 0px; padding: 0 200px;}
+.gnb .brand_center{display:block; width: 100%; height: 64px; text-align: center; vertical-align: middle; margin: 12px 0px; /* padding: 0 200px; */}
 .gnb .brand_center .gnb-logo{display: inline-block; width: 100%;line-height: 4; vertical-align: middle;}
 .gnb .banner_event{position: absolute; top:0; right: 0;}
 .nav-bar{display:block; background-color: #fff; border-bottom: 1px solid #ddd;}
