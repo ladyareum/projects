@@ -327,7 +327,10 @@ table thead .date{width: 120px}
 .container{position:relative; width: 100%; max-width: 1280px; min-width: 768px; margin: 0 auto; padding:0px 20px;}
 .container:after{content:""; display:block; clear:both;}
 .top_banner{position:relative; text-align: center; background:#3b393a;}
-.top_banner a{position:relative; width: 100%; height:100px;}
+.top_banner.bg_color{background: #f85f4f;}
+.top_banner .inner{padding:0;}
+.top_banner a{display:block; position:relative; width: 100%;}
+.top_banner a img{width: 100%;}
 .header{position:relative; width:100%; height: 100%; background-color: #fff; clear: both; z-index:999;}
 .header .top_gnb{position: relative; width: 100%; background: #f7f7f7; text-align: right; padding: 10px 0;}
 .top_gnb .personal_area, .top_gnb .support_area{display: inline-block; font-size: 13px; font-size: 1.3rem; margin-left:20px;}
@@ -339,7 +342,7 @@ table thead .date{width: 120px}
 .gnb .banner_area{width: 200px; height: 64px; background: #ddd; margin: 12px 0px;}
 .gnb .banner_left{}
 .gnb .brand_center{display:block; width: 100%; height: 64px; text-align: center; vertical-align: middle; margin: 12px 0px; padding: 0 200px;}
-.gnb .brand_center .gnb-logo{position: relative; overflow: hidden; width: 100%; height: 52px; line-height: 4;}
+.gnb .brand_center .gnb-logo{display: inline-block; width: 100%;line-height: 4; vertical-align: middle;}
 .gnb .banner_event{position: absolute; top:0; right: 0;}
 .nav-bar{display:block; background-color: #fff; border-bottom: 1px solid #ddd;}
 .nav-bar .menu-list{position: relative; overflow: hidden; text-align: center;}
@@ -523,6 +526,7 @@ table thead .date{width: 120px}
 .login_style{position: relative; width:800px; margin:0 auto; padding: 80px 0;}
 .login_style  .login-form{position: relative; width:100%; height:300px;}
 .login_style .login_ad-banner{position: relative; width:360px; height:300px; margin:0 auto; background: #f5f5f5;}
+.login_style .login_ad-banner a{display:block; position: relative;}
 .login_style .form-group{margin-bottom: 10px;}
 .login_style .check_in{position: relative; overflow:hidden;}
 .login_style .check_in .login_link{text-align: right;}
@@ -1277,6 +1281,3 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
     .test_start .test_list-sytle .list-item ul li{font-size: 16px; font-size: 1.6rem;}
     
     
-
-/* top_banner */
-.top_banner.bg_color{background: #030e14;}
