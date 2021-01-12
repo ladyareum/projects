@@ -311,15 +311,17 @@ table thead .date{width: 120px}
 .pagination li.active a{background: #fff; border: 1px solid #fff; color: #3b393a; font-weight: 700;}
 .pagination .pages li a{width: 28px; height: 28px;}
 .pagination .previous li a, .pagination .next li a{padding: 4px 8px;}
+.pagination .form_selectbox{padding:3px 0;}
+.pagination .form_selectbox .select-style{height: 28px;}
 .pagination_style01{justify-content: flex-end;}
 .pagination_style01 .paginate_counter{height: 30px; font-size: 14px; font-size: 1.4rem; line-height: 2.4;}
 .pagination_style01 .paginate{display: flex; display: -webkit-flex; justify-content: flex-end;; -webkit-justify-content: flex-end;;}
-.pagination_style01 .paginate li{margin-left: 2rem;}
+.pagination_style01 .paginate li{margin-left: 1rem;}
 .pagination_style01 .paginate .previous, .pagination_style01 .paginate .next{width: 30px; height: 30px; background: #f7f7f7;}
 .pagination_style01 .paginate .previous:after{content: " "; position: absolute; width: 10px; height: 10px; left: 12px; border-right: 1px solid #626061; border-bottom: 1px solid #626061; margin-top: 4px; transform: rotate(135deg); transition: all .2s ease-in-out;}
 .pagination_style01 .paginate .next:after{content: " "; position: absolute; width: 10px; height: 10px; right: 12px; border-right: 1px solid #626061; border-bottom: 1px solid #626061; margin-top: 4px; transform: rotate(-45deg); transition: all .2s ease-in-out;}
 .pagination_style01 .paginate .previous:hover:after, .pagination_style01 .paginate .next:hover:after{border-right: 2px solid #3b393a; border-bottom: 2px solid #3b393a;}
-
+.pagination_style01 .form_selectbox{margin-left: 5px;}
 
 /* Custom layout */
 .wrapper{position:relative; /* min-height: 100%; */}
@@ -1261,7 +1263,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 }
 
 @media screen and (max-width:980px){
-	.top_contents .content_title h2{font-size: 38px; font-size: 3.8rem;}
+	.top_contents .content_title h2{font-size: 34px; font-size: 3.4rem;}
 	.top_contents .content_description p{font-size: 18px; font-size: 1.8rem;}
 	.question_item .objective_item .multiple-choice li .answer_text{width: 85%;}
 	.math-problem_contents table thead .answer{width:80px;}
