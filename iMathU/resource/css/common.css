@@ -343,13 +343,13 @@ table thead .date{width: 120px}
 .gnb{position: relative; overflow: hidden; width: 100%; height: 88px; border-bottom:3px solid #ff6d37; vertical-align: middle;}
 .gnb .banner_area{width: 200px; height: 64px; background: #ddd; margin: 12px 0px;}
 .gnb .banner_left{}
-.gnb .brand_center{display:block; width: 100%; height: 64px; text-align: center; vertical-align: middle; margin: 12px 0px; /* padding: 0 200px; */}
-.gnb .brand_center .gnb-logo{display: inline-block; width: 100%;line-height: 4; vertical-align: middle;}
+.gnb .brand_center{display:block; width: 100%; height: 64px; max-width: 1280px; min-width: 768px; text-align: center; vertical-align: middle; margin: 12px auto; /* padding: 0 200px; */}
+.gnb .brand_center .gnb-logo{display: inline-block; line-height: 4; vertical-align: middle;}
 .gnb .banner_event{position: absolute; top:0; right: 0;}
 .nav-bar{display:block; background-color: #fff; border-bottom: 1px solid #ddd;}
 .nav-bar .menu-list{position: relative; overflow: hidden; text-align: center;}
 .nav-bar .menu-list .list-item{display: inline-block; width: 120px; height: 56px; margin: 0 20px; padding: 0;}
-.nav-bar .menu-list .list-item a{font-size: 18px; font-size: 1.8rem; line-height: 3.5; font-weight:500; transition: all .2s ease-in-out;}
+.nav-bar .menu-list .list-item a{font-size: 18px; font-size: 1.8rem; line-height: 3; font-weight:500; transition: all .2s ease-in-out;}
 .nav-bar .menu-list .list-item a:hover{color: #ff6d37; text-decoration: none;}
 .nav-bar .menu-list .list-item.active a{color: #ff6d37;}
 .support_area{position: absolute; height: 60px; top:0; right:0; padding:0 20px;}
@@ -894,11 +894,11 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .support-center .sc-info ul li{font-size:16px ; font-size:1.6rem;}
 .support-center .sc_content .col-7{width:65%;}
 .support-center .sc_content .col-3{width:35%;}
-.support-center .cs_inquiry{position: relative;border: 1px solid #c9caca; padding:20px 20px;}
+.support-center .cs_inquiry{position: relative;border: 1px solid #efefef; padding:20px 20px;}
 .support-center .cs_inquiry .contnet-item{display:inline-block; position: relative; width:100%;}
-.support-center .cs_inquiry .cs_img{position:relative; height: 120px; float: left; padding-right: 40px; }
-.support-center .cs_inquiry .cs_info{position: relative; width:100%;}
-.support-center .cs_inquiry .cs_info .item-header{display: inline-block; font-size: 20px; font-size: 2rem; font-weight: 700; padding-bottom: 10px;}
+.support-center .cs_inquiry .cs_img{position:relative; height: 110px; float: left;}
+.support-center .cs_inquiry .cs_info{position: relative; width:100%; padding-left:80px;}
+.support-center .cs_inquiry .cs_info .item-header{display: inline-block; font-size: 16px; font-size: 1.6rem; font-weight: 500; padding-bottom: 5px;}
 .support-center .cs_inquiry .cs_info .item-sub, .support-center .cs_inquiry .cs_info .btn-area{padding:5px 0;}
 .support_notice .content-header{background:#fff; border-bottom: 1px dotted #9c9c9c; text-align: left; margin: 0; margin-bottom: 10px; padding: 5px 0 5px;}
 .support_notice .content-header .content_heading{display: inline-block; font-size: 16px; font-size: 1.6rem; font-weight: 500; line-height: 1.8;}
@@ -908,11 +908,11 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .support_notice .notice_list li .date{float: right; text-align: right; padding: 0 8px;}
 .support-center .search-area{position: relative; max-width: 920px; margin: 40px auto;}
 .support-center .search-area .search-title-area{display:inline-block; margin-right: 20px;vertical-align: middle;} 
-.support-center .search-area .search-title-area .search-title{font-size:25px;font-size: 2.5rem; font-weight:700;line-height: 50px;}
-.support-center .form-control{height:50px;border-color:#3b393a;}
-.support-center .link-list>dt{display:block;font-size:1.6rem;padding:8px 0px;font-weight:600; color: #ff6d37; border-bottom: 1px solid #c9caca}
-.support-center .link-list>dd>a{display:block;font-size:1.4rem;line-height: 1.6;margin:8px 0px;}
-.support-center .link-list>dd>a:before{content:'';display: inline-block;vertical-align: middle;margin-right:4px;width:3px; height:3px; background:#6b6b6b;}
+.support-center .search-area .search-title-area .search-title{font-size:24px;font-size: 2.4rem; font-weight:700;line-height: 50px;}
+.support-center .form-control{height:50px; border-color:#3b393a;}
+.support-center .link-list>dt{display:block; font-size:16px; font-size:1.6rem; border-bottom: 1px solid #c9caca; padding:8px 0; margin-bottom: 8px;}
+.support-center .link-list>dd>a{display:block; font-size:14px; font-size:1.4rem; line-height: 1.6;}
+.support-center .link-list>dd>a:before{content:' ';display: inline-block; position: relative; top:-1px; vertical-align: middle; margin-right:8px; width:3px; height:3px; background:#c9caca;}
 .support-center .search-form{display: inline-block; width: calc(100% - 224px);}
 .support-center .search-control-area{display: inline-block;width:calc(100% - 68px);float: left;}
 .support-center .search-btn-area{display: inline-block;}
@@ -1156,13 +1156,13 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .middle_visual .single-services p{font-size: 16px;}
 .middle_visual .single-services:hover .service-icon{background: deepskyblue; color:#fff; transition: all 0.4s ease;}
 
-.services_area .services-item{position: relative; overflow: hidden; margin-bottom:20px;}
+.services_area .services-item{position: relative; overflow: hidden; margin-bottom:20px; box-sizing: content-box;}
 .services_area .services-item {border: 3px solid #efefef; background: #fff;}
 .services_area .services-item .service-header{position: relative; overflow: hidden; background: #efefef; text-align: center; padding: 10px 20px;}
 .services_area .services-item .service-header .service-icon{display: inline-block; width: 48px; height: 48px; background: #fff; border-radius: 50%; }
 .services_area .services-item .service-header .service-icon span{position: relative; top:5px; width: 36px; font-size: 36px;}
 .services_area .services-item .service-header h2{display: inline-block; position: relative; top:-4px; font-size: 22px; font-size: 2.2rem; font-weight: 700; color: #fff; margin-left: 10px;}
-.services_area .services-item .service-text {height: 280px; padding: 20px;}
+.services_area .services-item .service-text {padding: 20px;}
 .services_area .services-item .service-text .headline{font-size: 18px; font-weight: 500; margin-bottom: 20px;}
 .services_area .services-item .service-text p{font-size: 16px; font-size: 1.6rem; letter-spacing: -1px; padding-bottom: 10px;}
 .services_area .services-item.border_point{border: 1px solid #ff6d37;}

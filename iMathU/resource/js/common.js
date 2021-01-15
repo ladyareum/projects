@@ -102,3 +102,12 @@ $(".form_file").on("change", ".file-field", function(){
 $('a[href="#"]').click(function(e) {
 	e.preventDefault();
 });
+
+// services-item 높이 맞추기
+$(document).ready( function(){ 
+    var heightArray = $(".services-item .service-text").map( function(){ 
+             return  $(this).height(); 
+    }).get(); 
+  var maxHeight = Math.max.apply( Math, heightArray); 
+ $(".services-item .service-text").height(maxHeight); 
+})
