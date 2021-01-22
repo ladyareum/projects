@@ -311,7 +311,7 @@ table thead .date{width: 120px}
 .pagination li.active a{background: #fff; border: 1px solid #fff; color: #3b393a; font-weight: 700;}
 .pagination .pages li a{width: 28px; height: 28px;}
 .pagination .previous li a, .pagination .next li a{padding: 4px 8px;}
-.pagination .form_selectbox{padding:3px 0;}
+.pagination .form_selectbox{margin-right:10px; padding:3px 0;}
 .pagination .form_selectbox .select-style{height: 28px;}
 .pagination_style01{justify-content: flex-end;}
 .pagination_style01 .paginate_counter{height: 30px; font-size: 14px; font-size: 1.4rem; line-height: 2.4;}
@@ -321,7 +321,7 @@ table thead .date{width: 120px}
 .pagination_style01 .paginate .previous:after{content: " "; position: absolute; width: 10px; height: 10px; left: 12px; border-right: 1px solid #626061; border-bottom: 1px solid #626061; margin-top: 4px; transform: rotate(135deg); transition: all .2s ease-in-out;}
 .pagination_style01 .paginate .next:after{content: " "; position: absolute; width: 10px; height: 10px; right: 12px; border-right: 1px solid #626061; border-bottom: 1px solid #626061; margin-top: 4px; transform: rotate(-45deg); transition: all .2s ease-in-out;}
 .pagination_style01 .paginate .previous:hover:after, .pagination_style01 .paginate .next:hover:after{border-right: 2px solid #3b393a; border-bottom: 2px solid #3b393a;}
-.pagination_style01 .form_selectbox{margin-left: 5px;}
+.pagination_style01 .form_selectbox{margin-left: 5px; margin-right:0;}
 
 /* Custom layout */
 .wrapper{position:relative; /* min-height: 100%; */}
@@ -343,8 +343,8 @@ table thead .date{width: 120px}
 .gnb{position: relative; overflow: hidden; width: 100%; height: 88px; border-bottom:3px solid #ff6d37; vertical-align: middle;}
 .gnb .banner_area{width: 200px; height: 64px; background: #ddd; margin: 12px 0px;}
 .gnb .banner_left{}
-.gnb .brand_center{display:block; width: 100%; height: 64px; max-width: 1280px; min-width: 768px; text-align: center; vertical-align: middle; margin: 12px auto; /* padding: 0 200px; */}
-.gnb .brand_center .gnb-logo{display: inline-block; line-height: 4; vertical-align: middle;}
+.gnb .brand_center{display:block; width: 100%; height: 88px; max-width: 1280px; min-width: 768px; text-align: center; vertical-align: middle; margin: 0 auto;}
+.gnb .brand_center .gnb-logo{display: inline-block; position: relative; top:20px; vertical-align: middle;}
 .gnb .banner_event{position: absolute; top:0; right: 0;}
 .nav-bar{display:block; background-color: #fff; border-bottom: 1px solid #ddd;}
 .nav-bar .menu-list{position: relative; overflow: hidden; text-align: center;}

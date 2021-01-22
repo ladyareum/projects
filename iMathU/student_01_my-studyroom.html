@@ -14,6 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="./resource/font/NotoSans/notosans.css">
 		<link rel="stylesheet" type="text/css" href="./resource/css/common.css">	
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="shortcut icon" href="./resource/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="./resource/images/favicon.ico" type="image/x-icon">
 	</head>
 	
 	<body>
@@ -26,69 +28,65 @@
 				</div>
 			</div>
 			<header class="header">
-				<div class="">
-					<div class="container">
-						<div class="top_gnb pull-right">
-							<div class="personal_area">
-								<div class="login">
-									<span>
-										<a href="#">로그인</a>
-									</span>
-									<span class="divi-vertical"></span>
-									<span>
-										<a href="#">회원가입</a>
-									</span>
-								</div>
-								<div class="logout hide">
-									<span>
-										<a href="#">
-											<span class="user-name">홍길동님</span>
-											<span>환영합니다.</span>
-										</a>
-									</span>
-									<span class="divi-vertical"></span>
-									<span>
-										<a href="#">마이페이지</a>
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="gnb">
-							<div class="banner_area banner_left pull-left">
-								<a href="#" class="">
-									<img src="">
-								</a>
-							</div>
-							<div class="brand_center">
-								<a href="#" class="gnb-logo">
-									<img src="./resource/images/header-logo.png" width="200" height="64" alt="개념원리">
-								</a>
-							</div>
-							<div class="banner_area banner_event pull-right">
-								<a href="#" class="">
-									<img src="">
-								</a>
-							</div>
-						</div>										
-					</div>
-				</div>
+			    <div class="top_gnb pull-right">
+                    <div class="inner">
+                        <div class="personal_area">
+                            <div class="login">
+                                <span>
+                                    <a href="#">로그인</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">회원가입</a>
+                                </span>
+                            </div>
+                            <div class="logout hide">
+                                <span>
+                                    <a href="#">
+                                        <span class="user-name">홍길동님</span>
+                                        <span>환영합니다.</span>
+                                    </a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">마이페이지</a>
+                                </span>
+                            </div>
+                            <span class="divi-vertical"></span>
+                            <span>
+                                <a href="#">온라인서점</a>
+                            </span>
+                            <span class="divi-vertical"></span>
+                            <span>
+                                <a href="#">고객센터</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb">
+                    <div class="banner_area banner_left pull-left hide">
+                        <a href="#" class="">
+                            <img src="#">
+                        </a>
+                    </div>
+                    <div class="brand_center">
+                        <a href="#" class="gnb-logo">
+                            <img src="./resource/images/header-logo.png" width="120" alt="개념원리">
+                        </a>
+                    </div>
+                    <div class="banner_area banner_event pull-right hide">
+                        <a href="#" class="">
+                            <img src="#">
+                        </a>
+                    </div>
+                </div>
 				<div class="nav-bar menu_style01">
-					<div class="container">
+					<div class="inner">
 						<ul class="menu-list">
-							<li class="list-item"><a href="#">내 진단테스트</a></li>
+							<li class="list-item"><a href="#">내 진단 테스트</a></li>
 							<li class="list-item active"><a href="#">내 공부방</a></li>
 							<li class="list-item"><a href="#">수강신청</a></li>
-							<li class="list-item"><a href="#">온라인서점</a></li>
 						</ul>
-						<div class="support_area pull-right">
-							<span>
-								<a href="#">학습지원센터</a>
-							</span>
-							<span class="divi-vertical"></span>
-							<span>
-								<a href="#">코치지원센터</a>
-							</span>
-						</div>	
 					</div>
 				</div>
 			</header>
@@ -210,7 +208,7 @@
 								<div class="tab-content active" id="tab_01_1">
 									<div class="content-item">
 										<div class="content-header line-sytle">
-											<h3 class="content_heading">주간 학습전달 사항</h3>
+											<h3 class="content_heading">주간 학습 전달사항</h3>
 											<div class="option-area fl-r">
 												<a href="#" class="link-text">+ 더보기</a>
 											</div>
@@ -237,7 +235,7 @@
 									<!-- 컨텐츠가 없을때, 리스트  버전 -->
 									<div class="content-item">
 										<div class="content-header line-sytle">
-											<h3 class="content_heading">주간 학습전달 사항</h3>
+											<h3 class="content_heading">주간 학습 전달사항</h3>
 											<div class="option-area fl-r">
 												<a href="#" class="link-text">+ 더보기</a>
 											</div>
@@ -420,6 +418,15 @@
 											</form>
 											<div class="board-pagination">
 												<div class="pagination">
+													<label class="form_selectbox">
+                                                        <select name="page-show" class="form-control select-style">
+                                                            <option value="" selected="">10</option>
+                                                            <option value="">20</option>
+                                                            <option value="">30</option>
+                                                            <option value="">50</option>
+                                                            <option value="">100</option>
+                                                        </select>
+                                                    </label> 
 													<ul class="previous">
 														<li><a href="">이전</a></li>
 													</ul>
@@ -438,15 +445,6 @@
 													<ul class="next">
 														<li><a href="">다음</a></li>
 													</ul>
-													<label class="form_selectbox">
-                                                        <select name="page-show" class="form-control select-style">
-                                                            <option value="" selected="">10</option>
-                                                            <option value="">20</option>
-                                                            <option value="">30</option>
-                                                            <option value="">50</option>
-                                                            <option value="">100</option>
-                                                        </select>
-                                                    </label> 
 												</div>
 											</div>
 											<div class="board-pagination">
