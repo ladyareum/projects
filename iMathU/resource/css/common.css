@@ -550,13 +550,13 @@ table thead .date{width: 120px}
 /* Agreement on Terms and Conditions */
 .agree_style .agree-item .required{background: #fff7f4; border: 1px solid #ff6d37;}
 .agree_style{position: relative; width: 100%;}
-.agree_style .agree-item{position: relative; margin-bottom: 20px;}
+.agree_style .agree-item{position: relative; margin-bottom: 10px;}
 .agree_style .agree-item .agree-head{display: block;position: relative;background: #fff;border: 1px solid #efefef;font-size: 14px;font-size: 1.4rem;font-weight: 700; margin-bottom: -1px; padding: 10px 20px;}
 .agree_style .agree-item .required{background: #fff7f4; border: 1px solid #ff6d37; z-index: 10;}
 .agree_style .agree-contents{display: block; width: 100%; height: auto; background: #fff; border: 1px solid #efefef; margin-top: -1px;}
 .agree_style .agree_content{display: block; width: 100%; height: auto; background: #fff;}
 .agree_style .agree_content .check_form-group .m-checkbox{font-weight: 400;}
-.agree_style .agree_all label{font-size: 16px; font-size: 1.6rem; margin-bottom: 15px;}
+.agree_style .agree_all label{font-size: 16px; font-size: 1.6rem; margin:10px 0;}
 .agree_style .agree_all .m-checkbox span{top: 5px;}
 .agree_style .agreement_title{margin-bottom:10px;}
 .agree_style .check_form-group .m-checkbox{font-size:14px; font-size:1.4rem; font-weight: 500; line-height: 1.4; color: #3b393a;}
@@ -947,7 +947,8 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .price_table .discount{color: #ff6d37; font-size: 16px; font-size: 1.6rem; font-weight: 500; margin-left:10px;}
 .price_table .price{font-size: 26px; font-size:2.6rem; font-weight: 700; margin: 20px 0;}
 
-
+.deduction-payment .step-list{background: #f7f7f7; margin: 10px 0; padding:10px 10px;}
+.deduction-payment .btn-box{text-align: center; padding: 55px 0;}
 
 /* table style purchase */
 .table-style_purchase thead .title{width: 40%;}
