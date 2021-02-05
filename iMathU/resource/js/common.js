@@ -111,3 +111,26 @@ $(document).ready( function(){
   var maxHeight = Math.max.apply( Math, heightArray); 
  $(".services-item .service-text").height(maxHeight); 
 })
+
+
+// Header Login Layer
+//$(document).on('click', '.user-info', function(){
+//	$('.user-info').toggleClass('show');
+//	$('.layer_box').toggleClass('on');
+//});
+$(".user-info").click(function(event){
+	event.stopPropagation();
+	$(".user-info").toggleClass("show");
+	$('.layer_box').toggleClass('on');
+});
+$('body').on('click', function(e){
+    var $tgPoint = $(e.target);
+    var $popCallBtn = $tgPoint.hasClass('user-info')
+    var $popArea = $tgPoint.hasClass('layer_box')
+ 
+    if ( !$popCallBtn && !$popArea ) {
+    	$(".user-info").removeClass("show");
+        $('.layer_box').removeClass('on');
+    }
+});
+

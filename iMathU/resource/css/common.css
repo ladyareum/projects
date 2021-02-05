@@ -1290,5 +1290,50 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 	.recruit_teacher .contnet-item dl{padding-left: 230px;}
     .middle_visual .content-item .services_area .col-4{width: 50%;}
     .test_start .test_list-sytle .list-item ul li{font-size: 16px; font-size: 1.6rem;}
-    
+}
+
+
+/* header style */
+.header_style01{display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; height:88px; top:0; background: #fff; border-bottom: 3px solid #ff6d37; -webkit-transition: background .25s ease-out,height .25s ease-out,-webkit-transform .3s ease-out; transition: background .25s ease-out,height .25s ease-out,-webkit-transform .3s ease-out; transition: background .25s ease-out,height .25s ease-out,transform .3s ease-out; transition: background .25s ease-out,height .25s ease-out,transform .3s ease-out,-webkit-transform .3s ease-out; z-index:10;}
+.header_style01 .inner{overflow:inherit;}
+.header_style01 .gnb-logo{display: block; position: absolute; top:50%; width: 140px;text-align: left; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transition: margin-top .25s ease-out; transition: margin-top .25s ease-out; margin-left: auto; margin-right: auto;}
+.header_style01 .nav_category{position: absolute; left: 160px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transition: margin-top .25s ease-out; transition: margin-top .25s ease-out;}
+.header_style01 .navbar-right{position: absolute; top:50%; right: 0;  -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transition: margin-top .25s ease-out; transition: margin-top .25s ease-out; margin-right: 20px; }
+
+.header_style02{position:relative; width:100%; height: 100%; background-color: #fff; clear: both; z-index:999;}
+.header_style02 .inner{overflow:inherit;}
+.header_style02 .top_gnb{position: relative; width: 100%; background: #f7f7f7; text-align: right; padding: 6px 0;}
+.header_style02 .gnb{display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; height:60px; top:0; background: #fff; border-bottom: 3px solid #ff6d37; -webkit-transition: background .25s ease-out,height .25s ease-out,-webkit-transform .3s ease-out; transition: background .25s ease-out,height .25s ease-out,-webkit-transform .3s ease-out; transition: background .25s ease-out,height .25s ease-out,transform .3s ease-out; transition: background .25s ease-out,height .25s ease-out,transform .3s ease-out,-webkit-transform .3s ease-out; z-index:10;}
+.header_style02 .gnb .gnb-logo{display: block; position: absolute; top:50%; width: 120px; text-align: left; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transition: margin-top .25s ease-out; transition: margin-top .25s ease-out; margin-left: auto; margin-right: auto;}
+.header_style02 .gnb .nav_category{position: absolute; left: 140px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transition: margin-top .25s ease-out; transition: margin-top .25s ease-out;}
+.header_style02 .gnb .navbar-right{position: absolute; top:50%; right: 0;  -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transition: margin-top .25s ease-out; transition: margin-top .25s ease-out; margin-right: 20px; }
+.header_style02 .top_gnb .personal_area .about-style{color: #ff6d37; font-weight: 500;}
+
+.header_style02 .gnb .navbar-right .personal_area{display: inline-block;}
+.menu-list{position: relative; overflow: hidden;}
+.menu-list .list-item{display: inline-block; margin: 0 10px; padding: 0;}
+.menu-list .list-item a{font-size: 16px; font-size: 1.6rem; line-height: 3.5; font-weight:500; transition: all .2s ease-in-out;}
+.menu-list .list-item a:hover{color: #ff6d37; text-decoration: none;}
+.menu-list .list-item.active a{color: #ff6d37;}
+
+.personal_area .personal-list{position: relative;}
+.personal_area .personal-list a:hover{text-decoration: none;}
+.personal_area .personal-list .list-item{display: inline-block; margin: 0 5px; padding: 0;}
+.personal_area .personal-list .list-item a{font-size: 13px; font-size: 1.3rem; line-height: 3.4; transition: all .2s ease-in-out;}
+.personal_area .personal-list .about-style{color: #ff6d37; font-weight: 500;}
+
+
+.user-info{position: relative; cursor: pointer;} 
+.user-info .img-profile{width:26px; height:26px; border-radius:50%; margin-right:5px;}
+.user-info .user-id{position: relative; vertical-align: middle;}
+.user-info .user-id .icon-arr{display: inline-block; position: relative; vertical-align: middle; margin: 0 5px;}
+.user-info .user-id .arr-down{width: 0; height: 0; border-color: #3b393a transparent transparent; border-style: solid; border-width: 5px 4px 0;}
+.layer_box{display:none; position: absolute; top:30px; right:0; min-width:140px;}
+.layer_box.on{display:block;}
+.layer_box.on .user-list{background:#fff; border:1px solid #efefef;}
+.personal_area .personal-list .user-list li{padding: 5px 10px;}
+.personal_area .personal-list .user-list li:hover{background:#f7f7f7;}
+.personal_area .personal-list .user-list li a{font-size:13px; font-size:1.3rem; line-height: 1.4;}
+
+
     
