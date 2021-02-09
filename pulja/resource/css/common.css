@@ -1354,29 +1354,29 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .color-sytle{}
 .color-sytle li{display: inline-block;}
 .font-color{color: #fff;}
-.brand{background: #ff6d37;} 
-.brand:hover{background: #ff6d37;} 
+.brand{background: #ff6d37; border: 1px solid #ff6d37;} 
+.brand:hover{background: #ff6229; border: 1px solid #ff6229;} 
 .default{background: #fff; border: 1px solid #626061; color:#626061;}
 .default:hover{background: #fff; border: 1px solid #626061; color:#626061;}
-.primary{background: #74afcd;}
-.primary:hover{background: #5a98b7;}
+.primary{background: #74afcd; border: 1px solid #74afcd;}
+.primary:hover{background: #5a98b7; border: 1px solid #5a98b7;}
 .primary_ghost{background: #fff; border:1px solid #74afcd; color: #74afcd;}
 .primary_ghost:hover{background: #fff; border:1px solid #5a98b7; color: #5a98b7;}
-.secondary{background: #8ab669;} 
-.secondary:hover{background: #73a250;} 
+.secondary{background: #8ab669; border: 1px solid #8ab669;} 
+.secondary:hover{background: #73a250; border: 1px solid #73a250;} 
 .secondary_ghost{background: #fff; border:1px solid #8ab669; color:#8ab669;} 
 .secondary_ghost:hover{background: #fff; border:1px solid #73a250; color:#73a250;}
-.tertiary{background: #f9be62;}
-.tertiary:hover{background: #eaad4e;}
-.tertiary2{background: #a285bd;}
-.tertiary2:hover{background: #9170b0;}
+.tertiary{background: #f9be62; border: 1px solid #f9be62;}
+.tertiary:hover{background: #eaad4e; border: 1px solid #eaad4e;}
+.tertiary2{background: #a285bd; border: 1px solid #a285bd;}
+.tertiary2:hover{background: #9170b0; border: 1px solid #9170b0;}
 
-.primary2{background: #599daa;}
-.primary2:hover{background: #427882;}
+.primary2{background: #599daa; border: 1px solid #599daa;}
+.primary2:hover{background: #427882; border: 1px solid #427882;}
 .primary2_ghost{background: #fff; border:1px solid #599daa; color: #599daa;}
 .primary2_ghost:hover{background: #fff; border:1px solid #427882; color: #427882;}
-.secondary2{background: #45c2ec;} 
-.secondary2:hover{background: #24addb;} 
+.secondary2{background: #45c2ec; border: 1px solid #45c2ec;} 
+.secondary2:hover{background: #24addb; border: 1px solid #24addb;} 
 .secondary2_ghost{background: #fff; border:1px solid #45c2ec; color:#45c2ec;} 
 .secondary2_ghost:hover{background: #fff; border:1px solid #24addb; color:#24addb;} 
 
