@@ -1350,5 +1350,33 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .personal_area .personal-list .user-list li:hover{background:#f7f7f7;}
 .personal_area .personal-list .user-list li a{font-size:13px; font-size:1.3rem; line-height: 1.4;}
 
+/* color */
+.brand{background: #ff6d37;} 
+.brand:hover{background: #ff6d37;} 
+.default{background: #fff; border: 1px solid #626061; color:#626061;}
+.default:hover{background: #fff; border: 1px solid #626061; color:#626061;}
+.primary{background: #74afcd;}
+.primary:hover{background: #5a98b7;}
+.primary_ghost{background: #fff; border:1px solid #74afcd; color: #74afcd;}
+.primary_ghost:hover{background: #fff; border:1px solid #5a98b7; color: #5a98b7;}
+.secondary{background: #8ab669;} 
+.secondary:hover{background: #73a250;} 
+.secondary_ghost{background: #fff; border:1px solid #8ab669; color:#8ab669;} 
+.secondary_ghost:hover{background: #fff; border:1px solid #73a250; color:#73a250;}
+.tertiary{background: #f9be62;}
+.tertiary:hover{background: #eaad4e;}
+.tertiary2{background: #a285bd;}
+.tertiary2:hover{background: #9170b0;}
 
-    
+.primary2{background: #599daa;}
+.primary2:hover{background: #427882;}
+.primary2_ghost{background: #fff; border:1px solid #599daa; color: #599daa;}
+.primary2_ghost:hover{background: #fff; border:1px solid #427882; color: #427882;}
+.secondary{background: #45c2ec;} 
+.secondary:hover{background: #24addb;} 
+.secondary_ghost{background: #fff; border:1px solid #45c2ec; color:#45c2ec;} 
+.secondary_ghost:hover{background: #fff; border:1px solid #24addb; color:#24addb;} 
+
+
+
+
