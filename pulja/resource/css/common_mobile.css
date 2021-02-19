@@ -184,10 +184,10 @@ a.disabled{pointer-events: none;}
 /* Btn Exception */
 .btn-default{background:#fff; border:1px solid #c9caca; color:#626061;}
 .btn-default:hover{background:#fff; border:1px solid #3b393a; color:#3b393a;}
-.btn-orange, .btn-apply{background:#ff6d37; border:1px solid #ff6d37; color:#fff;}
-.btn-orange:hover, .btn-apply:hover{background:#ff6127; border:1px solid #ff6127;}
-.btn-orange_outline, .btn-apply_outline{background:#fff; border:1px solid #ff6d37; color:#ff6d37;}
-.btn-orange_outline:hover, .btn-apply_outline:hover{background : #ff6d37; color:#fff;} 
+.btn-brand, .btn-apply{background:#ff6d37; border:1px solid #ff6d37; color:#fff;}
+.btn-brand:hover, .btn-apply:hover{background:#ff6127; border:1px solid #ff6127;}
+.btn-brand_outline, .btn-apply_outline{background:#fff; border:1px solid #ff6d37; color:#ff6d37;}
+.btn-brand_outline:hover, .btn-apply_outline:hover{background : #ff6d37; color:#fff;} 
 .btn-primary{background:#00c18c; border:1px solid #00c18c; color:#fff;}
 .btn-primary:hover{background:#00ad7e; border:1px solid #00ad7e;}
 .btn-primary_outline{background:#fff; border:1px solid #00c18c; color:#00c18c;}
