@@ -112,8 +112,8 @@ h7{font-size:12px; font-size: 1.2rem;}
 .fl-r{float:right !important;}
 
 /* Responsive Layout Column Grid  */
-.row {position: relative; overflow: hidden; margin-left: -10px; margin-right: -10px; /* margin-bottom: 20px; */}
-.row [class*="col-"]{position: relative; float: left; min-height: 1px; padding-left: 10px; padding-right: 10px;}
+.row {position: relative; overflow: hidden; margin-left: -20px; margin-right: -20px; /* margin-bottom: 20px; */}
+.row [class*="col-"]{position: relative; float: left; min-height: 1px; padding-left: 20px; padding-right: 20px;}
 .col-xs-12{width: 100%;}
 .col-xs-11 {width: 91.67%;}
 .col-xs-10 {width: 83.33%;}
@@ -238,7 +238,7 @@ a.disabled{pointer-events: none;}
 .text-secondary{color:#8ab669 !important;}
 .text-tertiary{color:#f9be62 !important}
 .text-tertiary2{color:#a285bd !important;}
-.text-dark{color:#3b393a !important;}
+.text-dark{color:#626061 !important;}
 .text-gray{color:#9fa0a0 !important;}
 .text-lightgray, .text-info{color:#bcbcbc !important;}
 .text-danger{color:#ff1313!important}
@@ -274,7 +274,7 @@ a.disabled{pointer-events: none;}
 .m-checkbox-inline, .m-radio-inline{display: inline-block;}
 .m-checkbox-inline .m-checkbox, .m-radio-inline .m-radio, .m-checkbox input:checked~span:after, .m-radio>input:checked~span:after{display: inline-block; margin-right: 15px; margin-bottom: 5px;}
 .m-checkbox-inline .m-checkbox:last-child, .m-checkbox-inline .m-radio:last-child{margin-right: 0;}
-.m-checkbox, .m-radio{display: inline-block; position: relative; margin-bottom: 14px; padding-left: 25px; font-size: 13px; font-size: 1.3rem; font-weight: 400; line-height: 1.5; cursor: pointer; webkit-transition: all .3s;transition: all .3s; -o-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s;}
+.m-checkbox, .m-radio{display: inline-block; position: relative; margin-bottom: 14px; padding-left: 25px; font-size: 13px; font-size: 1.3rem; font-weight: 400; line-height: 1.5; cursor: pointer; -webkit-transition: all .3s;transition: all .3s; -o-transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s;}
 .m-checkbox input, .m-radio input{position: absolute; z-index: -1; top:2px; left: 0; width:16px; height:16px; margin: 0; opacity: 0; filter: alpha(opacity = 0);}
 .m-checkbox span, .m-radio span{position: absolute; top: 2px; left: 0; width: 16px; height: 16px; border: 1px solid #c9caca; background: #fff;}
 .m-checkbox-disabled, .m-checkbox input[disabled]~span, .m-checkbox input:checked[disabled]~span, .m-radio-disabled, .m-radio input[disabled]~span, .m-radio input:checked[disabled]~span{opacity: .8; cursor: default; filter: alpha(opacity = 80);}
@@ -328,7 +328,7 @@ table thead .date{width: 120px}
 
 
 /* Pagination Style  */
-.pagination, .pagination ul{display: flex;}
+.pagination, .pagination ul{display: flex; font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
 .pagination{justify-content: center;}
 .pagination li{position: relative;  margin: .2rem;}
 .pagination a{display: block; color: #626061; background: #fff; border: 1px solid #fff; font-size:13px; font-size:1.3rem; text-align: center; text-decoration: none; padding: 5px 3px;}
@@ -337,7 +337,7 @@ table thead .date{width: 120px}
 .pagination .pages li a{width: 28px; height: 28px;}
 .pagination .previous li a, .pagination .next li a{padding: 4px 8px;}
 .pagination .form_selectbox{margin-right:10px; padding:3px 0;}
-.pagination .form_selectbox .select-style{height: 28px;}
+.pagination .form_selectbox .select-style{font-family: 'Rubik', 'Noto Sans KR',sans-serif; height: 28px;}
 .pagination_style01{justify-content: flex-end;}
 .pagination_style01 .paginate_counter{height: 30px; font-size: 14px; font-size: 1.4rem; line-height: 2.4;}
 .pagination_style01 .paginate{display: flex; display: -webkit-flex; justify-content: flex-end;; -webkit-justify-content: flex-end;;}
@@ -367,7 +367,6 @@ table thead .date{width: 120px}
 .top_gnb .support_area{font-weight:500;}
 .gnb{position: relative; width: 100%; height: 88px; border-bottom:3px solid #ff6d37; vertical-align: middle;}
 .gnb .banner_area{width: 200px; height: 64px; background: #ddd; margin: 12px 0px;}
-.gnb .banner_left{}
 .gnb .brand_center{display:block; width: 100%; height: 88px; max-width: 1280px; min-width: 768px; text-align: center; vertical-align: middle; margin: 0 auto;}
 .gnb .brand_center .gnb-logo{display: inline-block; position: relative; top:20px; vertical-align: middle;}
 .gnb .banner_event{position: absolute; top:0; right: 0;}
@@ -380,9 +379,9 @@ table thead .date{width: 120px}
 .support_area{position: absolute; height: 60px; top:0; right:0; padding:0 20px;}
 .support_area a{font-size:16px; font-size:1.6rem; line-height:4;}
 .support_area a:hover{color: #ff6d37; text-decoration: none;}
-/*.section h3{font-weight: 600; text-align: left; padding:10px 0;}*/
 .confirm-message{font-size:14px; font-size:1.4rem; margin-bottom:20px;}
 .fixed{position: fixed; top: 0; left: 0; width: 100%;}
+.icon{vertical-align:middle;}
 
 .personal_area .personal-info{position: relative; overflow: hidden;}
 .personal_area .personal-info .profile-img{width: 42px; height: 42px; border: 1px solid #303740; margin-right: 0;}
@@ -420,13 +419,13 @@ table thead .date{width: 120px}
 
 /* My Study Room */
 .my-studyroom .study-info{background:#efefef; padding: 10px;}
-.my-studyroom .study-info .contnet-item{height: 94px; background:#fff; border:1px solid #c9caca; padding:10px;}
-.my-studyroom .study-info .contnet-item .item-header{position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 10px;}
+.my-studyroom .study-info .contnet-item{height: 100px; background:#fff; border:1px solid #c9caca; padding:10px;}
+.my-studyroom .study-info .contnet-item .item-header{position: relative; overflow: hidden; line-height: 1.7; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 10px;}
 .my-studyroom .study-info .contnet-item .item-title{font-size: 16px; font-size: 1.6rem; font-weight:500;}
 .my-studyroom .study-info .contnet-item .sub-title{font-size: 14px; font-size: 1.4rem; font-weight:400;}
 .my-studyroom .study-info .contnet-item .next-meeting, .my-studyroom .study-info .contnet-item .coach_teacher-info{font-size: 15px; font-size: 1.5rem; font-weight:400;}
 .my-studyroom .study-info .contnet-item .next-meeting .coaching_date{font-size: 16px; font-size: 1.6rem;}
-.my-studyroom .study-info .contnet-item .btn-area{position: absolute; top: 12px; right:20px; padding:10px 10px;}
+.my-studyroom .study-info .contnet-item .btn-area{position: absolute; top: 12px; right:21px; padding:10px 10px;}
 
 /* MyPage */
 .mypage .my-info{background:#efefef; padding: 10px; text-align:center;}
@@ -440,7 +439,6 @@ table thead .date{width: 120px}
 .mypage.login_style .content-item{padding: 40px 20px;}
 .mypage .inner-group .file-uplad:before{content: '첨부파일';}
 
-.profile_box{}
 .profile_box .profile-img{vertical-align: middle; margin-bottom: 10px;}
 .profile_box .img_style{width: 280px; min-height: 280px; background: #fff; border: 1px solid #efefef; text-align: center; padding: 20px 20px;}
 .profile_box .profile-info{padding-left:80px;}
@@ -485,8 +483,6 @@ table thead .date{width: 120px}
 .list_style_disc {list-style-type: disc; padding-left: 20px;}
 .list_style_disc li{line-height:1.2; padding-bottom:5px;}
 .box_border{border:1px solid #efefef; padding: 20px 20px;}
-.box_img{}
-.box_info{}
 .form-horizontal{position:relative;}
 .form-horizontal .form-control-static{display: inline-block; vertical-align: middle;}
 .form-half{width:50%; min-width: 535px; margin:0 auto;}
@@ -526,7 +522,7 @@ table thead .date{width: 120px}
 .option-area{position: relative; vertical-align: middle; text-align:right;}
 .option-area .sorting_select{overflow: inherit; float:none; margin: 0 5px;}
 .option-area .form-input-area .form-control{height: 30px; font-size:13px; font-size:1.3rem;}
-.option-area .form-input-area .search-input{position:relative;}
+.option-area .form-input-area .search-input{position:relative; min-width:130px;}
 .option-area .form-input-area .search-input .search-form{padding: 5px 32px 5px 10px;}
 .option-area .form-input-area .search-input .search-icon{position: absolute; right: 0; width: 40px; height: 30px; text-align: center; background:transparent; z-index: 2;}
 .option-area .form-input-area .icon-search{display: inline-block; position: relative; width: 14px; height: 14px; top: 2px; border-radius: 50%; border: 2px solid #c9caca; margin: 3px 3px;}
@@ -567,7 +563,6 @@ table thead .date{width: 120px}
 .login_style .join_link{position:absolute; left:0; bottom:0; width:100%;  border: 1px solid #efefef; padding: 10px 10px;}
 .login_style .join_link .text{font-size: 14px; font-size: 1.4rem; font-weight: 500; line-height: 2; vertical-align: middle;}
 .login_style .find_menu{text-align: center; margin: 20px 0; padding-top: 20px;}
-.login_style .find_menu .m-radio-inline .m-radio{}
 .login_style .content-item{margin-bottom: 20px; padding:20px 20px;}
 .login_style .find_content{display:none;}
 .login_style .find_content.on{display:block;}
@@ -598,7 +593,7 @@ table thead .date{width: 120px}
 .agree_style .agree_policy .agree-item_2depth{margin-bottom: 2px;}
 .agree_style .agree_policy .agree-item_2depth .agree-head_2depth{display:block; position:relative; background:#f5f5f5; border: 1px solid #efefef; margin-bottom: -1px; margin-top: -1px; padding:5px 20px;}
 .agree_style .agree_policy .agree-head_2depth .check_form-group .m-checkbox{font-size: 13px; font-size: 1.3rem; font-weight: 400;}
-.agree_style .agree_policy .agree-head_2depth .terms_link .help-text{ont-size:12px; font-size:1.2rem; font-weight: 400; color: #626061;}
+.agree_style .agree_policy .agree-head_2depth .terms_link .help-text{font-size:12px; font-size:1.2rem; font-weight: 400; color: #626061;}
 .agree_style .agree_policy .agree-contents_2depth{display: block; background:#fefefe; border: 1px solid #efefef;}
 
 /* Tabs */
@@ -612,6 +607,10 @@ table thead .date{width: 120px}
 .tab-content{position: relative;}
 .tab-content .content-item{margin: 10px 0; margin-bottom: 50px;}
 
+/* Tabs Table  */
+.table-tabs-nav li{display: block; position: relative; overflow: hidden; float: left; color: #9fa0a0; font-size: 16px; font-size: 1.6rem; line-height: 1.6; text-align: center; border: 1px solid transparent;  margin-right: 2px; margin-bottom: -1px; text-decoration: none; cursor: pointer;}
+.table-tabs-nav li.active{background: transparent;ont-weight: 500;color: #3b393a;cursor: default;}
+.table-tabs-nav li .divi{display: inline-block; position: relative; top: -1px; width:3px; height:3px; background:#c9caca; border-radius: 50%; vertical-align: middle; margin: 0 30px;}
 /* Multi Tabs */
 .tabs_multi .sub-tabs-nav{border: 0; margin-bottom: 0; padding: 10px 0;}
 .sub-tabs-area{display: block; position: relative; overflow: hidden; margin-bottom: 10px;}
@@ -668,7 +667,6 @@ table thead .date{width: 120px}
 
 
 /* slick slider */
-.list-slider{}
 .list-slider .option-area .slide-indicators{position: relative; left: 0; margin:5px 0;}
 .list-slider .slick-dotted.slick-slider{margin-bottom: 0;}
 .list-slider .dots{position: relative; text-align: center; padding:0 10px;}
@@ -734,8 +732,6 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .math-problem_contents .content_option{position: relative; background: #f5f5f5; margin-top: 20px;}
 .math-problem_contents .content_option .total-score{display: inline-block; font-family: 'Rubik', 'Noto Sans KR', sans-serif; width: 120px; text-align: center; background: #3b393a; color: #fff; padding: 10px;}
 .math-problem_contents .content_option .total-score span{font-size: 28px; font-weight: 700;}
-.math-problem_contents .content_option .option-area{}
-.math-problem_contents .content_option .option-area .sorting{}
 .math-problem_contents table thead .num{width: 50px;}
 .math-problem_contents table thead .scores{width: 80px;}
 .math-problem_contents table thead .answer{width: 100px;}
@@ -797,20 +793,25 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .table-style_lecture thead .video{width: 14%;}
 .table-style_lecture thead .solve{width: 14%;}
 .table-style_lecture tbody{font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
-.table-style_lecture tbody td{font-weight: 400; padding:10px 5px;}
+.table-style_lecture tbody td{font-weight: 400; padding:10px 10px;}
 .table-style_lecture tbody .lecture_title{text-align: left;}
 .table-style_lecture .btn-table{line-height:2.0; font-size: 12px; font-size: 1.2rem; margin-bottom: 5px;}
 .table-style_lecture .btn-table:last-child{margin-bottom: 0;}
+.table-style_lecture .btn-area .btn-table:last-child{margin-bottom: 5px;}
 .table-style_lecture .btn-solve{background: #ff6d37; border: 1px solid #ff6d37; color: #fff;}
 .table-style_lecture .btn-solve:hover{background: #ff6127; border: 1px solid #ff6127;}
 .table-style_lecture .btn-complete{background: #9fa0a0; border: 1px solid #9fa0a0; color: #fff;}
 .table-style_lecture .btn-complete:hover{background: #7f8080; border: 1px solid #7f8080;}
 .table-style_lecture .learn_state{font-size: 13px; font-size: 1.3rem;}
+.table-style_lecture .state_course{font-size:13px; font-size:1.3rem; font-weight:500; letter-spacing: -1px;}
 .table-style_lecture .state_ing{color:#ff6d37;}
-.table-style_lecture .state_complete{color:#3b393a;}
+.table-style_lecture .state_stop{color:#9fa0a0;}
+.table-style_lecture .state_cxsomplete{color:#3b393a;}
+.table-style_lecture .state_course{font-size:13px; font-size:1.3rem; font-weight:500; letter-spacing: -1px;}
+
 .table-style_lecture .btn-table.btn-width{min-width:120px;}
 .table-style_lecture tbody td .toggle_favorite{line-height: 1.5;}
-.table-style_lecture .lecture_title .text-fixed{color: #ff6d37; font-weight: 500; }
+.table-style_lecture .lecture_title .text-fixed{color: #ff6d37; font-weight: 500; }xs
 .table-style_lecture .lecture_title .text-unit{font-weight: 500;}
 
 /* table style test  */
@@ -942,7 +943,8 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .support_notice .content-header{background:#fff; border-bottom: 1px dotted #9c9c9c; text-align: left; margin: 0; margin-bottom: 10px; padding: 5px 0 5px;}
 .support_notice .content-header .content_heading{display: inline-block; font-size: 16px; font-size: 1.6rem; font-weight: 500; line-height: 1.8;}
 .support_notice .notice_list li{position:relative; overflow:hidden; width: 100%; margin-bottom: 5px;}
-.support_notice .notice_list li a{position:relative;}
+.support_notice .notice_list li a{position:relative; color:#626061;}
+.support_notice .notice_list li a:hover{position:relative; color:#3b393a;}
 .support_notice .notice_list li .list{width: 75%; float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: top; padding: 0 8px;}
 .support_notice .notice_list li .date{float: right; text-align: right; padding: 0 8px;}
 .support-center .search-area{position: relative; max-width: 920px; margin: 40px auto;}
@@ -1186,7 +1188,6 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .event-item .event_text{font-size: 24px; font-size: 2.4rem; font-weight: 500; line-height: 1.6; padding:40px 0 0;}
 .event-item mark{background-color: #fd5724; color:#fff; font-weight: 700; line-height: 1.4; padding: 0px 5px; padding-bottom: 0;}
 
-
 /* Horizontal Accordion */
 .horizontal_accordion{width: 100%; height: 250px; overflow: hidden; margin:0 auto;}
 .horizontal_accordion ul{display: table; table-layout: fixed; width: 100%; margin: 0; padding: 0;}
@@ -1420,6 +1421,27 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .personal_area .personal-list .layer_box .user-list li{padding: 5px 10px;}
 .personal_area .personal-list .layer_box .user-list li:hover{background:#f7f7f7;}
 .personal_area .personal-list .layer_box .user-list li a{font-size:13px; font-size:1.3rem; line-height: 1.4;}
+
+/* my student info  */
+.my-student .table-style_lecture .name_student{font-size:16px; font-size:1.6rem; font-weight:500;}
+.my-student .table-style_lecture .link_consult{padding:3px 0;}
+.my-student .table-style_lecture .link_consult a{color:#626061; font-size:13px; font-size:1.3rem; line-height: 1.4; /* text-decoration:underline; */}
+.my-student .table-style_lecture .link_consult a:hover{color:#3b393a; }
+.my-student .table-style_lecture .course_info{word-break: break-all;}
+.my-student .table-style_lecture .course_info .course_product{font-size:16px; font-size:1.6rem; font-weight:500;}
+.my-student .table-style_lecture .course_info .course_date{font-size:13px; font-size:1.3rem; padding:3px 0;}
+.my-student .table-style_lecture .course_info .course_guide{font-size:12px; font-size:1.2rem; color:#74afcd;}
+.my-student .table-style_lecture .learning_progress{margin-bottom:5px; padding:5px 0;}
+.my-student .table-style_lecture .learning_progress .state_title{font-size:14px; font-size:1.4rem; font-weight:500; letter-spacing: -1px; padding-bottom:3px;}
+.my-student .table-style_lecture .learning_progress .state_progress .state_percent{font-size:16px; font-size:1.6rem; font-weight:700; color:#ff6d37;}
+.my-student .table-style_lecture .count_box{ padding:5px 0;}
+.my-student .table-style_lecture .count_box a{display: block; position: relative; background:#f5f5f5; padding:10px;}
+.my-student .table-style_lecture .count_box a:hover{background:#fff7f4;  text-decoration:none;}
+.my-student .table-style_lecture .count_box .count_header h4{font-size:13px; font-size:1.3rem; letter-spacing: -1px;}
+.my-student .table-style_lecture .count_box .counting{font-size:14px; font-size:1.4rem; font-weight:700; }
+.my-student .table-style_lecture .count_box .counting .icon{font-size:18px; font-size:1.8rem;}
+
+
 
 
 
