@@ -325,7 +325,7 @@ table thead .date{width: 120px}
 .table_select-list thead .select_data{width:24%;}
 .table_select-list .list:hover{background:#fff7f4;}
 .table_select-list .list_fixed, .table_select-list .list_fixed:hover{background:#f7f7f7;}
-
+.table_select-list .coaching_test, .table_select-list .coaching_test:hover{background:#fdf6e9;}
 
 /* Pagination Style  */
 .pagination, .pagination ul{display: flex; font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
@@ -391,7 +391,7 @@ table thead .date{width: 120px}
 .main_contents, .coach_contents, .math-problem_contents{position: relative; overflow: hidden; width: 100%;}
 .main_contents, .coach_contents{margin-top: 30px; }
 .contents-header{position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 20px; margin-bottom: 20px;}
-.contents-header .contents_heading{font-size: 22px; font-size: 2.2rem; font-weight: 700;}
+.contents-header .contents_heading{font-size: 20px; font-size: 2.0rem; font-weight: 500;}
 .content_box{position: relative; overflow: hidden; width:100%;}
 .content-header{position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 20px; margin-bottom: 20px;}
 .content_heading{color:#3b393a; font-weight: 500;}
@@ -409,7 +409,7 @@ table thead .date{width: 120px}
 .sub-header .test_timer{color: #eb6d38; font-size: 16px; font-size: 1.6rem; line-height: 2.2;}
 .content-list_grid, .content-list_list{margin-bottom:0;}
 .content-list_grid .grid-item{margin-bottom: 10px;}
-.content-item{margin: 20px 0; margin-bottom:50px;}
+.content-item{margin: 20px 0; margin-bottom:40px;}
 .content-item .content-header {margin:10px 0;}
 .content-item .content-header.line-sytle{border-bottom: 1px solid #efefef; padding-bottom: 10px; }
 .content-item .content-header .content_heading{display:inline-block; font-size: 16px; font-size: 1.6rem; line-height: 1.8;}
@@ -418,6 +418,7 @@ table thead .date{width: 120px}
 .content-item .content-header .link-text:hover{color:#3b393a;}
 
 /* My Study Room */
+.my-studyroom .content-list_grid{margin-bottom:50px;}
 .my-studyroom .study-info{background:#efefef; padding: 10px;}
 .my-studyroom .study-info .contnet-item{height: 100px; background:#fff; border:1px solid #c9caca; padding:10px;}
 .my-studyroom .study-info .contnet-item .item-header{position: relative; overflow: hidden; line-height: 1.7; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 10px;}
@@ -530,6 +531,12 @@ table thead .date{width: 120px}
 .option-area .form-input-area .icon-search:hover{border: 2px solid #3b393a;}
 .option-area .form-input-area .icon-search:hover:before, .icon-search:hover:after{background: #3b393a;}
 
+.week-picker_select .form_selectbox .select-style{height:28px; border: 1px solid #fff;}
+.week-picker_select .form_selectbox .select-style:focus{outline:0;}
+.week-picker_select .btn_icon{width:28px; height:28px; background:#fff;}
+.week-picker_select .btn_icon .material-icons{position: relative; top:-1px; right:6px; color:#9fa0a0; font-size:28px;}
+.week-picker_select .btn_icon .material-icons:hover{color:#3b393a;}
+
 .list_description{padding-left: 10px;}
 .list_description dd{line-height: 1.2; text-indent: -10px; padding-bottom: 5px;}
 .table_empty{padding:0;}
@@ -545,10 +552,16 @@ table thead .date{width: 120px}
 .table_board-list .btn-solve{background: #ff6d37; border: 1px solid #ff6d37; color: #fff;}
 .table_board-list .btn-solve:hover{background: #ff6127; border: 1px solid #ff6127;}
 .table_board-list .btn-complete{background: #9fa0a0; border: 1px solid #9fa0a0; color: #fff;}
-.table_board-list .btn-complete:hover{background: #7f8080; border: 1px solid #7f8080;}
+.table_board-list .btn-complete:hover{background: #626061; border: 1px solid #626061;}
 .list_detailview .content-item{margin-top:0;}
 .list_detailview .content-item .accordion-list-box{padding-top:0;}
 .datepicker_control{display: inline-block; width: 100%; min-width: 104px; height: 28px; font-size: 1.3rem; font-size: 1.3rem; text-align: center; text-indent:0 !important; background: #fff; border: 1px solid #ddd; padding: 5px 8px;}
+.count_box a{display: block; position: relative; background:#74afcd; color:#fff;  text-align: center; padding:20px 20px;}
+.count_box a:hover{background:#5a98b7;  text-decoration:none;}
+.count_box .count_header {font-size:14px; font-size:1.4rem; font-weight:500; letter-spacing: -1px; margin-bottom: 10px;}
+.count_box .counting span{font-size:16px; font-size:1.6rem; font-weight:700;}
+.count_box .counting .icon{font-size:16px; font-size:1.6rem;}
+
 
 /* login */
 .login_style{position: relative; width:800px; margin:0 auto; padding: 80px 0;}
@@ -608,9 +621,11 @@ table thead .date{width: 120px}
 .tab-content .content-item{margin: 10px 0; margin-bottom: 50px;}
 
 /* Tabs Table  */
-.table-tabs-nav li{display: block; position: relative; overflow: hidden; float: left; color: #9fa0a0; font-size: 16px; font-size: 1.6rem; line-height: 1.6; text-align: center; border: 1px solid transparent;  margin-right: 2px; margin-bottom: -1px; text-decoration: none; cursor: pointer;}
-.table-tabs-nav li.active{background: transparent;ont-weight: 500;color: #3b393a;cursor: default;}
+.table-tabs-nav{display:inline-block; width:auto;}
+.table-tabs-nav li{display: block; position: relative; overflow: hidden; float: left; color: #9fa0a0; font-weight: 500; font-size: 16px; font-size: 1.6rem; line-height: 1.8; text-align: center;  margin-right: 2px; text-decoration: none; cursor: pointer;}
+.table-tabs-nav li.active{background: transparent; color: #3b393a;cursor: default;}
 .table-tabs-nav li .divi{display: inline-block; position: relative; top: -1px; width:3px; height:3px; background:#c9caca; border-radius: 50%; vertical-align: middle; margin: 0 30px;}
+
 /* Multi Tabs */
 .tabs_multi .sub-tabs-nav{border: 0; margin-bottom: 0; padding: 10px 0;}
 .sub-tabs-area{display: block; position: relative; overflow: hidden; margin-bottom: 10px;}
@@ -813,6 +828,12 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .table-style_lecture tbody td .toggle_favorite{line-height: 1.5;}
 .table-style_lecture .lecture_title .text-fixed{color: #ff6d37; font-weight: 500; }xs
 .table-style_lecture .lecture_title .text-unit{font-weight: 500;}
+
+.table-style_lecture thead .lecture_date{width: 10%;}
+.table-style_lecture thead .lecture_title{width: auto;}
+.table-style_lecture thead .lecture_time{width: 8%;}
+.table-style_lecture thead .lecture_btn{width: 12%;}
+.table-style_lecture thead .lecture_state{width: 10%;}
 
 /* table style test  */
 .table-style_test tbody{font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
@@ -1326,6 +1347,29 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .table_style02 thead th:last-child, .table_style02 tbody td:last-child{border-right: 0;}
 .table_style02 tbody tr td{font-size: 13px; font-size: 1.3rem; text-align: left; vertical-align: middle; padding: 10px 10px;}
 
+.learning_progress{text-align:center;}
+.learning_progress a{display:block; position:relative; background:#fff7f4; padding:20px 20px; cursor:default;}
+.learning_progress a:hover{background:#fff7f4; text-decoration:none;}
+.learning_progress .state_title{font-size:14px; font-size:1.4rem; font-weight:500; letter-spacing: -1px;  padding-bottom: 10px;}
+.learning_progress .state_progress span{font-size:18px; font-size:1.8rem; font-weight:700; }
+.learning_progress .state_progress .state_percent{color:#ff6d37;}
+
+/* coach notify */
+.notify-item{position:relative; background:#3c3a3b; color:#fff;  padding: 20px 20px; text-align:center;}
+.notify-item .notify_message{font-size:18px; font-size:1.8rem; font-weight:500; padding-bottom:5px;}
+.notify-item .notify_message .coach-name{color: #fff; font-weight: 900;}
+.notify-item .count_student{font-size:18px; font-size:1.8rem; font-weight:500;}
+
+
+/* contents dashboard */
+.contents_dashboard .side-item .item_support, .contents_dashboard .item_faq, .contents_dashboard .item_download{text-align: center; border:1px solid #efefef; margin-bottom: 0; padding:20px 10px;}
+.contents_dashboard .side-item .content_heading{font-weight:700; border-bottom: 1px solid #f7f7f7; padding-bottom:5px;}
+.contents_dashboard .side-item .content_info{font-size:14px; font-size:1.4rem; line-height: 1.3; font-weight:400; padding-top:10px;}
+.contents_dashboard .side-item .btn{margin-top:10px; text-align:center;}
+.contents_dashboard .side-item .item_support .cs-number{font-size:20px; font-size:2.0rem; font-weight:700;}
+.contents_dashboard .side-item .item_download{border:1px solid #8ab669;}
+.contents_dashboard .side-item .item_download .content_heading{color: #8ab669; border-bottom: 0; padding:0;}
+
 
 @media screen and (max-width: 1260px){	
 	.math-problem_contents table thead .solve{width:164px;}
@@ -1335,6 +1379,11 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 	.top_contents .content_left{padding: 60px 0;}
 	.top_contents .content_title h2{font-size: 40px; font-size: 4.0rem;}
 	.top_contents .content_description p{font-size: 18px; font-size: 1.8rem;}
+	.table-style_lecture thead .lecture_date{width: 90px;}
+	.table-style_lecture thead .lecture_title{width: auto;}
+	.table-style_lecture thead .lecture_time{width: 80px;}
+	.table-style_lecture thead .lecture_btn{width: 130px;}
+	.table-style_lecture thead .lecture_state{width: 100px;}
 }
 
 @media screen and (max-width:980px){
@@ -1353,6 +1402,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 	.recruit_teacher .contnet-item dl{padding-left: 290px;}
 	.services_area .col-4{width:50%;}
 	.test_start .test_list-sytle .list-item ul li{font-size: 16px; font-size: 1.6rem;}
+	.learning_progress a{min-height: 100px; padding: 10px 10px;}
 	
 }
 @media screen and (max-width:768px){
@@ -1432,14 +1482,16 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .my-student .table-style_lecture .course_info .course_date{font-size:13px; font-size:1.3rem; padding:3px 0;}
 .my-student .table-style_lecture .course_info .course_guide{font-size:12px; font-size:1.2rem; color:#74afcd;}
 .my-student .table-style_lecture .learning_progress{margin-bottom:5px; padding:5px 0;}
-.my-student .table-style_lecture .learning_progress .state_title{font-size:14px; font-size:1.4rem; font-weight:500; letter-spacing: -1px; padding-bottom:3px;}
-.my-student .table-style_lecture .learning_progress .state_progress .state_percent{font-size:16px; font-size:1.6rem; font-weight:700; color:#ff6d37;}
+.my-student .table-style_lecture .learning_progress .state_title{padding-bottom:3px;}
 .my-student .table-style_lecture .count_box{ padding:5px 0;}
-.my-student .table-style_lecture .count_box a{display: block; position: relative; background:#f5f5f5; padding:10px;}
+.my-student .table-style_lecture .count_box a{display: block; position: relative; background:#f5f5f5; color:#3b393a; padding:10px;}
 .my-student .table-style_lecture .count_box a:hover{background:#fff7f4;  text-decoration:none;}
-.my-student .table-style_lecture .count_box .count_header h4{font-size:13px; font-size:1.3rem; letter-spacing: -1px;}
-.my-student .table-style_lecture .count_box .counting{font-size:14px; font-size:1.4rem; font-weight:700; }
-.my-student .table-style_lecture .count_box .counting .icon{font-size:18px; font-size:1.8rem;}
+.my-student .table-style_lecture .count_box .count_header {font-size:13px; font-size:1.3rem; font-weight:500; letter-spacing: -1px; padding-bottom: 0;}
+.my-student .table-style_lecture .count_box .counting{font-size:14px; font-size:1.4rem; font-weight:500; }
+.my-student .table-style_lecture .count_box .counting .icon{font-size:16px; font-size:1.6rem;}
+
+
+
 
 
 

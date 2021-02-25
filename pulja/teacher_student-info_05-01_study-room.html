@@ -118,10 +118,10 @@
 			<div class="container">
 				<section class="main_contents my-studyroom">
 					<div class="contents-header">
-						<h2 class="contents_heading">학생 공부방</h2>
+						<h2 class="contents_heading">내 학생정보 > 내 강의실</h2>
 					</div>	
 					<article class="content_box">					
-						<div class="content-list_grid">
+						<div class="content-list_grid content-item">
 							<div class="row-contents">
 								<div class="col-2">
 									<div class="study-info">
@@ -167,6 +167,64 @@
 								</div>
 							</div>					
 						</div>					
+					</article>
+					
+					<article class="content_box">
+						<div class="content-item">
+							<div class="row-contents">
+								<div class="col-5">
+									<div class="learning_progress">
+										<a href='javascript:void(0);'>
+											<div class="state_title">커리큘럼 개념 진행률</div>
+											<div class="state_progress">
+												<span class="state_percent font_num">5강</span>
+												<span class="font_num"> / 총 20강</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-5">
+									<div class="learning_progress">
+										<a href='javascript:void(0);'>
+											<div class="state_title">총 학습시간</div>
+											<div class="state_progress">
+												<span class="state_percent font_num">50시간 50분</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-5">
+									<div class="learning_progress">
+										<a href='javascript:void(0);'>
+											<div class="state_title">영상학습(개념학습)</div>
+											<div class="state_progress">
+												<span class="state_percent font_num">20%</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-5">
+									<div class="learning_progress">
+										<a href='javascript:void(0);'>
+											<div class="state_title">문제학습</div>
+											<div class="state_progress">
+												<span class="state_percent font_num">20%</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-5">
+									<div class="learning_progress">
+										<a href='javascript:void(0);'>
+											<div class="state_title">정답률</div>
+											<div class="state_progress">
+												<span class="state_percent font_num">93%</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</article>
 					
 					<article class="content_box">
@@ -383,12 +441,26 @@
 					<article class="content_box">
 						<div class="tabs-area">
 							<ul  class="tabs table-tabs-nav">
-								<li rel="tab_01" class="active">수강중인 강의 <span class="divi"></span></li>
-								<li rel="tab_02" class="">이전 수강 강의</li>
+								<li rel="tab_01" class="inline active">수강중인 강의 <span class="divi"></span></li>
+								<li rel="tab_02" class="inline">이전 수강 강의</li>
 							</ul>
+							<div class="option-area fl-r">
+								<div class="week-picker_select">
+									<button class="btn_icon btn_prev"><span class="material-icons">keyboard_arrow_left</span></button>
+									<label class="form_selectbox">
+										<select name="level" class="form-control select-style">
+											<option value="1week">2021년 01월 30일 ~ 2021년 02월 05</option>
+											<option value="2week">2021년 01월 30일 ~ 2021년 02월 05</option>
+											<option value="3week">2021년 01월 30일 ~ 2021년 02월 05</option>
+											<option value="4week">2021년 01월 30일 ~ 2021년 02월 05</option>
+										</select>
+									</label>
+									<button class="btn_icon btn_prev"><span class="material-icons">keyboard_arrow_right</span></button>
+								</div>
+							</div>
 							<div class="tab-container">
 								<!-- tab content 01 -->
-								<div class="tab-content active" id="tab_01">
+								<div class="tab-content" id="tab_01">
 									<div class="content-item">
 										<form role="form" class="form-horizontal curriculum_setting">
 											<div class="form-contents">
@@ -396,22 +468,22 @@
 													<div class="form-group board_list">
 														<table class="table_board-list table-style_lecture table_select-list">
 															<caption>강의 리스트</caption>
-															<colgroup>
+															<!-- <colgroup>
 																<col width="120">
 																<col width="">
 																<col width="100">
 																<col width="130">
 																<col width="130">
 																<col width="120">
-															</colgroup>
+															</colgroup> -->
 															<thead>
 																<tr>
-																	<th scope="col" class="">수업일자</th>
-																	<th scope="col" class="">강의명</th>
-																	<th scope="col" class="">강의시간</th>
-																	<th scope="col" class="">강의영상</th>
-																	<th scope="col" class="">문제학습</th>
-																	<th scope="col" class="">학습상태</th>
+																	<th scope="col" class="lecture_date">수업일자</th>
+																	<th scope="col" class="lecture_title">강의명</th>
+																	<th scope="col" class="lecture_time">강의시간</th>
+																	<th scope="col" class="lecture_btn">강의영상</th>
+																	<th scope="col" class="lecture_btn">문제학습</th>
+																	<th scope="col" class="lecture_state">학습상태</th>
 																</tr>
 															</thead>
 															<tbody>
@@ -424,12 +496,12 @@
 																	<td class="font_num">54분</td>
 																	<td>
 																		<div class="btn-box">
-																			<a href="#" class="btn btn-brand btn-table btn-width">강의보기</a>
+																			<a href="#" class="btn btn-complete btn-table btn-width">강의보기</a>
 																		</div>
 																	</td>
 																	<td>
 																		<div class="btn-box">
-																			<a href="#" class="btn btn-brand btn-table btn-width">문제풀기</a>
+																			<a href="#" class="btn btn-complete btn-table btn-width">채점결과보기</a>
 																		</div>
 																	</td>
 																	<td class="learn_state">
@@ -451,7 +523,7 @@
 																	</td>
 																	<td>
 																		<div class="btn-box">
-																			<a href="#" class="btn btn-brand btn-table btn-width">문제풀기</a>
+																			<a href="#" class="btn btn-secondary btn-table btn-width">문제풀기</a>
 																		</div>
 																	</td>
 																	<td class="learn_state">
@@ -465,15 +537,70 @@
 																		<div class="text-unit text-fixed">대단원 테스트</div>  
 																		<div class="ellipsis">1. 다항식</div>
 																	</td>
-																	<td class="font_num">54분</td>
+																	<td class="font_num"></td>
+																	<td>
+																	</td>
 																	<td>
 																		<div class="btn-box">
-																			<a href="#" class="btn btn-brand btn-table btn-width">강의보기</a>
+																			<a href="#" class="btn btn-secondary btn-table btn-width">문제풀기</a>
+																		</div>
+																	</td>
+																	<td class="learn_state">
+																		<div class="state_ing">시작하기</div>
+																		<div class="state_date">2021.02.01</div>
+																	</td>
+																</tr>
+																<tr class="list list_fixed">
+																	<td class="font_num">2020.11.06 (수)</td>
+																	<td class="lecture_title">
+																		<div class="text-unit text-fixed">대단원 테스트</div>  
+																		<div class="ellipsis">1. 다항식</div>
+																	</td>
+																	<td class="font_num"></td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-complete btn-table btn-width">보고서</a>
 																		</div>
 																	</td>
 																	<td>
 																		<div class="btn-box">
-																			<a href="#" class="btn btn-brand btn-table btn-width">문제풀기</a>
+																			<a href="#" class="btn btn-complete btn-table btn-width">채점결과보기</a>
+																		</div>
+																	</td>
+																	<td class="learn_state">
+																		<div class="state_complete">학습완료</div>
+																		<div class="state_date">2021.02.01</div>
+																	</td>
+																</tr>
+																<tr class="list list_fixed coaching_test">
+																	<td class="font_num">2020.11.06 (수)</td>
+																	<td class="lecture_title">
+																		<div class="text-unit text-fixed">코칭 테스트</div>  
+																	</td>
+																	<td class="font_num"></td>
+																	<td>
+																	</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-secondary btn-table btn-width">문제풀기</a>
+																		</div>
+																	</td>
+																	<td class="learn_state">
+																		<div class="state_ing">시작하기</div>
+																		<div class="state_date">2021.02.01</div>
+																	</td>
+																</tr>
+																<tr class="list list_fixed coaching_test">
+																	<td class="font_num">2020.11.06 (수)</td>
+																	<td class="lecture_title">
+																		<div class="text-unit text-fixed">코칭 테스트</div>  
+																	</td>
+																	<td class="font_num"></td>
+																	<td>
+																	</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-complete btn-table btn-width">채점결과보기</a>
 																		</div>
 																	</td>
 																	<td class="learn_state">
@@ -495,7 +622,7 @@
 																	</td>
 																	<td>
 																		<div class="btn-box">
-																			<a href="#" class="btn btn-brand btn-table btn-width">문제풀기</a>
+																			<a href="#" class="btn btn-secondary btn-table btn-width">문제풀기</a>
 																		</div>
 																	</td>
 																	<td class="learn_state">
@@ -509,13 +636,250 @@
 												</div>
 											</div>
 										</form>
+										<div class="board-pagination">
+											<div class="pagination">
+												<label class="form_selectbox">
+			                                        <select name="page-show" class="form-control select-style">
+			                                            <option value="" selected="">10</option>
+			                                            <option value="">20</option>
+			                                            <option value="">30</option>
+			                                            <option value="">50</option>
+			                                            <option value="">100</option>
+			                                        </select>
+			                                    </label> 
+												<ul class="previous">
+													<li><a href="">이전</a></li>
+												</ul>
+												<ul class="pages">
+													<li class="active"><a href="">1</a></li>
+													<li><a href="">2</a></li>
+													<li><a href="">3</a></li>
+													<li><a href="">4</a></li>
+													<li><a href="">5</a></li>
+													<li><a href="">6</a></li>
+													<li><a href="">7</a></li>
+													<li><a href="">8</a></li>
+													<li><a href="">9</a></li>
+													<li><a href="">10</a></li>
+												</ul>
+												<ul class="next">
+													<li><a href="">다음</a></li>
+												</ul>
+											</div>
+										</div>
 									</div>	
 								</div>
 								<!-- //  tab content 01  -->
 									
 								<!-- tab content 02 -->
 								<div class="tab-content" id="tab_02">
-									tab content 02
+									<div class="content-item">
+										<form role="form" class="form-horizontal curriculum_setting">
+											<div class="form-contents">
+												<div class="content-item">
+													<div class="form-group board_list">
+														<table class="table_board-list table-style_lecture table_select-list">
+															<caption>강의 리스트</caption>
+															<!-- <colgroup>
+																<col width="120">
+																<col width="">
+																<col width="100">
+																<col width="130">
+																<col width="130">
+																<col width="120">
+															</colgroup> -->
+															<thead>
+																<tr>
+																	<th scope="col" class="lecture_date">수업일자</th>
+																	<th scope="col" class="lecture_title">강의명</th>
+																	<th scope="col" class="lecture_time">강의시간</th>
+																	<th scope="col" class="lecture_btn">강의영상</th>
+																	<th scope="col" class="lecture_btn">문제학습</th>
+																	<th scope="col" class="lecture_state">학습상태</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr class="list">
+																	<td class="font_num">2020.11.07 (수)</td>
+																	<td class="lecture_title">
+																		<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
+																		<div class="ellipsis">[항등식에서  미정계수  구하기  –  수치대입범]</div>
+																	</td>
+																	<td class="font_num">54분</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-complete btn-table btn-width">강의보기</a>
+																		</div>
+																	</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-complete btn-table btn-width">채점결과보기</a>
+																		</div>
+																	</td>
+																	<td class="learn_state">
+																		<div class="state_complete">학습완료</div>
+																		<div class="state_date">2021.02.01</div>
+																	</td>
+																</tr>
+																<tr class="list">
+																	<td class="font_num">2020.11.06 (화)</td>
+																	<td class="lecture_title">
+																		<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
+																		<div class="ellipsis">[항등식에서  미정계수  구하기  –  계수비교법]</div>
+																	</td>
+																	<td class="font_num">54분</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-brand btn-table btn-width">강의보기</a>
+																		</div>
+																	</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-secondary btn-table btn-width">문제풀기</a>
+																		</div>
+																	</td>
+																	<td class="learn_state">
+																		<div class="state_ing">학습중</div>
+																		<div class="state_date">2021.02.01</div>
+																	</td>
+																</tr>
+																<tr class="list list_fixed">
+																	<td class="font_num">2020.11.06 (수)</td>
+																	<td class="lecture_title">
+																		<div class="text-unit text-fixed">대단원 테스트</div>  
+																		<div class="ellipsis">1. 다항식</div>
+																	</td>
+																	<td class="font_num"></td>
+																	<td>
+																	</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-secondary btn-table btn-width">문제풀기</a>
+																		</div>
+																	</td>
+																	<td class="learn_state">
+																		<div class="state_ing">시작하기</div>
+																		<div class="state_date">2021.02.01</div>
+																	</td>
+																</tr>
+																<tr class="list list_fixed">
+																	<td class="font_num">2020.11.06 (수)</td>
+																	<td class="lecture_title">
+																		<div class="text-unit text-fixed">대단원 테스트</div>  
+																		<div class="ellipsis">1. 다항식</div>
+																	</td>
+																	<td class="font_num"></td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-complete btn-table btn-width">보고서</a>
+																		</div>
+																	</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-complete btn-table btn-width">채점결과보기</a>
+																		</div>
+																	</td>
+																	<td class="learn_state">
+																		<div class="state_complete">학습완료</div>
+																		<div class="state_date">2021.02.01</div>
+																	</td>
+																</tr>
+																<tr class="list list_fixed coaching_test">
+																	<td class="font_num">2020.11.06 (수)</td>
+																	<td class="lecture_title">
+																		<div class="text-unit text-fixed">코칭 테스트</div>  
+																	</td>
+																	<td class="font_num"></td>
+																	<td>
+																	</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-secondary btn-table btn-width">문제풀기</a>
+																		</div>
+																	</td>
+																	<td class="learn_state">
+																		<div class="state_ing">시작하기</div>
+																		<div class="state_date">2021.02.01</div>
+																	</td>
+																</tr>
+																<tr class="list list_fixed coaching_test">
+																	<td class="font_num">2020.11.06 (수)</td>
+																	<td class="lecture_title">
+																		<div class="text-unit text-fixed">코칭 테스트</div>  
+																	</td>
+																	<td class="font_num"></td>
+																	<td>
+																	</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-complete btn-table btn-width">채점결과보기</a>
+																		</div>
+																	</td>
+																	<td class="learn_state">
+																		<div class="state_complete">학습완료</div>
+																		<div class="state_date">2021.02.01</div>
+																	</td>
+																</tr>
+																<tr class="list">
+																	<td class="font_num">2020.11.06 (금)</td>
+																	<td class="lecture_title">
+																		<div class="text-unit">1 다항식 &gt; 02 다항식의 연산 00강</div>  
+																		<div class="ellipsis">[다항식의 연산 덧셈과 뻴셈]</div>
+																	</td>
+																	<td class="font_num">54분</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-brand btn-table btn-width">강의보기</a>
+																		</div>
+																	</td>
+																	<td>
+																		<div class="btn-box">
+																			<a href="#" class="btn btn-secondary btn-table btn-width">문제풀기</a>
+																		</div>
+																	</td>
+																	<td class="learn_state">
+																		<div class="state_ing">시작하기</div>
+																		<div class="state_date">2021.02.01</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</form>
+										<div class="board-pagination">
+											<div class="pagination">
+												<label class="form_selectbox">
+			                                        <select name="page-show" class="form-control select-style">
+			                                            <option value="" selected="">10</option>
+			                                            <option value="">20</option>
+			                                            <option value="">30</option>
+			                                            <option value="">50</option>
+			                                            <option value="">100</option>
+			                                        </select>
+			                                    </label> 
+												<ul class="previous">
+													<li><a href="">이전</a></li>
+												</ul>
+												<ul class="pages">
+													<li class="active"><a href="">1</a></li>
+													<li><a href="">2</a></li>
+													<li><a href="">3</a></li>
+													<li><a href="">4</a></li>
+													<li><a href="">5</a></li>
+													<li><a href="">6</a></li>
+													<li><a href="">7</a></li>
+													<li><a href="">8</a></li>
+													<li><a href="">9</a></li>
+													<li><a href="">10</a></li>
+												</ul>
+												<ul class="next">
+													<li><a href="">다음</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
 								</div>
 								<!-- //  tab content 02  -->
 							</div>
