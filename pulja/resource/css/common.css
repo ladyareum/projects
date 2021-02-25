@@ -1368,7 +1368,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .contents_dashboard .side-item .btn{margin-top:10px; text-align:center;}
 .contents_dashboard .side-item .item_support .cs-number{font-size:20px; font-size:2.0rem; font-weight:700;}
 .contents_dashboard .side-item .item_download{border:1px solid #8ab669;}
-.contents_dashboard .side-item .item_download .content_heading{color: #8ab669; border-bottom: 0; padding:0;}
+.contents_dashboard .side-item .item_download .content_heading{color: #73a250; border-bottom: 0; padding:0;}
 
 
 @media screen and (max-width: 1260px){	
