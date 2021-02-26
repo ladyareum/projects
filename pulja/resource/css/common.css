@@ -1365,6 +1365,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .contents_dashboard .side-item .item_support, .contents_dashboard .item_faq, .contents_dashboard .item_download{text-align: center; border:1px solid #efefef; margin-bottom: 0; padding:20px 10px;}
 .contents_dashboard .side-item .content_heading{font-weight:500; border-bottom: 1px solid #f7f7f7; padding-bottom:5px;}
 .contents_dashboard .side-item .content_info{font-size:14px; font-size:1.4rem; line-height: 1.3; font-weight:400; padding-top:10px;}
+.contents_dashboard .side-item .content_info .info-message{font-size:13px; font-size:1.3rem;}
 .contents_dashboard .side-item .btn{margin-top:10px; text-align:center;}
 .contents_dashboard .side-item .item_support .cs-number{font-size:20px; font-size:2.0rem; font-weight:700;}
 .contents_dashboard .side-item .item_download{border:1px solid #8ab669;}
