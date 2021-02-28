@@ -1361,7 +1361,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 /* coach notify */
 .notify-item{position:relative; background:#3c3a3b; color:#fff;  padding: 20px 20px; text-align:center;}
 .notify-item .notify_message{font-size:18px; font-size:1.8rem; font-weight:500; padding-bottom:5px;}
-.notify-item .notify_message .coach-name{color: #fff; font-weight: 900;}
+.notify-item .notify_message .coach-name, .notify-item .notify_message .student-name{color: #fff; font-weight: 700;}
 .notify-item .count_student{font-size:18px; font-size:1.8rem; font-weight:500;}
 
 
@@ -1371,7 +1371,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .contents_dashboard .side-item .content_info{font-size:14px; font-size:1.4rem; line-height: 1.3; font-weight:400; padding-top:10px;}
 .contents_dashboard .side-item .content_info .info-message{font-size:13px; font-size:1.3rem;}
 .contents_dashboard .side-item .btn{margin-top:10px; text-align:center;}
-.contents_dashboard .side-item .item_support .cs-number{font-size:20px; font-size:2.0rem; font-weight:700;}
+.contents_dashboard .side-item .item_support .cs-number{color: #ea6b39; font-size:24px; font-size:2.4rem; font-weight:700;}
 .contents_dashboard .side-item .item_download{border:1px solid #8ab669;}
 .contents_dashboard .side-item .item_download .content_heading{color: #73a250; border-bottom: 0; padding:0;}
 
@@ -1473,7 +1473,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .layer_box{display:none; position: absolute; top:30px; right:0; min-width:140px;}
 .layer_box.on{display:block;}
 .layer_box.on .user-list{background:#fff; border:1px solid #efefef;}
-.personal_area .personal-list .layer_box .user-list li{padding: 5px 10px;}
+.personal_area .personal-list .layer_box .user-list li{text-align: left; padding: 5px 10px;}
 .personal_area .personal-list .layer_box .user-list li:hover{background:#f7f7f7;}
 .personal_area .personal-list .layer_box .user-list li a{font-size:13px; font-size:1.3rem; line-height: 1.4;}
 
