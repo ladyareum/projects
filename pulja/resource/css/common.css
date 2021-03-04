@@ -832,7 +832,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .table-style_lecture .state_course{font-size:13px; font-size:1.3rem; font-weight:500; letter-spacing: -1px;}
 .table-style_lecture .state_ing{color:#ff6d37;}
 .table-style_lecture .state_stop{color:#9fa0a0;}
-.table-style_lecture .state_cxsomplete{color:#3b393a;}
+.table-style_lecture .state_complete{color:#3b393a;}
 .table-style_lecture .state_course{font-size:13px; font-size:1.3rem; font-weight:500; letter-spacing: -1px;}
 .table-style_lecture .btn-area{padding:0;}
 .table-style_lecture .btn-table.btn-width{min-width:120px;}
@@ -1020,6 +1020,37 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .curriculum_setting .level_list_info{margin-bottom:0 !important;}
 .curriculum_setting .list-info .sub-header{padding-bottom: 10px;}
 .curriculum_setting .list-info .level_list{background: #f7f7f7; padding: 10px;}
+
+/* list drag&drop */
+.list_table{display: flex; flex-flow: column nowrap;}
+.list_table .list_thead{display: flex; flex-flow: row nowrap; background: #fff; text-align: center; border-top: 2px solid #3b393a; border-bottom: 1px solid #efefef;}
+.list_table .list_thead .list_th{flex-grow: 1; font-size: 14px; font-size: 1.4rem; font-weight: 500; padding:10px 10px}
+.list_table .list_thead .lecture_title{flex-grow: 6;}
+.list_table .list_thead .lecture_time{ width: 120px;}
+.list_table .list_thead .lecture_btn{flex-grow: 0; width: 130px;}
+.list_table .list_thead .learn_state{flex-grow: 0; width: 120px;}
+.list_table .list_tbody{position: relative;}
+.list_table .list_tbody .list-tr{display: flex; flex-flow: row nowrap; text-align: center; justify-content: center; align-items: center;  border-bottom: 1px solid #efefef;}
+.list_table .list_tbody .list-tr .list_td{flex-grow: 1; font-size: 14px; font-size: 1.4rem; padding: 10px 10px;}
+.list_table .list_tbody .list-tr .list-group{display: flex; flex-flow: column nowrap; flex-grow: 1;}
+.list_table .list_tbody .list-tr .list-group .list-item{display: flex; flex-flow: row nowrap; justify-content: center; align-items: center; border-bottom: 1px solid #efefef;}
+.list_table .list_tbody .list-tr .list-group .list-item:last-child{border-bottom:0;}
+.list_table .list_tbody .list-tr .list-group .list-item:hover{background:#fff7f4;}
+.list_table .list_tbody .list-tr .list_td.lecture_title{flex-grow: 0; width: 42%; text-align: left;}
+.list_table .list_tbody .list-tr .list_td.lecture_time{flex-grow: 1; width: 130px;}
+.list_table .list_tbody .list-tr .lecture_btn{flex-grow: 0; width: 130px;}
+.list_table .list_tbody .list-tr .lecture_date{flex-grow: 0; width: 120px;}
+.list_table .list_tbody .list-tr .lecture_btn .btn-table{display:block; font-size: 13px; font-size: 1.3rem; font-weight: 400; line-height: 2.0; margin-bottom:5px;}
+.list_table .list_tbody .list-tr .lecture_btn .btn-table:last-child{margin-bottom: 0;}
+.list_table .list_tbody .list-tr .learn_state{flex-grow: 0; width: 120px; font-size: 13px; font-size: 1.3rem; font-weight: 400;}
+.list_table .list_tbody .list-tr .learn_state .state_ing{color:#ff6d37;}
+.list_table .list_tbody .list-tr .learn_state .state_stop{color:#9fa0a0;}
+.list_table .list_tbody .list-tr .learn_state .state_complete{color:#3b393a;}
+.list_table .list_tbody .list-tr .list-group .list_fixed, .list_table .list_tbody .list-tr .list-group .list_fixed:hover{background:#f7f7f7;}
+.list_table .list_tbody .list-tr .list_fixed .lecture_title .text-fixed{color: #ff6d37; font-weight: 500;}
+.list_table .list_tbody .list-tr .list_fixed .lecture_time{padding: 10px 23px;}
+.list_table .list_tbody .list-tr .list-group .list_empty{width: 100%; height: 80px;}
+.list_table .list_tbody .list-tr .list-group .list_empty:hover{background:#fff;}
 
 /* purchase  */
 .price_table{}

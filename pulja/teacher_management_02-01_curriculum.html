@@ -327,107 +327,133 @@
 											<a href="#" class="btn btn-primary btn-sm">설정 저장</a>
 										</div>
 									</div>
-									<form role="form" class="form-horizontal curriculum_setting">
-										<div class="form-contents">
-											<div class="content-item">
-												<div class="form-group board_list">
-													<table class="table_board-list table-style_lecture table_select-list">
-														<caption>강의 리스트</caption>
-														<colgroup>
-															<col width="100">
-															<col width="">
-															<col width="100">
-															<col width="130">
-															<col width="100">
-														</colgroup>
-														<thead>
-															<tr>
-																<th scope="col" class="">수업일자</th>
-																<th scope="col" class="">강의명</th>
-																<th scope="col" class="">강의시간</th>
-																<th scope="col" class="">문제학습</th>
-																<th scope="col" class="">학습상태</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr class="">
-																<td class="list font_num">2020.11.06 (월)</td>
-																<td class="list lecture_title">
-																	<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
-																	<div class="ellipsis">[항등식에서  미정계수  구하기  –  수치대입범]</div>
-																</td>
-																<td class="list font_num">54분</td>
-																<td class="list">
-																	<div class="btn-box">
-																		<a href="#" class="btn btn-default btn-table btn-width" onclick="curriculum_popup_change()">3문제</a>
-																		<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
-																	</div>
-																</td>
-																<td class="list learn_state">
-																	<div class="state_complete">학습완료</div>
-																	<div class="state_date">2021.02.01</div>
-																</td>
-															</tr>
-															<tr class="list">
-																<td class="font_num">2020.11.06 (화)</td>
-																<td class="lecture_title">
-																	<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
-																	<div class="ellipsis">[항등식에서  미정계수  구하기  –  계수비교법]</div>
-																</td>
-																<td class="font_num">54분</td>
-																<td>
-																	<div class="btn-box">
-																		<a href="#" class="btn btn-default btn-table btn-width" onclick="curriculum_popup_change()">10문제</a>
-																		<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
-																	</div>
-																</td>
-																<td class="learn_state">
-																	<div class="state_ing">학습중</div>
-																	<div class="state_date">2021.02.01</div>
-																</td>
-															</tr>
-															<tr class="list list_fixed">
-																<td class="font_num">2020.11.06 (수)</td>
-																<td class="lecture_title">
-																	<div class="text-unit text-fixed">대단원 테스트</div>  
-																	<div class="ellipsis">1. 다항식</div>
-																</td>
-																<td class="font_num">54분</td>
-																<td>
-																	<div class="btn-box">
-																		<a href="#" class="btn btn-default btn-table btn-width" onclick="curriculum_popup_change()">10문제</a>
-																		<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
-																	</div>
-																</td>
-																<td class="learn_state">
-																	<div class="state_complete">학습완료</div>
-																	<div class="state_date">2021.02.01</div>
-																</td>
-															</tr>
-															<tr class="list">
-																<td class="font_num">2020.11.06 (금)</td>
-																<td class="lecture_title">
-																	<div class="text-unit">1 다항식 &gt; 02 다항식의 연산 00강</div>  
-																	<div class="ellipsis">[다항식의 연산 덧셈과 뻴셈]</div>
-																</td>
-																<td class="font_num">54분</td>
-																<td>
-																	<div class="btn-box">
-																		<a href="#" class="btn btn-default btn-table btn-width" onclick="curriculum_popup_change()">10문제</a>
-																		<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
-																	</div>
-																</td>
-																<td class="learn_state">
-																	<div class="state_ing">시작하기</div>
-																	<div class="state_date">2021.02.01</div>
-																</td>
-															</tr>
-														</tbody>
-													</table>
+									<div class="form-contents curriculum_setting">
+										<div class="list_table list_lecture">
+											<div class="list_thead">
+												<div class="list_th lecture_date">수업일자</div>
+												<div class="list_th lecture_title">강의명</div>
+												<div class="list_th lecture_time">강의시간</div>
+												<div class="list_th lecture_btn">문제학습</div>
+												<div class="list_th learn_state">학습상태</div>
+											</div>
+											<div class="list_tbody">
+												<div class="list-tr">
+													<div class="list_td font_num lecture_date">2021.02.01<br />(월)</div>
+													<div class="list-group">
+														<div class="list-item"> <!-- 드래그앤 드롭 가능한 클래스 입니다.  -->
+															<div class="list_td font_num lecture_title">
+																<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
+																<div class="ellipsis">[항등식에서  미정계수  구하기  –  수치대입범]</div>
+															</div>
+															<div class="list_td font_num lecture_time">1분 1초</div>
+															<div class="list_td lecture_btn">
+																<div class="btn-box">
+																	<a href="#" class="btn btn-default btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																</div>
+															</div>
+															<div class="list_td font_num learn_state">
+																<div class="state_complete">학습완료</div>
+																<div class="state_date">2021.02.01</div>
+															</div>
+														</div>
+														<div class="list-item">
+															<div class="list_td font_num lecture_title">
+																<div class="text-unit">1 다항식 &gt; 01다항식의 연산 00강</div>  
+																<div class="ellipsis">[다항식의 연산 덧셈과 뻴셈]</div>
+															</div>
+															<div class="list_td font_num lecture_time">2분 25초</div>
+															<div class="list_td lecture_btn">
+																<div class="btn-box">
+																	<a href="#" class="btn btn-default btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																</div>
+															</div>
+															<div class="list_td font_num learn_state">
+																<div class="state_ing">학습중</div>
+																<div class="state_date">2021.02.01</div>
+															</div>
+														</div>
+													</div>
 												</div>
+												<div class="list-tr">
+													<div class="list_td font_num lecture_date">2021.02.02<br />(화)</div>
+													<div class="list-group">
+														<div class="list-item"> <!-- 드래그앤 드롭 가능한 클래스 입니다.  -->
+															<div class="list_td font_num lecture_title">
+																<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
+																<div class="ellipsis">항등식에서  미정계수  구하기  –  계수비교법]</div>
+															</div>
+															<div class="list_td font_num lecture_time">0분 0초</div>
+															<div class="list_td lecture_btn">
+																<div class="btn-box">
+																	<a href="#" class="btn btn-default btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																</div>
+															</div>
+															<div class="list_td font_num learn_state">
+																<div class="state_complete">학습완료</div>
+																<div class="state_date">2021.02.01</div>
+															</div>
+														</div>
+													</div>
+												</div>	
+												<div class="list-tr">
+													<div class="list_td font_num lecture_date">2021.02.03<br />(수)</div>
+													<div class="list-group">
+														<div class="list-item list_empty"> <!-- 드래그앤 드롭 가능한 클래스 입니다.  -->
+															<div class="list_td font_num">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="list-tr">
+													<div class="list_td font_num lecture_date">2021.02.04<br />(목)</div>
+													<div class="list-group">
+														<div class="list-item list_fixed"> <!-- 고정일때  -->
+															<div class="list_td font_num lecture_title">
+																<div class="text-unit text-fixed">대단원 테스트</div>   <!-- 고정일때  -->
+																<div class="ellipsis">1. 다항식</div>
+															</div>
+															<div class="list_td font_num lecture_time"></div>
+															<div class="list_td lecture_btn">
+																<div class="btn-box">
+																	<a href="#" class="btn btn-default btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																</div>
+															</div>
+															<div class="list_td font_num learn_state">
+																<div class="state_complete">학습완료</div>
+																<div class="state_date">2021.02.01</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="list-tr">
+													<div class="list_td font_num lecture_date">2021.02.05<br />(금)</div>
+													<div class="list-group">
+														<div class="list-item"> <!-- 드래그앤 드롭 가능한 클래스 입니다.  -->
+															<div class="list_td font_num lecture_title">
+																<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
+																<div class="ellipsis">[항등식에서  미정계수  구하기  –  수치대입범]</div>
+															</div>
+															<div class="list_td font_num lecture_time">46분 37초</div>
+															<div class="list_td lecture_btn">
+																<div class="btn-box">
+																	<a href="#" class="btn btn-default btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																</div>
+															</div>
+															<div class="list_td font_num learn_state">
+																<div class="state_complete">학습완료</div>
+																<div class="state_date">2021.02.01</div>
+															</div>
+														</div>
+													</div>
+												</div>	
 											</div>
 										</div>
-									</form>
+									</div>
 								</div>
 							</div>
 						</div>	
