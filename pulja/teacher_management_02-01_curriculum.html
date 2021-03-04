@@ -88,15 +88,14 @@
 					</div>
 					<article class="content_box">
 						<div class="content-item">
-							<div class="content-header">
-								<h3 class="content_heading"><span class="weight-500_medium">홍길동</span> 님의 커리큘럼 관리</h3>
-								<div class="option-area fl-r">
-									<a href="#" class="btn btn-brand btn-sm" onclick="curriculum_popup_add()">강의추가</a>
-									<a href="#" class="btn btn-primary btn-sm">설정 저장</a>
-								</div>
-							</div>
 							<div class="row">
 								<div class="col-md-4">
+									<div class="content-header">
+										<h3 class="content_heading"><span class="weight-500_medium">홍길동</span> 님의 커리큘럼 관리</h3>
+										<div class="option-area fl-r">
+											<a href="#" class="btn btn-brand btn-sm" onclick="curriculum_popup_create()">커리큘럼 만들기</a>
+										</div>
+									</div>
 									<form role="form" class="form-horizontal curriculum_setting">
 										<div class="form-contents">
 											<div class="form-info-box">
@@ -104,33 +103,18 @@
 													<div class="sub-header">
 														<h4 class="content_heading sub_heading">
 															<span class="sub_title">커리큘럼 설정 </span>
+															
 														</h4>
-													</div>
-													<div class="form-group">
-														<div class="row-contents">
-															<div class="label-control col-4">과목</div>
-															<div class="col-md-9">
-																<label class="form_selectbox">
-								                                    <select name="subject" class="form-control select-style">
-								                                        <option value="">수학(상)</option>
-								                                        <option value="">수학(하)</option>
-								                                        <option value="">수학Ⅰ</option>
-								                                        <option value="">수학Ⅱ</option>
-								                                        <option value="">확률과통계</option>
-								                                        <option value="">미적분</option>
-								                                        <option value="">기하</option>
-								                                    </select>
-								                                </label>
-								                                <button type="button" class="btn btn-default btn-sm" onclick="curriculum_popup_select()">범위 선택</button>
-															</div>
-														</div>
+														<span class="option-area fl-r">
+															<a href="#" class="btn btn-default btn-sm" onclick="curriculum_popup_create()">수정</a>
+														</span>
 													</div>
 													<div class="form-group">
 														<div class="row-contents">
 															<div class="label-control col-4">커리큘럼</div>
 															<div class="col-md-9">
 																<label class="form_selectbox">
-								                                    <select name="readTime" class="form-control select-style">
+								                                    <select name="readTime" class="form-control select-style" disabled="disabled">
 								                                        <option value="">코치 직접 설정</option>
 								                                        <option value="">수학(상)4주 완성(주6회 일일 2시간 기준)</option>
 								                                        <option value="">수학(상)4주 완성(주6회 일일 2시간 기준)</option>
@@ -143,6 +127,43 @@
 															</div>
 														</div>
 													</div>
+													<div class="form-group">
+														<div class="row-contents">
+															<div class="label-control col-4">커리큘럼명</div>
+															<div class="col-md-9">
+																<div class="input-group">
+		                                                            <input type="text" id="curriculumName" class="form-control" disabled="disabled" placeholder="홍길동 학생 수학(상) 1학기">
+		                                                        </div>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="row-contents">
+															<div class="label-control col-4">과목</div>
+															<div class="col-md-9">
+																<label class="form_selectbox">
+								                                    <select name="subject" class="form-control select-style input-width-md" disabled="disabled">
+								                                        <option value="">수학(상)</option>
+								                                        <option value="">수학(하)</option>
+								                                        <option value="">수학Ⅰ</option>
+								                                        <option value="">수학Ⅱ</option>
+								                                        <option value="">확률과통계</option>
+								                                        <option value="">미적분</option>
+								                                        <option value="">기하</option>
+								                                    </select>
+								                                </label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="row-contents">
+															<div class="label-control col-4">범위</div>
+															<div class="col-md-9">
+																<div class="input-text disabled">부분범위</div>
+															</div>
+														</div>
+													</div>
+													
 												</div>
 												
 												<div class="content-item">
@@ -300,6 +321,12 @@
 									</form>
 								</div>
 								<div class="col-md-8">
+									<div class="content-header">
+										<div class="option-area fl-r">
+											<a href="#" class="btn btn-brand btn-sm" onclick="curriculum_popup_add()">강의추가</a>
+											<a href="#" class="btn btn-primary btn-sm">설정 저장</a>
+										</div>
+									</div>
 									<form role="form" class="form-horizontal curriculum_setting">
 										<div class="form-contents">
 											<div class="content-item">
@@ -323,7 +350,7 @@
 															</tr>
 														</thead>
 														<tbody>
-															<tr class="list">
+															<tr class="">
 																<td class="font_num">2020.11.06 (월)</td>
 																<td class="lecture_title">
 																	<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
@@ -590,10 +617,10 @@
 						</div> 
 						<!-- // 팝업 끝 강의 추가 -->	
                         <!-- 팝업 시작 범위 선택 -->
-						<div id="popupSelect" class="layer-popup-style01">	
+						<div id="popupCreate" class="layer-popup-style01">	
 							<div class="layer-popup-content popup-width-sm" style="height: auto; width: auto;">
 								<div class="popup-header-area">
-							  	    <h3 class="popup-header">범위 선택</h3>
+							  	    <h3 class="popup-header">커리큘럼 만들기</h3>
 							  	    <div class="btn-area">
 									 	<button type="button" class="btn-close b-close" name="close">
 									 		<span class="close icon-close"></span>
@@ -602,16 +629,77 @@
 								</div>
 								<div class="popup-content">
 									<div class="content_box">
-										<div class="filter-area">
-											<div class="m-radio-inline" style="padding-top: 3px;">												
-												<label class="m-radio"> 
-													<input type="radio" name="payment" id="rangeAll" value="rangeAll" data-parsley-multiple="range"> 전체범위 
-													<span></span>
-												</label> 
-												<label class="m-radio"> 
-													<input type="radio" name="payment" id="rangePrat" value="rangePrat" checked="checked" data-parsley-multiple="range"> 부분범위
-													<span></span>
-												</label> 
+										<div class="filter-area vertical-area">
+											<div class="form-group">
+												<div class="row-contents">
+													<div class="col-4">
+														<span class="label-control">커리큘럼</span>
+													</div>
+													<div class="col-9">
+														<label class="form_selectbox">
+						                                    <select name="readTime" class="form-control select-style input-width-lg">
+						                                        <option value="">코치 직접 설정</option>
+						                                        <option value="">수학(상)4주 완성(주6회 일일 2시간 기준)</option>
+						                                        <option value="">수학(상)4주 완성(주6회 일일 2시간 기준)</option>
+						                                        <option value="">수학Ⅱ</option>
+						                                        <option value="">확률과통계</option>
+						                                        <option value="">미적분</option>
+						                                        <option value="">기하</option>
+						                                    </select>
+						                                </label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row-contents">
+													<div class="col-4">
+														<span class="label-control">커리큘럼명</span>
+													</div>
+													<div class="col-9">
+														<div class="input-group">
+		                                                    <input type="text" id="curriculumName" class="form-control input-width-lg" placeholder="커리큘럼명">
+		                                                </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row-contents">
+													<div class="col-4">
+														<span class="label-control">과목</span>
+													</div>
+													<div class="col-9">
+														<label class="form_selectbox">
+						                                    <select name="subject" class="form-control select-style input-width-lg">
+						                                        <option value="">수학(상)</option>
+						                                        <option value="">수학(하)</option>
+						                                        <option value="">수학Ⅰ</option>
+						                                        <option value="">수학Ⅱ</option>
+						                                        <option value="">확률과통계</option>
+						                                        <option value="">미적분</option>
+						                                        <option value="">기하</option>
+						                                    </select>
+						                                </label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row-contents">
+													<div class="col-4">
+														<span class="label-control">범위</span>
+													</div>
+													<div class="col-9">
+														<div class="m-radio-inline" style="padding-top: 3px;">												
+															<label class="m-radio"> 
+																<input type="radio" name="payment" id="rangeAll" value="rangeAll" data-parsley-multiple="range"> 전체범위 
+																<span></span>
+															</label> 
+															<label class="m-radio"> 
+																<input type="radio" name="payment" id="rangePrat" value="rangePrat" checked="checked" data-parsley-multiple="range"> 부분범위
+																<span></span>
+															</label> 
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -1056,8 +1144,8 @@
 	<script src="./resource/js/jquery.datetimepicker.full.min.js"></script>
 	<script>
 	    //Layer Popup
-		function curriculum_popup_select() {	   
-		  $('#popupSelect').bPopup({
+		function curriculum_popup_create() {	   
+		  $('#popupCreate').bPopup({
 			  modalClose: false,
 			  easing: 'easeOutBack', //uses jQuery easing plugin
 		      speed: 450,

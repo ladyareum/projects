@@ -62,7 +62,15 @@ $('.tabs.tabs-nav li').click(function(){
 	$('#'+tab_id).show();
 
 });
+$('.tabs.table-tabs-nav li').click(function(){
+	$('.tabs.table-tabs-nav li').removeClass('active'); 
+	$(this).addClass('active');					 
+	var tab_id = $(this).attr('rel');
+	$('.tab-container .tab-content').hide();
+	$('#'+tab_id).show();
+});
 
+// MultiTabs - 2depth일때사용
 $('.tabs.sub-tabs-nav li').click(function(){
 	$(this).parent().children().removeClass('active'); 
 	$(this).addClass('active');
@@ -75,14 +83,6 @@ $('.tabs.sub-tabs-nav li').click(function(){
 	$('#'+tab_id).show();
 });
 
-$('.tabs.table-tabs-nav li').click(function(){
-	$('.tabs.tabs-nav li').removeClass('active'); 
-	$(this).addClass('active');					 
-	var tab_id = $(this).attr('rel');
-	$('.tab-container .tab-content').hide();
-	$('#'+tab_id).show();
-
-});
 
 //Accordion
 $(document).ready(function(){	
