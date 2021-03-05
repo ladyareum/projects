@@ -85,11 +85,250 @@
 				</div>
 			</header>
 			<div class="container">
-				<section class="main_contents my-studyroom">
+				<section class="main_contents my-report">
 					<div class="contents-header">
-						<h2 class="contents_heading">내 강의실</h2>
+						<h2 class="contents_heading">내 리포트</h2>
 					</div>	
-					<article class="content_box">					
+					<article class="content_box">
+						<!-- tabs -->	
+							<div class="tabs-area">
+								<ul class="tabs tabs-nav">
+									<li rel="tab_report_01" class="active">주간 학습 리포트</li>
+									<li rel="tab_report_02">대단원 테스트 리포트</li>
+								</ul>
+								<div class="tab-container">
+									<!-- content report 01 -->
+									<div class="tab-content active" id="tab_report_01">
+										<div class="content-item header_weekly">
+											<div class="week-picker_select">
+												<button class="btn_icon btn_prev"><span class="material-icons">keyboard_arrow_left</span></button>
+												<label class="form_selectbox">
+													<select name="level" class="form-control select-style font_num">
+														<option value="1week">2021년 01월 30일 ~ 2021년 02월 05</option>
+														<option value="2week">2021년 01월 30일 ~ 2021년 02월 05</option>
+														<option value="3week">2021년 01월 30일 ~ 2021년 02월 05</option>
+														<option value="4week">2021년 01월 30일 ~ 2021년 02월 05</option>
+													</select>
+												</label>
+												<button class="btn_icon btn_prev"><span class="material-icons">keyboard_arrow_right</span></button>
+											</div>
+											<span class="help-block help-text">주간 선택을 하시면 지난 주간 학습 리포트를 확인하실 수 있습니다.</span>
+										</div>
+										<div class="content-item">
+											<div class="content-header">
+												<h3 class="content_heading">주간 학습 전달사항</h3>
+											</div>
+											<div class=" learning_progress">
+												<div class="row-contents">
+													<div class="col-5">
+														<div class="progress-item">
+															<div class="state_title">커리큘럼 개념 진행률</div>
+															<div class="state_progress">
+																<span class="state_percent font_num">5강</span>
+																<span class="font_num"> / 총 20강</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-5">
+														<div class="progress-item">
+															<div class="state_title">총 학습시간</div>
+															<div class="state_progress">
+																<span class="state_percent font_num">50시간 50분</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-5">
+														<div class="progress-item">
+															<div class="state_title">영상학습(개념학습)</div>
+															<div class="state_progress">
+																<span class="state_percent font_num">20%</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-5">
+														<div class="progress-item">
+															<div class="state_title">문제학습</div>
+															<div class="state_progress">
+																<span class="state_percent font_num">20%</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-5">
+														<div class="progress-item br-n">
+															<div class="state_title">정답률</div>
+															<div class="state_progress">
+																<span class="state_percent font_num">93%</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="content-item weekly-learning">
+											<div id="accordion" class="accordion-list-box">
+												<div class="acc-item">
+				                                    <div class="acc-head">
+				                                    	<h4 class="heade-title date_weekly font_num">2021년 01월 30일 ~ 2021년 02월 05일</h4>
+				                                    </div>
+				                                    <div class="acc-contents" style="display: none;">
+				                                    	<div class="forward_day">
+				                                    		<div class="forward_head">
+				                                    			<h5 class="heade-title font_num">
+				                                    				<span class="separation">[기타] </span>2021년 02월 18일 (목)
+				                                    			</h5>
+				                                    		</div>
+				                                    		<div class="forward_content">
+				                                    			<div class="messages">
+				                                    				<p>수고했어요.</p>
+				                                    			</div>
+						                                        <div class="writer-info">
+						                                            <span class="sub-text">작성자 : 이순신</span>
+						                                            <a href="#" class="btn btn-default btn-xs">수정</a>
+						                                            <a href="#" class="btn btn-default btn-xs">삭제</a>
+						                                        </div>
+				                                    		</div>
+				                                    	</div>
+				                                    	<div class="forward_day">
+				                                    		<div class="forward_head">
+				                                    			<h5 class="heade-title font_num">
+				                                    				<span class="separation">[코칭] </span>2021년 02월 15일 (월)
+				                                    			</h5>
+				                                    		</div>
+				                                    		<div class="forward_content">
+				                                    			<div class="messages">
+				                                    				<p>1일에 해야 할 1강, 2강을 수행하지 않았습니다.</p>
+				                                    				<p>이번 주 까지 꼭 문제풀기까지 해주세요. 	</p>
+				                                    			</div>
+						                                        <div class="writer-info">
+						                                            <span class="sub-text">작성자 : 이순신</span>
+						                                            <a href="#" class="btn btn-default btn-xs">수정</a>
+						                                            <a href="#" class="btn btn-default btn-xs">삭제</a>
+						                                        </div>
+				                                    		</div>
+				                                    	</div>
+				                                    	<div class="forward_day">
+				                                    		<div class="forward_head">
+				                                    			<h5 class="heade-title font_num">
+				                                    				<span class="separation">[주간 학습 전달] </span>2021년 02월 05일 (금)
+				                                    			</h5>
+				                                    		</div>
+				                                    		<div class="forward_content">
+				                                    			<div class="messages">
+				                                    				<p>1일에 해야 할 1강, 2강을 수행하지 않았습니다.</p>
+				                                    				<p>이번 주 까지 꼭 문제풀기까지 해주세요. 	</p>
+				                                    			</div>
+						                                        <div class="writer-info">
+						                                            <span class="sub-text">작성자 : 이순신</span>
+						                                            <a href="#" class="btn btn-default btn-xs">수정</a>
+						                                            <a href="#" class="btn btn-default btn-xs">삭제</a>
+						                                        </div>
+				                                    		</div>
+				                                    	</div>
+				                                    </div>
+				                               	</div>
+											</div>
+										</div>
+										<div class="content-item">
+											<div class="content-header">
+												<h3 class="content_heading">주간 정답률 변화 추이</h3>
+											</div>
+											<div class="content_graph">
+												그래프 영역
+											</div>
+										</div>
+										<div class="content-item">
+											<div class="content-header">
+												<h3 class="content_heading">주간 성취도 분석</h3>
+											</div>
+											<div class="">
+												<form role="form" class="form-horizontal">
+													<div class="form-contents">
+														<div class="content-item">
+															<div class="form-group board_list">
+																<table class="table_board-list table_style02">
+																	<caption>강의 리스트</caption>
+																	<!-- <colgroup>
+																		<col width="120">
+																		<col width="">
+																		<col width="100">
+																		<col width="130">
+																		<col width="130">
+																		<col width="120">
+																	</colgroup> -->
+																	<thead>
+																		<tr>
+																			<td rowspan="2" class="">구분</td>
+																			<td rowspan="2" class="">수업일자</td>
+																			<td rowspan="2" class="">강의명</td>
+																			<td rowspan="2" class="">학습상태</td>
+																			<td class="">개념 학습(영상학습</td>
+																			<td class="">문제 학습</td>
+																			<td rowspan="2" class="">오답보기</td>
+																		</tr>
+																		<tr>
+																			<td class="">진도율(개수 기준)</td>
+																			<td class="">정답률</td>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr class="">
+																			<td class="font_num">2020.11.07 (수)</td>
+																			<td class="lecture_title">
+																				<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
+																				<div class="ellipsis">[항등식에서  미정계수  구하기  –  수치대입범]</div>
+																			</td>
+																			<td class="font_num">54분</td>
+																			<td>
+																				<div class="btn-box">
+																					<a href="#" class="btn btn-complete btn-table btn-width">강의보기</a>
+																				</div>
+																			</td>
+																			<td>
+																				<div class="btn-box">
+																					<a href="#" class="btn btn-complete btn-table btn-width">채점결과보기</a>
+																				</div>
+																			</td>
+																			<td class="learn_state">
+																				<div class="state_complete">학습완료</div>
+																				<div class="state_date">2021.02.01</div>
+																			</td>
+																			<td>
+																				<div class="btn-box">
+																					<a href="#" class="btn btn-complete btn-table btn-width">채점결과보기</a>
+																				</div>
+																			</td>
+																		</tr>
+																		
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+										
+									</div>
+									<!-- // content report 01 -->
+									
+									<!-- content report 02 -->
+									<div class="tab-content active" id="tab_report_02">
+										<div class="content-item">
+										</div>
+									</div>
+									<!-- // content report 02 -->
+								</div>
+							</div>	
+						<!-- //tabs -->		
+						
+						
+						
+						
+						
+						
+						
+						
+								
 						<div class="content-list_grid content-item">
 							<div class="row-contents">
 								<div class="col-2">
