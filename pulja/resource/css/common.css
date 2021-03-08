@@ -324,7 +324,22 @@ table thead .date{width: 120px}
 .table_select-list .list_fixed, .table_select-list .list_fixed:hover{background:#f7f7f7;}
 .table_select-list .coaching_test, .table_select-list .coaching_test:hover{background:#fdf6e9;}
 .table_option-area{position: relative; background: #f7f7f7; vertical-align: middle; margin:15px 0 0; padding: 10px 10px;}
-
+.table_style02{table-layout: fixed; font-family: 'Rubik', 'Noto Sans KR',sans-serif; margin-bottom: -1px;}
+.table_style02 thead{background: #fff; border-top: 2px solid #3b393a; border-bottom: 1px solid #c9caca;}
+.table_style02 thead th{font-size: 13px; font-size: 1.3rem; font-weight:500; text-align: center; vertical-align: middle; padding: 10px 5px;}
+.table_style02 tbody{background: #fff;}
+.table_style02 thead tr th, .table_style02 tbody tr td{border-right: 1px solid #c9caca; border-bottom: 1px solid #c9caca;}
+.table_style02 thead th:last-child, .table_style02 tbody td:last-child{border-right: 0;}
+.table_style02 tbody tr td{vertical-align: middle; padding: 10px 10px;}
+.table_style03{font-family: 'Rubik', 'Noto Sans KR',sans-serif; margin-bottom: -1px;}
+.table_style03 thead th{text-align: center; vertical-align: middle; padding: 5px 10px;}
+.table_style03 th, .table_style03  td{vertical-align: middle; border:1px solid #efefef; border-bottom: 0;}
+.table_style03 th:first-child, .table_style03  td:first-child{border-left:0;}
+.table_style03 th:last-child, .table_style03  td:last-child{border-right:0;}
+.table_style03 tbody td{border-top:0; }
+.table_style03 .lecture_progress .state_percent{font-weight:700;}
+.table_style03 .lecture_progress .state_percent{font-weight:700;}
+.table_style03 .lecture_progress .state_guide{font-size: 13px; font-size: 1.3rem; color: #626061; }
 
 /* Pagination Style  */
 .pagination, .pagination ul{display: flex; font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
@@ -401,7 +416,9 @@ table thead .date{width: 120px}
 .content-header .header-option-area .option-select .form-control{height:30px;}
 .content-header .header-option-area .btn{height:30px;}
 .content-header .header-option-area .option-input .form-control{height:28px; padding: 14px 10px;}
-.content-header .header-option-area .option-input{display: inline-block; max-width: 250px; min-width: 164px;;}
+.content-header .header-option-area .option-input{display: inline-block; max-width: 250px; min-width: 164px;}
+.header_title .content_heading{font-size:20px; font-size:2.0rem; font-weight: 700; line-height: 1.8;}
+.line-sytle{border-bottom: 1px solid #efefef; padding-bottom: 10px; }
 .sub-header {padding: 10px 0;}
 .sub_heading{display:inline-block;}
 .sub-header .sub_title{font-size: 16px; font-size: 1.6rem; font-weight: 500; color: #3b393a;}
@@ -636,7 +653,7 @@ table thead .date{width: 120px}
 .sub-tabs-area .sub-tabs-nav li.active{color: #3b393a; cursor: default;}
 
 /* Accordion */
-.accordion-list-box{width:100%;}
+.accordion-list-box{width:100%; padding-top:10px; padding-bottom:40px;}
 .accordion-list-box .acc-item{position: relative; margin-bottom: 5px;}
 .accordion-list-box .acc-item .acc-head{display:block; position:relative; background:#f7f7f7; border:1px solid #c9caca; font-size: 14px; font-size: 1.4rem; font-weight: 500; cursor: pointer; margin-bottom: -1px;/* margin-top: -1px; */ padding:10px 20px;}
 .accordion-list-box .acc-item .acc-head .heade-title{color:#3b393a; font-weight: 500; margin:0;}
@@ -752,7 +769,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .math-problem_contents table thead .num{width: 50px;}
 .math-problem_contents table thead .scores{width: 80px;}
 .math-problem_contents table thead .answer{width: 100px;}
-.math-problem_contents .form-group .btn{margin:2px 5px 2px 0;}
+.math-problem_contents .form-group .btn{min-width:auto; margin:2px 5px 2px 0;}
 .math-problem_contents .form-group .btn:last-child{margin-right:0;}
 
 /* Toggle Style */
@@ -817,6 +834,8 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .table-style_lecture thead .lecture_state{width: 10%;}
 .table-style_lecture thead .lecture_name{width: 10%;}
 .table-style_lecture thead .lecture_detail{width: 14%;}
+.table-style_lecture thead .lecture_separate{width:10%;}
+.table-style_lecture thead .lecture_progress{width:12%;}
 .table-style_lecture tbody{font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
 .table-style_lecture tbody td{font-weight: 400; padding:10px 10px;}
 .table-style_lecture tbody .lecture_title{text-align: left;}
@@ -838,6 +857,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .table-style_lecture tbody td .toggle_favorite{line-height: 1.5;}
 .table-style_lecture .lecture_title .text-fixed{color: #ff6d37; font-weight: 500;}
 .table-style_lecture .lecture_title .text-unit{line-height: 1.6; font-weight: 500;}
+
 
 .table-style_lecture .learning-schedule{border-bottom:1px solid #efefef;}
 .table-style_lecture .learning-schedule .lecture_title{display: flex; align-items: center; text-align: left; border-bottom:0;}
@@ -1381,17 +1401,11 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .rule-style.contents{margin-top: 0;}
 .rule-style .table_list{margin:20px 0;}
 
-.table_style02{table-layout: fixed; font-family: 'Rubik', 'Noto Sans KR',sans-serif; margin-bottom: -1px;}
-.table_style02 thead{background: #fff; border-top: 2px solid #3b393a; border-bottom: 1px solid #c9caca;}
-.table_style02 thead th{font-size: 13px; font-size: 1.3rem; font-weight:500; text-align: center; vertical-align: middle; padding: 10px 5px;}
-.table_style02 tbody{background: #fff;}
-.table_style02 thead tr th, .table_style02 tbody tr td{border-right: 1px solid #c9caca; border-bottom: 1px solid #c9caca;}
-.table_style02 thead th:last-child, .table_style02 tbody td:last-child{border-right: 0;}
-.table_style02 tbody tr td{font-size: 13px; font-size: 1.3rem; text-align: left; vertical-align: middle; padding: 10px 10px;}
+
 
 .learning_progress{text-align:center; border: 1px solid #c9caca; padding: 10px 10px;}
 .learning_progress .col-5, .learning_progress .col-4{border-right:1px solid #efefef;}
-.learning_progress .col-5:last-child, , .learning_progress .col-4:last-child{border-right:0;}
+.learning_progress .col-5:last-child, .learning_progress .col-4:last-child{border-right:0;}
 .learning_progress .progress-item{background: #fff; padding:20px 0;}
 .learning_progress .state_title{font-size:14px; font-size:1.4rem; font-weight:500; letter-spacing: -1px;  padding-bottom: 10px;}
 .learning_progress .state_progress span{font-size:21px; font-size:2.1rem; font-weight:700;}
@@ -1415,8 +1429,17 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .contents_dashboard .table_option-area .notify_lecture .counting{color: #74afcd; font-size:16px; font-size:1.6rem; font-weight: 500;}
 
 /* my report  */
-.my-report .content-item{margin-bottom: 20px;;}
+.my-report .content-item{margin-bottom: 30px;;}
 .my-report .header_weekly{text-align:center;}
+.total_learning-score{position: relative; overflow:hidden; width:100%;  text-align: center; padding:20px 0;}
+.total_learning-score .total_score{display: inline-block; position: relative; width:30%; vertical-align: middle; margin:0 10px;}
+.total_learning-score .total_score .result_title{color:#fff; font-size: 16px; font-size: 1.6rem; font-weight:500; padding: 10px 10px;}
+.total_learning-score .total_score .result_content{height: 120px; font-size: 26px; font-size: 2.6rem; font-weight:500; line-height: 1.2; padding: 40px 20px;}
+.total_learning-score .total_score .result_guide{color: #626061; font-size: 16px; font-size: 1.6rem; font-weight:500;}
+.total_score.problem .result_title{background:#74afcd;}
+.total_score.problem .result_content{background:#eef5f9;}
+.total_score.score .result_title{background:#8ab669;}
+.total_score.score .result_content{background:#eef5ea;}
 
 .header_weekly .week-picker_select .form_selectbox .select-style{height:34px; font-size: 16px; font-size: 1.6rem; border: 1px solid #fff;}
 .header_weekly .week-picker_select .form_selectbox .select-style:focus{outline:0;}
