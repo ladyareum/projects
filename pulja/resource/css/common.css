@@ -332,11 +332,12 @@ table thead .date{width: 120px}
 .table_style02 thead th:last-child, .table_style02 tbody td:last-child{border-right: 0;}
 .table_style02 tbody tr td{vertical-align: middle; padding: 10px 10px;}
 .table_style03{font-family: 'Rubik', 'Noto Sans KR',sans-serif; margin-bottom: -1px;}
+.table_style03 thead{background: #eef5f9; border-top: 2px solid #74afcd; border-bottom: 1px solid #74afcd;}
 .table_style03 thead th{text-align: center; vertical-align: middle; padding: 5px 10px;}
-.table_style03 th, .table_style03  td{vertical-align: middle; border:1px solid #efefef; border-bottom: 0;}
+.table_style03 th, .table_style03  td{vertical-align: middle; border:1px solid #74afcd; border-bottom: 0;}
 .table_style03 th:first-child, .table_style03  td:first-child{border-left:0;}
 .table_style03 th:last-child, .table_style03  td:last-child{border-right:0;}
-.table_style03 tbody td{border-top:0; }
+.table_style03 tbody td{border-bottom: 1px solid #74afcd; border-top:0; }
 .table_style03 .lecture_progress .state_percent{font-weight:700;}
 .table_style03 .lecture_progress .state_percent{font-weight:700;}
 .table_style03 .lecture_progress .state_guide{font-size: 13px; font-size: 1.3rem; color: #626061; }
