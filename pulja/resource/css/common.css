@@ -1076,15 +1076,19 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .list_table .list_tbody .list-tr .list-group .list_empty:hover{background:#fff;}
 
 /* purchase  */
-.price_table{}
-.price_table .box_border{padding:20px 40px;}
+.purchase .purchase_header{background:#fff; text-align:center; padding:20px 20px;}
+.price_table{font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
+.price_table .box_border{padding: 0;}
 .price_table .box_info{text-align: center;}
-.price_table .box_info .content-header{background: #fff; padding: 20px 20px;}
-.price_table .box_info .content-header .content_heading{color: #ff6d37; font-size: 24px; font-size: 2.4rem; font-weight:700;}
-.price_table .box_info_text{font-size: 18px; font-size:1.8rem; font-weight:700; border-top: 1px solid #efefef; border-bottom: 1px solid #efefef; margin-bottom:20px; padding:20px 20px}
-.price_table .sub-text{color:#9fa0a0; font-size: 16px; font-size: 1.6rem; font-weight:500; margin-top: 5px;}
-.price_table .discount{color: #ff6d37; font-size: 16px; font-size: 1.6rem; font-weight: 500; margin-left:10px;}
-.price_table .price{font-size: 26px; font-size:2.6rem; font-weight: 700; margin: 20px 0;}
+.price_table .box_info .content-header{background: #fff; margin:0; padding:30px 10px;}
+.price_table .box_info .content-header .content_heading{color: #3b393a; font-size: 20px; font-size: 2.0rem; font-weight:500;}
+.price_table .box_info_list{padding:30px 20px}
+.price_table .box_info_list .item_text{text-align:center; letter-spacing: -1px; border-bottom:1px solid #efefef; padding-bottom:10px;}
+.price_table .box_info_list .item_text .info_text{font-size: 18px; font-size:1.8rem; font-weight:500; }
+.price_table .box_info_list .item_text .sub-text{color:#626061; font-size: 14px; font-size: 1.4rem; font-weight:400;}
+.price_table .price{background: #f7f7f7; font-size: 20px; font-size:2.0rem; font-weight: 700; padding: 30px 10px;}
+.price_table .discount{color: #ff6d37; font-size: 16px; font-size: 1.6rem; font-weight: 500; margin-left:5px;}
+.price_table .btn-box{padding:20px 10px;}
 
 .deduction-payment .step-list{background: #f7f7f7; margin: 10px 0; padding:10px 10px;}
 .deduction-payment .btn-box{text-align: center; padding: 55px 0;}
