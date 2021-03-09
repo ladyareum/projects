@@ -1079,6 +1079,8 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .purchase .purchase_header{background:#fff; text-align:center; padding:20px 20px;}
 .price_table{font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
 .price_table .box_border{padding: 0;}
+.price_table .box_border:hover{border:1px solid #ff6d37; }
+.price_table .box_border:hover .btn-box .btn-brand_outline{background:#ff6d37; color:#fff; transition: all .2s ease-in-out;}
 .price_table .box_info{text-align: center;}
 .price_table .box_info .content-header{background: #fff; margin:0; padding:30px 10px;}
 .price_table .box_info .content-header .content_heading{color: #3b393a; font-size: 20px; font-size: 2.0rem; font-weight:500;}
