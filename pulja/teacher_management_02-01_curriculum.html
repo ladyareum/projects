@@ -93,7 +93,8 @@
 									<div class="content-header">
 										<h3 class="content_heading"><span class="weight-500_medium">홍길동</span> 님의 커리큘럼 관리</h3>
 										<div class="option-area fl-r">
-											<a href="#" class="btn btn-brand btn-sm" onclick="curriculum_popup_create()">커리큘럼 만들기</a>
+											<a href="#" class="btn btn-apply btn-sm" onclick="curriculum_popup_create()">커리큘럼 만들기</a>
+											<a href="#" class="btn btn-default btn-sm" onclick="curriculum_popup_create()">삭제</a>
 										</div>
 									</div>
 									<form role="form" class="form-horizontal curriculum_setting">
@@ -105,9 +106,6 @@
 															<span class="sub_title">커리큘럼 설정 </span>
 															
 														</h4>
-														<span class="option-area fl-r">
-															<a href="#" class="btn btn-default btn-sm" onclick="curriculum_popup_create()">수정</a>
-														</span>
 													</div>
 													<div class="form-group">
 														<div class="row-contents">
@@ -132,7 +130,10 @@
 															<div class="label-control col-4">커리큘럼명</div>
 															<div class="col-md-9">
 																<div class="input-group">
-		                                                            <input type="text" id="curriculumName" class="form-control" disabled="disabled" placeholder="홍길동 학생 수학(상) 1학기">
+		                                                            <input type="text" id="curriculumName" class="form-control" placeholder="홍길동 학생 수학(상) 1학기">
+		                                                            <span class="btn_input-group">
+																		<button type="button" class="btn btn-default btn-sm">변경</button>
+																	</span>
 		                                                        </div>
 															</div>
 														</div>
@@ -141,8 +142,8 @@
 														<div class="row-contents">
 															<div class="label-control col-4">과목</div>
 															<div class="col-md-9">
-																<label class="form_selectbox">
-								                                    <select name="subject" class="form-control select-style input-width-md" disabled="disabled">
+																<label class="form_selectbox"> 
+								                                    <select name="subject" class="form-control select-style" disabled="disabled">
 								                                        <option value="">수학(상)</option>
 								                                        <option value="">수학(하)</option>
 								                                        <option value="">수학Ⅰ</option>
@@ -323,8 +324,8 @@
 								<div class="col-md-8">
 									<div class="content-header">
 										<div class="option-area fl-r">
-											<a href="#" class="btn btn-brand btn-sm" onclick="curriculum_popup_add()">강의추가</a>
-											<a href="#" class="btn btn-primary btn-sm">설정 저장</a>
+											<a href="#" class="btn btn-apply btn-sm" onclick="curriculum_popup_add()">강의추가</a>
+											<a href="#" class="btn btn-default btn-sm">설정 저장</a>
 										</div>
 									</div>
 									<div class="form-contents curriculum_setting">
@@ -348,8 +349,8 @@
 															<div class="list_td font_num lecture_time">1분 1초</div>
 															<div class="list_td lecture_btn">
 																<div class="btn-box">
-																	<a href="#" class="btn btn-default btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
-																	<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																	<a href="#" class="btn btn-apply btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-default  btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
 																</div>
 															</div>
 															<div class="list_td font_num learn_state">
@@ -365,8 +366,8 @@
 															<div class="list_td font_num lecture_time">2분 25초</div>
 															<div class="list_td lecture_btn">
 																<div class="btn-box">
-																	<a href="#" class="btn btn-default btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
-																	<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																	<a href="#" class="btn btn-apply btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-default  btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
 																</div>
 															</div>
 															<div class="list_td font_num learn_state">
@@ -387,8 +388,8 @@
 															<div class="list_td font_num lecture_time">0분 0초</div>
 															<div class="list_td lecture_btn">
 																<div class="btn-box">
-																	<a href="#" class="btn btn-default btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
-																	<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																	<a href="#" class="btn btn-apply btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-default  btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
 																</div>
 															</div>
 															<div class="list_td font_num learn_state">
@@ -418,8 +419,8 @@
 															<div class="list_td font_num lecture_time"></div>
 															<div class="list_td lecture_btn">
 																<div class="btn-box">
-																	<a href="#" class="btn btn-default btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
-																	<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																	<a href="#" class="btn btn-apply btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-default  btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
 																</div>
 															</div>
 															<div class="list_td font_num learn_state">
@@ -440,8 +441,8 @@
 															<div class="list_td font_num lecture_time">46분 37초</div>
 															<div class="list_td lecture_btn">
 																<div class="btn-box">
-																	<a href="#" class="btn btn-default btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
-																	<a href="#" class="btn btn-secondary btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																	<a href="#" class="btn btn-apply btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-default  btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
 																</div>
 															</div>
 															<div class="list_td font_num learn_state">
@@ -634,7 +635,7 @@
 											</div>							
 										</div>
 										<div class="btn-actions">
-											<button type="submit" class="btn btn-primary btn-sm b-close">확인</button>	
+											<button type="submit" class="btn btn-default btn-sm b-close">확인</button>	
 											<button type="submit" class="btn btn-default btn-sm b-close">취소</button>
 										</div>	
 									</div>
@@ -846,7 +847,7 @@
 											</form>
 										</div>
 										<div class="btn-actions">
-											<button type="submit" class="btn btn-primary btn-sm">확인</button>	
+											<button type="submit" class="btn btn-default btn-sm">확인</button>	
 											<button type="submit" class="btn btn-default btn-sm b-close">취소</button>
 										</div>
 									</div>
@@ -1076,7 +1077,7 @@
 											</div>							
 										</div>
 										<div class="btn-box btn-actions">
-											<button type="submit" class="btn btn-primary btn-sm">확인</button>	
+											<button type="submit" class="btn btn-default btn-sm">확인</button>	
 											<button type="submit" class="btn btn-default btn-sm b-close">취소</button>
 										</div>						
 									</div>
@@ -1149,7 +1150,7 @@
 											</form>
 										</div>
 										<div class="btn-box btn-actions">
-											<button type="submit" class="btn btn-primary btn-sm">확인</button>	
+											<button type="submit" class="btn btn-default btn-sm">확인</button>	
 											<button type="submit" class="btn btn-default btn-sm b-close">취소</button>
 										</div>	
 									</div>
