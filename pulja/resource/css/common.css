@@ -1091,7 +1091,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .price_table .box_border:hover .box_info .content-header hr{background:#ff6d37;}
 .price_table .box_info{text-align: center;}
 .price_table .box_info .content-header{background: #fff;}
-.price_table .box_info .content-header .content_heading{color: #3b393a; font-size: 20px; font-size: 2.0rem; font-weight:500; margin-bottom:10px;}
+.price_table .box_info .content-header .content_heading{display: block; color: #3b393a; font-size: 20px; font-size: 2.0rem; font-weight:500; margin-bottom:10px;}
 .price_table .box_info .content-header .trial-style{display: inline-block; position: relative; background:#fff;  font-weight:500;  line-height:1.8;  border:1px solid #ddd; border-radius:15px; padding:2px 20px; z-index:10;}
 .price_table .box_info .content-header hr{position:relative; height:1px; border:0; background:#efefef; top:-22px; }
 
