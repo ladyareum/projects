@@ -1097,12 +1097,11 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .price_table .box_info_list .item_list{letter-spacing: -1px; padding-bottom:10px;}
 .price_table .box_info_list .item_list .info_text{font-size: 16px; font-size:1.6rem; font-weight:500; text-align:left; }
 .price_table .box_info_list .item_list .sub-text{color:#626061; font-size: 15px; font-size: 1.5rem; font-weight:400; padding-bottom: 5px;}
-.price_table .box_info_list .item_info{border-top:1px solid #efefef; border-bottom:1px solid #efefef; padding:15px 15px;}
+.price_table .box_info_list .item_info{border-top:1px solid #efefef; border-bottom:1px solid #efefef; padding:15px 10px;}
 .price_table .box_info_list .item_info .icon-check{position: relative; top: 2px; font-size: 18px; font-size: 1.8rem; font-weight:900; padding-right: 3px;}
 .price_table .box_info_list .item_info .pb-3{padding-bottom:3px;}
 .price_table .price{font-size: 20px; font-size:2.0rem; font-weight: 700; padding:20px 0;}
 .price_table .discount{color: #ff6d37; font-size: 16px; font-size: 1.6rem; font-weight: 500; margin-left:5px;}
-.price_table .btn-box{}
 
 .deduction-payment .step-list{background: #f7f7f7; margin: 10px 0; padding:10px 10px;}
 .deduction-payment .btn-box{text-align: center; padding: 55px 0;}
@@ -1322,7 +1321,6 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 
 .middle_visual .content_box{margin:20px 0;}
 /* 추후 삭제 */
-.middle_visual .single-services{}
 .middle_visual .serviece-left{text-align: right;}
 .middle_visual .serviece-right{text-align: left;}
 .middle_visual .row-contents.middle-row{margin-top: 20px; margin-bottom: 20px;}
@@ -1484,7 +1482,6 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 	.table-style_lecture thead .lecture_btn{width: 130px;}
 	.table-style_lecture thead .lecture_state{width: 100px;}
 	.box_border{padding:10px 10px;}
-	.price_table .box_info_list .item_info{padding: 15px 0;}
 	.price_table .box_info_list .item_list .info_text{font-size: 16px; font-size: 1.6rem;}
 	
 }
@@ -1508,7 +1505,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 	.learning_progress a{min-height: 100px; padding: 10px 10px;}
 	.box_border{margin-bottom:20px;}
 	.price_table .col-5{width: 33.333%;}
-	.price_table .box_info_list .item_info{padding: 15px 60px;}
+	.price_table .box_info_list .item_info{padding: 15px 20px;}
 	
 	
 }
@@ -1521,7 +1518,6 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 	.recruit_teacher .contnet-item dl{padding-left: 230px;}
     .middle_visual .content-item .services_area .col-4{width: 50%;}
     .test_start .test_list-sytle .list-item ul li{font-size: 16px; font-size: 1.6rem;}
-    .price_table .box_info_list .item_info{padding: 15px 22px;}
 }
 
 
