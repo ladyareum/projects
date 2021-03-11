@@ -19,7 +19,7 @@ article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section{d
 audio, canvas, progress, video{display: inline-block;}
 progress{vertical-align: baseline;}
 ul, ol, menu{list-style-type:none; }
-legend, hr, caption span, .hide{position:absolute; left:-3000%;}
+legend, caption span, .hide{position:absolute; left:-3000%;}
 em, address{ font-style:normal;}
 table{width:100%; font-size:14px; font-size:1.4rem;border-collapse:collapse; border-spacing:0;}
 table caption, legend{position: absolute; top: -9999px; text-indent: -9999px; font-size: 0; line-height: 0;}
@@ -313,7 +313,7 @@ table thead .date{width: 120px}
 .board_list .answer-box .date{font-size:13px; font-size:1.3rem; color:#919daa; padding-bottom: 10px;}
 .board_list .answer-box p, .board_list .answer-box a{font-size: 14px; font-size: 1.4rem; font-weight:500; }
 .board_list .answer-box .message-item{padding: 20px 0;}
-.level_list .state_level{font-family: 'Rubik', 'Noto Sans KR',sans-serif; color:#8ab669; font-size:16px; font-size:1.6rem;}
+.level_list .state_level{font-family: 'Rubik', 'Noto Sans KR',sans-serif; color:#ff6d37; font-size:16px; font-size:1.6rem;}
 .table_style01{table-layout: fixed; font-family: 'Rubik', 'Noto Sans KR',sans-serif; margin-bottom: -1px;}
 .table_style01 tbody{background: #fff;}
 .table_style01 tbody th, .table_style01 tbody td{border-right: 1px solid #c9caca; border-bottom: 1px solid #c9caca;}
@@ -1041,7 +1041,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .curriculum_setting .days-class{background: #f7f7f7; padding: 10px 5px;}
 .curriculum_setting .days-class ul{display: flex; flex-direction: row;}
 .curriculum_setting .days-class ul li{flex: 1; background: #fff; text-align: center; font-size: 16px; font-size:1.6rem; margin: 0 5px; padding: 20px 15px;}
-.curriculum_setting .days-class ul li .state_day{font-size: 18px; font-size:1.8rem; font-weight:500;  color:#8ab669;}
+.curriculum_setting .days-class ul li .state_day{font-size: 18px; font-size:1.8rem; font-weight:500;  color:#ff6d37;}
 .curriculum_setting .level_list_info{margin-bottom:0 !important;}
 .curriculum_setting .list-info .sub-header{padding-bottom: 10px;}
 .curriculum_setting .list-info .level_list{background: #f7f7f7; padding: 10px;}
@@ -1084,19 +1084,25 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 /* purchase  */
 .purchase .purchase_header{background:#fff; text-align:center; padding:20px 20px;}
 .price_table{font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
-.price_table .box_border{padding: 0;}
+.price_table .box_border{}
 .price_table .box_border:hover{border:1px solid #ff6d37; }
 .price_table .box_border:hover .btn-box .btn-brand_outline{background:#ff6d37; color:#fff; transition: all .2s ease-in-out;}
 .price_table .box_info{text-align: center;}
-.price_table .box_info .content-header{background: #fff; margin:0; padding:30px 10px;}
-.price_table .box_info .content-header .content_heading{color: #3b393a; font-size: 20px; font-size: 2.0rem; font-weight:500;}
-.price_table .box_info_list{padding:30px 20px}
-.price_table .box_info_list .item_text{text-align:center; letter-spacing: -1px; border-bottom:1px solid #efefef; padding-bottom:10px;}
-.price_table .box_info_list .item_text .info_text{font-size: 18px; font-size:1.8rem; font-weight:500; }
-.price_table .box_info_list .item_text .sub-text{color:#626061; font-size: 14px; font-size: 1.4rem; font-weight:400;}
-.price_table .price{background: #f7f7f7; font-size: 20px; font-size:2.0rem; font-weight: 700; padding: 30px 10px;}
+.price_table .box_info .content-header{background: #fff;}
+.price_table .box_info .content-header .content_heading{color: #3b393a; font-size: 20px; font-size: 2.0rem; font-weight:500; margin-bottom:10px;}
+.price_table .box_info .content-header .trial-style{display: inline-block; position: relative; background:#fff;  font-weight:500;  line-height:1.8;  border:1px solid #ddd; border-radius:15px; padding:2px 20px; z-index:10;}
+.price_table .box_info .content-header hr{position:relative; height:1px; border:0; background:#efefef; top:-22px; }
+
+.price_table .box_info_list{}
+.price_table .box_info_list .item_list{letter-spacing: -1px; padding-bottom:10px;}
+.price_table .box_info_list .item_list .info_text{font-size: 16px; font-size:1.6rem; font-weight:500; text-align:left; }
+.price_table .box_info_list .item_list .sub-text{color:#626061; font-size: 15px; font-size: 1.5rem; font-weight:400; padding-bottom: 5px;}
+.price_table .box_info_list .item_info{border-top:1px solid #efefef; border-bottom:1px solid #efefef; padding:15px 0;}
+.price_table .box_info_list .item_info .icon-check{position: relative; top: 2px; font-size: 18px; font-size: 1.8rem; font-weight:900; padding-right: 5px;}
+.price_table .box_info_list .item_info .pb-3{padding-bottom:3px;}
+.price_table .price{font-size: 20px; font-size:2.0rem; font-weight: 700; padding:20px 0;}
 .price_table .discount{color: #ff6d37; font-size: 16px; font-size: 1.6rem; font-weight: 500; margin-left:5px;}
-.price_table .btn-box{padding:20px 10px;}
+.price_table .btn-box{}
 
 .deduction-payment .step-list{background: #f7f7f7; margin: 10px 0; padding:10px 10px;}
 .deduction-payment .btn-box{text-align: center; padding: 55px 0;}
