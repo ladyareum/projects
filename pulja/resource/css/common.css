@@ -1035,7 +1035,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .curriculum_setting .form-group{margin-bottom: 15px;}
 .curriculum_setting .label-control{font-size: 14px; font-size:1.4rem; font-weight:400;}
 .curriculum_setting .form-control{height: 28px;}
-.curriculum_setting .link-text{text-decoration: underline;}
+.curriculum_setting .link-text{font-size: 12px; font-size:1.2rem;  text-decoration: underline;}
 .curriculum_setting .days-class{background: #f7f7f7; padding: 10px 5px;}
 .curriculum_setting .days-class ul{display: flex; flex-direction: row;}
 .curriculum_setting .days-class ul li{flex: 1; background: #fff; text-align: center; font-size: 16px; font-size:1.6rem; margin: 0 5px; padding: 20px 15px;}
@@ -1047,6 +1047,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .curriculum_setting .input-group{display:flex; min-width: 140px; margin-bottom: 0;}
 .curriculum_setting .input-group .form-control{width:100%; margin-right:5px;}
 .curriculum_setting .input-group .btn_input-group .btn{min-width:60px;}
+.curriculum_setting .m-checkbox-inline .m-checkbox{margin-right:10px;}
 
 /* list drag&drop */
 .list_table{display: flex; flex-flow: column nowrap;}
@@ -1514,6 +1515,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 	.recruit_teacher .contnet-item dl{padding-left: 230px;}
     .middle_visual .content-item .services_area .col-4{width: 50%;}
     .test_start .test_list-sytle .list-item ul li{font-size: 16px; font-size: 1.6rem;}
+    .curriculum_setting{margin-bottom:30px;}
 }
 
 
