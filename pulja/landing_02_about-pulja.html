@@ -576,6 +576,9 @@
 		function firstPlay() {
 			$("body").removeClass("play");
 			var firstNum = $(".firstPlay li.active");
+			if(firstNum.find(".up .inn").text() == 1 && $(".secondPlay li.active .up .inn").text() == 0 && $(".thirdPlay li.active .up .inn").text() == 0){ 
+                thirdPlay(); 
+            }
 			if(firstNum.find(".up .inn").text() == 0){ 
                 secondPlay(); 
             }
