@@ -1588,12 +1588,10 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .my-student .table-style_lecture .learning_progress .count_box .counting{font-size:14px; font-size:1.4rem; font-weight:500; }
 .my-student .table-style_lecture .learning_progress .count_box .counting .icon{font-size:16px; font-size:1.6rem;}
 
-
-
-
-
-
-
-
+/* Back To Top */
+.back-to-top {display: none; position: fixed; bottom: 2em; right: 0px; font-size: 12px; color: #000; text-decoration: none; padding: 1em;}
+.back-to-top a{display: block; background: #fff; border: 1px solid #ddd; color: #ddd; text-align: center; text-transform: uppercase; text-decoration: none;}
+.back-to-top a:hover {text-decoration: none; background: #fff; border: 1px solid #626061; color: #626061; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
+.back-to-top span{display: block; width:36px; height:36px; font-size:24px; padding:7px 0;}
 
 
