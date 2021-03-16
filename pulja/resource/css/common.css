@@ -571,10 +571,6 @@ table thead .date{width: 120px}
 .message-item .search-text{font-weight:600; padding-right:5px;}
 .message-item .guide-box{display:inline-block; background: #f7f7f7; margin:20px 0; padding:20px 40px;}
 .table_board-list .board-pagination{width: 100%; text-align: center;}
-.table_board-list .btn-solve{background: #ff6d37; border: 1px solid #ff6d37; color: #fff;}
-.table_board-list .btn-solve:hover{background: #ff6127; border: 1px solid #ff6127;}
-.table_board-list .btn-complete{background: #9fa0a0; border: 1px solid #9fa0a0; color: #fff;}
-.table_board-list .btn-complete:hover{background: #626061; border: 1px solid #626061;}
 .list_detailview .content-item{margin-top:0;}
 .list_detailview .content-item .accordion-list-box{padding-top:0;}
 .datepicker_control{display: inline-block; width: 100%; min-width: 104px; height: 28px; font-size: 1.3rem; font-size: 1.3rem; text-align: center; text-indent:0 !important; background: #fff; border: 1px solid #ddd; padding: 5px 8px;}
@@ -848,8 +844,8 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .table-style_lecture .btn-area .btn-table:last-child{margin-bottom: 5px;}
 .table-style_lecture .btn-solve{background: #ff6d37; border: 1px solid #ff6d37; color: #fff;}
 .table-style_lecture .btn-solve:hover{background: #ff6127; border: 1px solid #ff6127;}
-.table-style_lecture .btn-complete{background: #bdbdbd; border: 1px solid #bdbdbd; color: #fff;}
-.table-style_lecture .btn-complete:hover{background: #9fa0a0; border: 1px solid #9fa0a0;}
+.table-style_lecture .btn-complete{background: #9fa0a0; border: 1px solid #9fa0a0; color: #fff;}
+.table-style_lecture .btn-complete:hover{background: #626061; border: 1px solid #626061;}
 .table-style_lecture .learn_state{font-size: 13px; font-size: 1.3rem;}
 .table-style_lecture .state_course{font-size:13px; font-size:1.3rem; font-weight:500; letter-spacing: -1px;}
 .table-style_lecture .state_ing{color:#ff6d37;}
