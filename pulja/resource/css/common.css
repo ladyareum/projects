@@ -968,11 +968,11 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .support_wrap table thead .num{width: 120px; min-width: 45px;}
 .support_wrap table thead .date{width: 120px;}
 .support_wrap .table_board-list tbody td{padding:15px 8px;}
-.support_wrap .support_header{background: #f7f7f7; text-align: center; margin-top: 10px; padding: 20px 0;}
+.support_wrap .support_header{background: #f7f7f7; text-align: center; padding: 20px 0;}
 .support_wrap .support_header .content_heading{font-weight: 700;}
 .support_wrap .inquiry .textarea-style{height: 150px;}
 .support_wrap .help-item{margin: 40px 0 20px;}
-.support_wrap .help-item p{font-size: 16px; font-size: 1.6rem;}
+.support_wrap .help-item p{font-size: 14px; font-size: 1.4rem;}
 .support_wrap .board_list{margin-top: 48px;}
 .support_wrap .notice .board_list{margin-top: 0;}
 .support_wrap .support-center{position: relative; overflow: hidden;}
