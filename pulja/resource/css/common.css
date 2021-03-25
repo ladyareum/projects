@@ -862,6 +862,8 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .table-style_lecture .learning-schedule .lecture_title{display: flex; align-items: center; text-align: left; border-bottom:0;}
 .table-style_lecture .learning-schedule .lecture_title .separate_title{display: inline-block; min-width: 40%; padding-right:10px;}
 .table-style_lecture .learning-schedule .lecture_title .lecture_state{display: inline-block; position: relative; overflow: hidden; padding: 6px 0;}
+.table-style_lecture .learning-schedule .lecture_title .lecture_state .badge{width:20px; height:20px; font-size:11px; font-size:1.1rem; padding: 3px 5px; margin-right: 0;}
+
 
 /* table style test  */
 .table-style_test tbody{font-family: 'Rubik', 'Noto Sans KR',sans-serif;}
