@@ -249,7 +249,8 @@ a.disabled{pointer-events: none;}
 .divi-vertical{display: inline-block; width:1px; height:8px;line-height: .8; border-right: 1px solid #c9caca; margin: 0 5px;}
 
 /* badge */
-.badge{display: inline-block; min-width: 10px; width:18px; height:18px; padding: 3px 5px; border-radius: 50%; font-size: 10px; font-size: 1.0rem; font-weight: 700; color: #fff; text-align: center; margin-right: 5px;}
+.badge{display: inline-block; min-width: 10px; width:18px; height:18px; padding: 2px 5px; border-radius: 50%; font-size: 10px; font-size: 1.0rem; font-weight: 500; color: #fff; text-align: center; margin-right: 5px;}
+.badge_mini{display: inline-block; min-width: 8px; width:8px; height:8px; border-radius: 50%; text-align: center;}
 .badge-brand{background:#ff6d37;}
 .badge-secondary{background:#8ab669;}
 .badge-tertiary{background:#f9be62;}
@@ -1052,6 +1053,11 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .curriculum_setting .input-group .form-control{width:100%; margin-right:5px;}
 .curriculum_setting .input-group .btn_input-group .btn{min-width:60px;}
 .curriculum_setting .m-checkbox-inline .m-checkbox{margin-right:10px;}
+.folat-box{display:block; position: fixed; bottom:30px; right: 30px; text-align: center; z-index:99;}
+.folat-box .btn_round{position: relative; width:50px; height:50px; background: #fff; border: 1px solid #ff3d3d; text-align: center; border-radius:50%; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 0.2s;}
+.folat-box .btn_round .btn-delete{position: relative; overflow: hidden; width:50px; height:50px; background: transparent;}
+.folat-box .btn_round .btn-delete .icon-delete{position: relative; left: -1px; color:#ff3d3d; font-size:32px; font-size:3.2rem;}
+.folat-box .btn_round:hover{box-shadow: 0px 0px 5px rgba(255, 61, 61, .8);}
 
 /* list drag&drop */
 .list_table{display: flex; flex-flow: column nowrap;}
@@ -1464,8 +1470,6 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .content_graph{border:1px solid #efefef; padding:10px;}
 
 
-
-
 @media screen and (max-width: 1260px){	
 	.math-problem_contents table thead .solve{width:164px;}
 }
@@ -1606,9 +1610,12 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 #calendar .fc .fc-highlight{background: rgb(60,58, 59, 0.03); background: var(--fc-highlight-color,rgba(60,58, 59, 0.03));}
 #calendar .fc .fc-daygrid-day.fc-day-today{background: rgba(234,107, 57, 0.1); background: var(--fc-today-bg-color,rgba(234,107, 57, 0.1));}
 #calendar .fc .fc-bg-event{background: rgb(162 133 189); background: var(--fc-bg-event-color, rgb(162 133 189)); opacity: 0.1; opacity: var(--fc-bg-event-opacity, 0.1);}
-#calendar .fc-day-today{background-color: rgba(255, 109, 55, 0.1); background-color: var(--fc-today-bg-color, rgba(255, 109, 55, 0.1));}
+#calendar .fc-day-today{background-color: rgba(255, 240, 235, 1); background-color: var(--fc-today-bg-color, rgba(255, 240, 235, 1));}
 #calendar .fc-theme-standard td, .fc-theme-standard th{background-color: rgb(255, 255, 255); background-color: var(--fc-today-bg-color,rgb(255, 255, 255));}
 #calendar .fc-day-sun a{color: #d9534f !important;}
 #calendar .fc-day-sat a{color: #428bca !important;}
 .fc .fc-toolbar-title{font-weight: 500;}
 .fc .fc-button{border-radius:0 !important; font-size: 0.929em !important; padding: 0.3em 0.714em!important;}
+.fc-theme-standard td, .fc-theme-standard th{float: none !important; padding: 0 !important;}
+.fc .fc-col-header-cell-cushion{float: none !important;}
+.fc .fc-daygrid-day-number{font-size: 13px; text-align: center;}
