@@ -1053,7 +1053,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .curriculum_setting .input-group .form-control{width:100%; margin-right:5px;}
 .curriculum_setting .input-group .btn_input-group .btn{min-width:60px;}
 .curriculum_setting .m-checkbox-inline .m-checkbox{margin-right:10px;}
-.folat-box{display:block; position: fixed; bottom:30px; right: 30px; text-align: center; z-index:99;}
+.folat-box{display:block; position: fixed; bottom:50%; right: 30px; text-align: center; z-index:99;}
 .folat-box .btn_round{position: relative; width:50px; height:50px; background: #fff; border: 1px solid #ff3d3d; text-align: center; border-radius:50%; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 0.2s;}
 .folat-box .btn_round .btn-delete{position: relative; overflow: hidden; width:50px; height:50px; background: transparent;}
 .folat-box .btn_round .btn-delete .icon-delete{position: relative; left: -1px; color:#ff3d3d; font-size:32px; font-size:3.2rem;}
