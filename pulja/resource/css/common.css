@@ -1531,7 +1531,6 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 @media screen and (max-width:768px){
 	.study-info .contnet-item .btn-group .btn-sm{padding: 3px 10px !important; font-size: 13px !important; font-size:1.3rem !important;}
 	.table-style_lecture thead .solve{width: 24%;}
-	.profile_box .profile-info{padding-left:120px;}
 	.steps{text-align: left;}
 	.steps li:after{width: 12px; height: 12px; margin: -8px 123px;}
 	.recruit_teacher .contnet-item dl{padding-left: 230px;}
@@ -1645,7 +1644,7 @@ table.dataTable.no-footer{border-bottom: transparent !important;}
 table.dataTable thead th, table.dataTable thead td{border-bottom: transparent; padding: 10px 5px;}
 table.dataTable thead th, table.dataTable tfoot th{font-weight:500;}
 table.dataTable tbody tr.selected, table.dataTable tbody tr:hover{background:#fff7f4;}
-
+table.dataTable td.dataTables_empty{padding: 100px 0;}
 
 
 
