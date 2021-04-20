@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 /* rest */ 
-*,*:before,*:after{box-sizing:inherit}
+*,*:before,*:after{box-sizing:border-box;}
 :root{font-size:62.5%; }
 html{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:border-box;}
 html{-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-touch-callout:none; /* -webkit-user-select:none; */ -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
@@ -1532,7 +1532,6 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 @media screen and (max-width:768px){
 	.study-info .contnet-item .btn-group .btn-sm{padding: 3px 10px !important; font-size: 13px !important; font-size:1.3rem !important;}
 	.table-style_lecture thead .solve{width: 24%;}
-	.profile_box .profile-info{padding-left:120px;}
 	.steps{text-align: left;}
 	.steps li:after{width: 12px; height: 12px; margin: -8px 123px;}
 	.recruit_teacher .contnet-item dl{padding-left: 230px;}
@@ -1632,15 +1631,27 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 #calendar .fc-theme-standard td, .fc-theme-standard th{background-color: rgb(255, 255, 255); background-color: var(--fc-today-bg-color,rgb(255, 255, 255));}
 #calendar .fc-day-sun a{color: #d9534f !important;}
 #calendar .fc-day-sat a{color: #428bca !important;}
-.fc .fc-toolbar-title{font-weight: 500;}
-.fc .fc-button{border-radius:0 !important; font-size: 0.929em !important; padding: 0.3em 0.714em!important;}
+#calendar .fc .fc-toolbar-title{font-weight: 500;}
+#calendar .fc .fc-button{border-radius:0 !important; font-size: 0.929em !important; padding: 0.3em 0.714em!important;}
 .fc-theme-standard td, .fc-theme-standard th{float: none !important; padding: 0 !important;}
 .fc .fc-col-header-cell-cushion{float: none !important;}
+<<<<<<< HEAD
 .fc .fc-daygrid-day-number{font-size: 13px; text-align: center;}
 .fc-direction-ltr .fc-toolbar > * > :not(:first-child){margin-left: .35em;}
 
+=======
+.fc .fc-daygrid-day-number{font-size: 13px; text-align: center; padding: 4px 2px !important;}.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{min-height: 1em !important;}
+.fc-direction-ltr .fc-toolbar > * > :not(:first-child){margin-left: .5em !important;}
+>>>>>>> f3db0ec11cfc5a8db3205e8bd262951fa7f83a5c
 
 
+/* 레이어 강의추가하기 테이블 스타일 */
+table.dataTable{border-collapse: collapse !important;}
+table.dataTable.no-footer{border-bottom: transparent !important;}
+table.dataTable thead th, table.dataTable thead td{border-bottom: transparent; padding: 10px 5px;}
+table.dataTable thead th, table.dataTable tfoot th{font-weight:500;}
+table.dataTable tbody tr.selected, table.dataTable tbody tr:hover{background:#fff7f4;}
+table.dataTable td.dataTables_empty{padding: 100px 0;}
 
 
 
