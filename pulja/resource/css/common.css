@@ -1152,6 +1152,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 /* table style table-style_select-textbook */
 .table-style_select-textbook .price{width:20%;}
 .table-style_select-textbook .quantity{width:20%;}
+.table-style_select-textbook .m-checkbox{margin-bottom:0;}
 
 /* consult-record */
 .consult-record .study-info{background: #efefef; margin-bottom: 20px; padding: 10px;}
@@ -1636,6 +1637,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .fc-theme-standard td, .fc-theme-standard th{float: none !important; padding: 0 !important;}
 .fc .fc-col-header-cell-cushion{float: none !important;}
 .fc .fc-daygrid-day-number{font-size: 13px; text-align: center;}
+.fc-direction-ltr .fc-toolbar > * > :not(:first-child){margin-left: .35em;}
 
 
 
