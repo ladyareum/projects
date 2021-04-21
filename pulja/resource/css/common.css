@@ -22,7 +22,7 @@ ul, ol, menu{list-style-type:none; }
 legend, caption span, .hide{position:absolute; left:-3000%;}
 em, address{ font-style:normal;}
 table{width:100%; font-size:14px; font-size:1.4rem;border-collapse:collapse; border-spacing:0;}
-table caption, legend{position: absolute; top: -9999px; text-indent: -9999px; font-size: 0; line-height: 0;}
+table caption, legend{top: -9999px; text-indent: -9999px; font-size: 0; line-height: 0;}
 fieldset, img, iframe, button{border:0;}
 input, button, textarea, select, img, a {vertical-align: middle;}
 a{background-color: transparent; color:#3b393a; text-decoration:none; -webkit-text-decoration-skip:object;}
