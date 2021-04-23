@@ -949,7 +949,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 
 
 /* Chat Learn */
-.chat_learn .chat_header{position: relative; overflow: hidden; background: #f7f7f7; border: 1px solid #efefef; padding: 10px 10px;}
+.chat_learn .chat_header{position: relative; overflow: hidden; background: #f7f7f7; border: 1px solid #efefef; padding: 10px 10px; margin-top: 20px;}
 .chat_learn .chat_header .contnet-item{display: inline-block;}
 .chat_learn .chat_content{position: relative; height: 400px; overflow-y: scroll; background: #fff; border: 1px solid #efefef; padding: 10px 10px;}
 .chat_learn .chat_list{position:relative; overflow:hidden;}
