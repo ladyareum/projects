@@ -1010,7 +1010,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .support-center .cs_inquiry{position: relative;border: 1px solid #efefef; padding:20px 20px;}
 .support-center .cs_inquiry .contnet-item{display:inline-block; position: relative; width:100%;}
 .support-center .cs_inquiry .cs_img{position:relative; height: 110px; float: left;}
-.support-center .cs_inquiry .cs_info{position: relative; width:100%; padding-left:80px;}
+.support-center .cs_inquiry .cs_info{position: relative; width:100%; padding-left:88px;}
 .support-center .cs_inquiry .cs_info .item-header{display: inline-block; font-size: 16px; font-size: 1.6rem; font-weight: 500; padding-bottom: 5px;}
 .support-center .cs_inquiry .cs_info .item-sub, .support-center .cs_inquiry .cs_info .btn-area{padding:5px 0;}
 .support_notice .content-header{background:#fff; border-bottom: 1px dotted #9c9c9c; text-align: left; margin: 0; margin-bottom: 10px; padding: 5px 0 5px;}
@@ -1619,6 +1619,7 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .back-to-top a:hover {text-decoration: none; background: #fff; border: 1px solid #626061; color: #626061; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
 .back-to-top span{display: block; width:36px; height:36px; font-size:24px; padding:7px 0;}
 
+/* calenda BG >> calenda inline style 적용 시 해당 스타일 삭제해주세요 */
 #calendar{font-family: 'Rubik', 'Noto Sans KR',sans-serif !important;}
 #calendar .fc-button-primary{background: #fff !important; color: #ff6d37 !important; border: 1px solid #ff6d37 !important; border-radius:0 !important; -webkit-transition: all 0.2s !important; -moz-transition: all 0.2s !important; transition: all 0.2s !important;}
 #calendar .fc-button-primary:hover{background: #ff6229 !important; color: #fff !important;}
@@ -1637,15 +1638,13 @@ body.problem_solving, .test_result{height:100%; overflow: auto;}
 .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{min-height: 1em !important;}
 .fc-direction-ltr .fc-toolbar > * > :not(:first-child){margin-left: .5em !important;}
 
-
-
 /* 레이어 강의추가하기 테이블 스타일 */
 table.dataTable{border-collapse: collapse !important;}
 table.dataTable.no-footer{border-bottom: transparent !important;}
-table.dataTable thead th, table.dataTable thead td{border-bottom: transparent; padding: 10px 5px;}
-table.dataTable thead th, table.dataTable tfoot th{font-weight:500;}
-table.dataTable tbody tr.selected, table.dataTable tbody tr:hover{background:#fff7f4;}
-table.dataTable td.dataTables_empty{padding: 100px 0;}
+table.dataTable thead th, table.dataTable thead td{border-bottom: transparent !important; padding: 10px 5px !important;}
+table.dataTable thead th, table.dataTable tfoot th{font-weight:500 !important;}
+table.dataTable tbody tr.selected, table.dataTable tbody tr:hover{background:#fff7f4 !important;}
+table.dataTable td.dataTables_empty{padding: 100px 0 !important;}
 
 
 
