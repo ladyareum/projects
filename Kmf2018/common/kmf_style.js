@@ -10,11 +10,11 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 console.log("is mobile? => " + isMobile);
 
 if (isMobile && /mobile/.test(document.location) == false) {
-    document.location.href = "https://event.bbangyatv.com/kmf2018/mobile/main.html";
+    document.location.href = "kmf2018/mobile/main.html";
 }
 
 if (!isMobile && /desktop/.test(document.location) == false) {
-    document.location.href = "https://event.bbangyatv.com/kmf2018/desktop/main.html";
+    document.location.href = "kmf2018/desktop/main.html";
 }
 
 var langCookieName = "org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE";

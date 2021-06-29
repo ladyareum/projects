@@ -4,31 +4,31 @@
  /* font*/ 
 @font-face { 
 	font-family:'nanumGothic'; 
-	src: url('../font/nanumgothic.eot'); 
-	src: url('../font/nanumgothic.eot?#iefix') format('embedded-opentype'), 
-		url('../font/nanumgothic.woff')format(‘woff’); 
-	src:local(※), url('../font/nanumgothic.woff') format('woff'); 
+	src: url('../../font/nanumgothic.eot'); 
+	src: url('../../font/nanumgothic.eot?#iefix') format('embedded-opentype'), 
+		url('../../font/nanumgothic.woff')format(‘woff’); 
+	src:local(※), url('../../font/nanumgothic.woff') format('woff'); 
 } 
 @font-face { 
 	font-family:'nanumGothicB'; 
-	src: url('../font/nanumgothicb.eot'); 
-	src: url('../font/nanumgothicb.eot?#iefix') format('embedded-opentype'), 
-		url('../font/nanumgothicb.woff')format(‘woff’); 
-	src:local(※), url('../font/nanumgothicb.woff') format('woff'); 
+	src: url('../../font/nanumgothicb.eot'); 
+	src: url('../../font/nanumgothicb.eot?#iefix') format('embedded-opentype'), 
+		url('../../font/nanumgothicb.woff')format(‘woff’); 
+	src:local(※), url('../../font/nanumgothicb.woff') format('woff'); 
 } 
 @font-face { 
 	font-family:'binggrae'; 
-	src: url('../font/binggrae.eot'); 
-	src: url('../font/binggrae.eot?#iefix') format('embedded-opentype'), 
-	  url('../font/binggrae.woff')format(‘woff’); 
-	src:local(※), url('../font/binggrae.woff') format('woff'); 
+	src: url('../../font/binggrae.eot'); 
+	src: url('../../font/binggrae.eot?#iefix') format('embedded-opentype'), 
+	  url('../../font/binggrae.woff')format(‘woff’); 
+	src:local(※), url('../../font/binggrae.woff') format('woff'); 
 } 
 @font-face { 
 	font-family:'binggraeB'; 
-	src: url('../font/binggraeb.eot'); 
-	src: url('../font/binggraeb.eot?#iefix') format('embedded-opentype'), 
-	  url('../font/binggraeb.woff')format(‘woff’); 
-	src:local(※), url('../font/binggraeb.woff') format('woff'); 
+	src: url('../../font/binggraeb.eot'); 
+	src: url('../../font/binggraeb.eot?#iefix') format('embedded-opentype'), 
+	  url('../../font/binggraeb.woff')format(‘woff’); 
+	src:local(※), url('../../font/binggraeb.woff') format('woff'); 
 }
 
 html, body, div, span, applet, object, iframe,
