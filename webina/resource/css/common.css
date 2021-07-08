@@ -48,6 +48,6 @@ h8{font-size:12px; font-size: 1.2rem;}
 .masthead h1,.masthead .h1{font-size:2.25rem;}
 
 .sidebar-right{margin-top:80px;}
-#sticky{background-color:#fff;color:#212121;}
-.sticky-box{background-color: #fff; color: #212121;}
+#sticky{top: 80px;}
+.sticky-box{width:360px; min-height:100px; background-color: #f7f7f7; color: #212121; margin:0 auto;}
 
