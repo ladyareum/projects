@@ -1,8 +1,7 @@
+@charset "utf-8";
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-@charset "utf-8";
-
 
 @media (prefers-reduced-motion: no-preference) {
   :root { scroll-behavior: smooth;}
@@ -36,6 +35,7 @@ h8{font-size:12px; font-size: 1.2rem;}
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color: rgba(255,255,255,1);}
 .dropdown-menu{font-size:1.2rem;}
 .dropdown-item{padding:.5rem 1rem;}
+.row{--bs-gutter-x: 4rem;}
 
 /* style */
 
@@ -57,7 +57,7 @@ h8{font-size:12px; font-size: 1.2rem;}
 .pannel-box{background-color: #fff; border-radius:3rem;}
 .sidebar-right{margin-top:80px;}
 #sticky{top: 80px;}
-.sticky-box{min-height:100px; background-color: #fff; border-radius:3rem; color: #212121; margin:0 auto;}
+.sticky-box{min-height:100px; background-color: #fff; border-radius:3rem; color: #212121; margin:0 auto; -webkit-box-shadow: 0px 0px 18px 0px rgb(0 0 0 / 25%); box-shadow: 0px 0px 18px 0px rgb(0 0 0 / 25%);}
 .event-state li{font-size: 1.6rem; margin-bottom: .65rem;}
 .event-state li span{line-height: 1.6;}
 .event-state li span a{position: relative; top: -.2rem; text-decoration: none;}
@@ -115,21 +115,21 @@ ion-icon{width:1.5em; height:1.5em; vertical-align: middle;}
 .card-content .event-info p{padding: 30px 50px 0 0;}
 
 .ticket-content{overflow: hidden;}
-.ticket-content .item{width: 100%; float: left; overflow: hidden; background: #fff;}
+.ticket-content .item{width: 100%; float: left; overflow: hidden; background: #f7f7f7;}
 .ticket-content .item-right, .ticket-content .item-left{float: left; padding: 20px }
-.ticket-content .item-right{position: relative; width: 25%; height: auto; margin-right: 1.8rem; padding: 8rem 1rem;}
-.ticket-content .item-right .up-border, .ticket-content .item-right .down-border{position: absolute; background-color: #ddd; border-radius: 50%; padding: 14px 15px;}
-.ticket-content .item-right .up-border{top: -.8rem; right: -3.5rem;}
-.ticket-content .item-right .down-border {right: -3.5rem; bottom: -1.3rem;}
-.ticket-content .item-right .num{font-size: 52px; font-weight: 600; text-align: center;  color: #111}
-.ticket-content .item-right .day, .ticket-content .item-left .event{font-size: 1.6rem; color: #555; line-height: 1.4; margin-bottom: 1rem;}
+.ticket-content .item-right{position: relative; width: 25%; height: auto; padding: 8rem 1rem;}
+.ticket-content .item-right .up-border, .ticket-content .item-right .down-border{position: absolute; background-color: #fff; border-radius: 50%; padding: 14px 15px;}
+.ticket-content .item-right .up-border{top: -.8rem; right: -1.5rem;}
+.ticket-content .item-right .down-border {right: -1.5rem; bottom: -1.3rem;}
+.ticket-content .item-right .num{font-size: 42px; font-weight: 600; text-align: center;  color: #111}
+.ticket-content .item-right .day, .ticket-content .item-left .event{font-size: 1.4rem; color: #555; line-height: 1.4; margin-bottom: .5rem;}
 .ticket-content .item-right .day{font-size: 25px; text-align: center;}
-.ticket-content .item-left{width: 71%; border-left: 2px dotted #999; padding: 3rem 2rem;}
+.ticket-content .item-left{width: 75%; border-left: 2px dotted #999; padding: 3rem 2rem;}
 .ticket-content .item-left .title {color: #111; font-size: 2.6rem; font-weight: 500; line-height: 1.3; margin-bottom: 1.5rem;}
 .ticket-content .item-left .sce {display: block; margin-top: .5rem;}
 .ticket-content .item-left .sce .icon, .ticket-content .item-left .sce p,
-.ticket-content .item-left .loc .icon, .ticket-content .item-left .loc p{float: left; word-spacing: 5px; letter-spacing: 1px; color: #888; margin-bottom: 10px;}
-.ticket-content .item-left .sce .icon, .ticket-content .item-left .loc .icon {margin-right: 10px; font-size: 20px; color: #666;}
+.ticket-content .item-left .loc .icon, .ticket-content .item-left .loc p{float: left; color: #888; margin-bottom: 10px;}
+.ticket-content .item-left .sce .icon, .ticket-content .item-left .loc .icon {margin-right: 10px; font-size: 1.6rem; color: #666;}
 .ticket-content .item-left .loc {display: block;}
 .fix {clear: both;}
 .ticket-content .item .tickets, .booked, .cancel{ float: right; color: #fff; font-size: 18px; border: none; margin-top: 10px; padding: 6px 14px; cursor: pointer;}
